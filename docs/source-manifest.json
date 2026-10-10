@@ -1,0 +1,42 @@
+{
+  "snapshot_date": "2026-10-10",
+  "timezone": "America/Santiago",
+  "note": "Snapshot textual con confirmaciones explícitas de stack base, diagrama y form_start; otros pendientes no aprobados. Ver docs/decisions.md.",
+  "sources": [
+    {
+      "path": "docs/strategy.md",
+      "library_file_id": "libfile_998ab71a1d788191ad3a0fa9181ff71b",
+      "sha256": "80db1d9886d924e2fa1ef619c00da5104876306ab5a7141314e85e6480ad6924"
+    },
+    {
+      "path": "docs/product.md",
+      "library_file_id": "libfile_ce731fe1f4988191a30115b56437d92a",
+      "sha256": "5d0dc1d184177550f8a47473bd3c128268328ef5715d11a405992ecce4028513"
+    },
+    {
+      "path": "docs/wireframe.md",
+      "library_file_id": "libfile_e673b2a46e08819181064c3b40294a4b",
+      "sha256": "4a748c353346dbd2ea343b5b252c1c0fe1bad17950d88ed1130492b1bfd19eba"
+    },
+    {
+      "path": "docs/content.md",
+      "library_file_id": "libfile_5ba63d19b17481919e1c93f5292226ac",
+      "sha256": "a9374ec9c3aa6404edfc9c715412ce3256c21fb01bda20fd22e26b7245acd2fa"
+    },
+    {
+      "path": "docs/design.md",
+      "library_file_id": "libfile_618185221b7c8191b16eb64883f7c355",
+      "sha256": "c212a5c882710a2246d54b1cc6dd886219c29dddc6a374c39331f1bb98ccd92e"
+    },
+    {
+      "path": "docs/technical.md",
+      "library_file_id": "libfile_1571d94366688191bbfca2b8a8752d2a",
+      "sha256": "c2ef97300411f43e5b0eab2fccf652764c78f95c5646ce2ef9f7df051aa10b51"
+    },
+    {
+      "path": "docs/measurement.md",
+      "library_file_id": "libfile_fb26d2aaed5c819183e6168d2c945db8",
+      "sha256": "f3700fefac7c26e25244aca9d8ac466ae9a4307788666893c8df253fbeb308fd"
+    }
+  ]
+}

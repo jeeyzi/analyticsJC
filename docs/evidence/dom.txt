@@ -1,0 +1,15 @@
+- link "Saltar al contenido":
+  - /url: "#contenido"
+- banner:
+  - link "José Cubillo":
+    - /url: /
+- main [active]:
+  - region "Conecta tus campañas con las oportunidades y ventas de tu CRM.":
+    - paragraph: Medición y trazabilidad para generación de leads
+    - heading "Conecta tus campañas con las oportunidades y ventas de tu CRM." [level=1]
+    - paragraph: Identifica qué campañas generan negocio y utiliza señales de resultados comerciales para orientar tu inversión publicitaria. Revisamos la medición, corregimos brechas y conectamos la captación con lo que ocurre después del formulario.
+- contentinfo:
+  - paragraph: José Cubillo
+  - paragraph: Digital Analytics & Tracking
+  - paragraph: Conectamos campañas, CRM y resultados comerciales.
+- alert

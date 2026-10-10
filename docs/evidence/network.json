@@ -1,0 +1,47 @@
+[
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/",
+    "type": "Document"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2",
+    "type": "Font"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/1gxnd5w86xtmh.css",
+    "type": "Stylesheet"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/0w3wvwco92luv.css",
+    "type": "Stylesheet"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/3cfn99dbrcvvp.js",
+    "type": "Script"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/3c4xol65z2da2.js",
+    "type": "Script"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/3dmm3v_fq28gc.js",
+    "type": "Script"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+    "type": "Script"
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:3000/_next/static/chunks/0umf92h1sb77c.js",
+    "type": "Script"
+  }
+]
