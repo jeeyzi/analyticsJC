@@ -1,0 +1,44 @@
+[
+  {
+    "background": "rgb(29, 78, 216)",
+    "borderContrast": 3.13,
+    "color": "rgb(255, 255, 255)",
+    "selector": "#ds-preview button",
+    "textContrast": 6.7
+  },
+  {
+    "background": "rgb(238, 242, 246)",
+    "borderContrast": 1.21,
+    "color": "rgb(82, 97, 113)",
+    "selector": "#ds-preview button:disabled",
+    "textContrast": 5.64
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "borderContrast": 4.76,
+    "color": "rgb(23, 33, 43)",
+    "selector": "#ds-fields input",
+    "textContrast": 16.29
+  },
+  {
+    "background": "rgb(248, 250, 252)",
+    "borderContrast": null,
+    "color": "rgb(185, 28, 28)",
+    "selector": "#ds-email-error",
+    "textContrast": 6.18
+  },
+  {
+    "background": "rgb(248, 250, 252)",
+    "borderContrast": null,
+    "color": "rgb(82, 97, 113)",
+    "selector": "#ds-name-help",
+    "textContrast": 6.07
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "borderContrast": 4.76,
+    "color": "rgb(29, 78, 216)",
+    "selector": "#ds-preview a",
+    "textContrast": 6.7
+  }
+]

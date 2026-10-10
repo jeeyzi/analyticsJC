@@ -1,0 +1,490 @@
+{
+  "responsive": [
+    {
+      "button": {
+        "font": "16px",
+        "height": 73.5999984741211,
+        "width": 280
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "1.25rem",
+      "h1": "36px",
+      "h2": "28px",
+      "scrollWidth": 320,
+      "sectionPadding": "56px",
+      "width": 320
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 73.5999984741211,
+        "width": 335.20001220703125
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "1.25rem",
+      "h1": "36px",
+      "h2": "28px",
+      "scrollWidth": 375,
+      "sectionPadding": "56px",
+      "width": 375
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 727.2000122070312
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "1.25rem",
+      "h1": "36px",
+      "h2": "28px",
+      "scrollWidth": 767,
+      "sectionPadding": "56px",
+      "width": 767
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 396.1875
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "2rem",
+      "h1": "44px",
+      "h2": "32px",
+      "scrollWidth": 768,
+      "sectionPadding": "72px",
+      "width": 768
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 396.1875
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "2rem",
+      "h1": "46.044px",
+      "h2": "32.7424px",
+      "scrollWidth": 1023,
+      "sectionPadding": "72px",
+      "width": 1023
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 396.1875
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "2.5rem",
+      "h1": "46.08px",
+      "h2": "32.768px",
+      "scrollWidth": 1024,
+      "sectionPadding": "96px",
+      "width": 1024
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 396.1875
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "2.5rem",
+      "h1": "56px",
+      "h2": "40px",
+      "scrollWidth": 1280,
+      "sectionPadding": "96px",
+      "width": 1280
+    },
+    {
+      "button": {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "width": 396.1875
+      },
+      "cards": [],
+      "fields": [
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-name"
+        },
+        {
+          "font": "16px",
+          "height": 49.60000228881836,
+          "id": "ds-email"
+        },
+        {
+          "font": "16px",
+          "height": 48,
+          "id": "ds-organization"
+        },
+        {
+          "font": "16px",
+          "height": 144,
+          "id": "ds-problem"
+        }
+      ],
+      "grids": [],
+      "gutter": "2.5rem",
+      "h1": "56px",
+      "h2": "40px",
+      "scrollWidth": 1440,
+      "sectionPadding": "96px",
+      "width": 1440
+    }
+  ],
+  "cardMeasures": [
+    {
+      "grids": [
+        {
+          "cards": [
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 280
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 280
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 280
+            }
+          ],
+          "columns": "280px",
+          "gap": "16px"
+        },
+        {
+          "cards": [
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 280
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 280
+            }
+          ],
+          "columns": "280px",
+          "gap": "16px"
+        }
+      ],
+      "width": 320
+    },
+    {
+      "grids": [
+        {
+          "cards": [
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 340
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 340
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 340
+            }
+          ],
+          "columns": "340px 340px",
+          "gap": "24px"
+        },
+        {
+          "cards": [
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 340
+            },
+            {
+              "padding": "24px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 340
+            }
+          ],
+          "columns": "340px 340px",
+          "gap": "24px"
+        }
+      ],
+      "width": 768
+    },
+    {
+      "grids": [
+        {
+          "cards": [
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 293.32501220703125
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 293.3374938964844
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 293.32501220703125
+            }
+          ],
+          "columns": "293.325px 293.337px 293.325px",
+          "gap": "32px"
+        },
+        {
+          "cards": [
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 456
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 456
+            }
+          ],
+          "columns": "456px 456px",
+          "gap": "32px"
+        }
+      ],
+      "width": 1024
+    },
+    {
+      "grids": [
+        {
+          "cards": [
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 378.6625061035156
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 378.6625061035156
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 378.6750183105469
+            }
+          ],
+          "columns": "378.663px 378.663px 378.675px",
+          "gap": "32px"
+        },
+        {
+          "cards": [
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 584
+            },
+            {
+              "padding": "32px",
+              "radius": "10px",
+              "shadow": "none",
+              "width": 584
+            }
+          ],
+          "columns": "584px 584px",
+          "gap": "32px"
+        }
+      ],
+      "width": 1440
+    }
+  ]
+}

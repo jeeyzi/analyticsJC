@@ -37,4 +37,17 @@ No crear carpetas vacías, rutas API, adapters, migraciones, formularios o tests
 
 ## Pendientes
 
-Privacidad, soporte, dominio, receptor, correo, scheduler, consentimiento, parámetros operativos y copy de estados requieren cierre según H-03 a H-15. Menú y 404 tienen vacíos de copy FND-02/FND-03. Sin Git inicializado: no hay commit, remoto, CI ejecutada ni lockfile versionado. Resultados y límites por criterio en `docs/validation-report.md`.
+Privacidad, soporte, dominio, receptor, correo, scheduler, consentimiento, parámetros operativos y copy de estados requieren cierre según H-03 a H-15. Menú y 404 tienen vacíos de copy FND-02/FND-03. Foundation versionada en `1a14f7f`; remoto y CI no verificados en esta fase. Resultados y límites por criterio en `docs/validation-report.md`.
+
+## Design System base
+
+Primitives y API mínima documentados en `docs/design-system-review.md`. La Home de foundation se conserva. Para mostrar el laboratorio explícitamente en desarrollo:
+
+```powershell
+$env:DESIGN_SYSTEM_PREVIEW = 'true'
+npm run dev
+```
+
+Abrir http://127.0.0.1:3000 y bajar a «Design System — muestra local de desarrollo». No enviar información real en controles de prueba. No hay formulario, backend o almacenamiento. El flag no habilita la muestra con `npm run build`/`npm run start`.
+
+Para volver a la muestra original, detener dev, ejecutar `Remove-Item Env:DESIGN_SYSTEM_PREVIEW` en esa terminal y reiniciar `npm run dev`. Capturas y registros de esta fase: `docs/evidence/design-system/`.

@@ -23,7 +23,7 @@ img, svg { max-width: 100%; height: auto; }
 :focus-visible {
   outline: 2px solid transparent;
   outline-offset: 2px;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 5px var(--color-primary);
+  box-shadow: var(--focus-ring);
 }
 .skip-link {
   display: block;
@@ -41,7 +41,9 @@ img, svg { max-width: 100%; height: auto; }
 }
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
-  a, button { transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out; }
+  a, button, input, select, textarea {
+    transition: color var(--motion-duration) var(--motion-easing), background-color var(--motion-duration) var(--motion-easing), border-color var(--motion-duration) var(--motion-easing);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }

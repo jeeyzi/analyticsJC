@@ -1,0 +1,321 @@
+{
+  "requests": [
+    {
+      "url": "http://127.0.0.1:3000/",
+      "method": "GET",
+      "type": "Document"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2",
+      "method": "GET",
+      "type": "Font"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_1ljo0ehre8efb._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_0tzf364z-0nz_._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1anvha4rlo79g._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_219uq1sj0q91c._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_20wefz_f1k6jn._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1u_0j6ofjij6b._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/__nextjs_font/geist-latin.woff2",
+      "method": "GET",
+      "type": "Font"
+    },
+    {
+      "url": "http://127.0.0.1:3000/",
+      "method": "GET",
+      "type": "Document"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2",
+      "method": "GET",
+      "type": "Font"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_1ljo0ehre8efb._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_0tzf364z-0nz_._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1anvha4rlo79g._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_219uq1sj0q91c._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_20wefz_f1k6jn._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1u_0j6ofjij6b._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/__nextjs_font/geist-latin.woff2",
+      "method": "GET",
+      "type": "Font"
+    },
+    {
+      "url": "http://127.0.0.1:3000/",
+      "method": "GET",
+      "type": "Document"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2",
+      "method": "GET",
+      "type": "Font"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_1ljo0ehre8efb._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/src_0tzf364z-0nz_._.css",
+      "method": "GET",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1anvha4rlo79g._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_219uq1sj0q91c._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_20wefz_f1k6jn._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/_1u_0j6ofjij6b._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js",
+      "method": "GET",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:3000/__nextjs_font/geist-latin.woff2",
+      "method": "GET",
+      "type": "Font"
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}

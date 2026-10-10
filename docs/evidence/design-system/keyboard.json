@@ -1,0 +1,104 @@
+{
+  "keyboard": [
+    {
+      "bottom": 50.400001525878906,
+      "focusVisible": true,
+      "id": "",
+      "label": "Saltar al contenido",
+      "shadow": "rgb(29, 78, 216) 0px 0px 0px 3px inset",
+      "tag": "A",
+      "top": 0,
+      "withinViewport": true
+    },
+    {
+      "bottom": 53.60000038146973,
+      "focusVisible": true,
+      "id": "",
+      "label": "José Cubillo",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "A",
+      "top": 9.600000381469728,
+      "withinViewport": true
+    },
+    {
+      "bottom": 487.0125045776367,
+      "focusVisible": true,
+      "id": "",
+      "label": "Alternar estado disabled del control de prueba",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "BUTTON",
+      "top": 413.4125061035156,
+      "withinViewport": true
+    },
+    {
+      "bottom": 548.6125144958496,
+      "focusVisible": true,
+      "id": "",
+      "label": "Revisar controles de prueba",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "A",
+      "top": 499.0125122070313,
+      "withinViewport": true
+    },
+    {
+      "bottom": 672.6125373840332,
+      "focusVisible": true,
+      "id": "",
+      "label": "Volver al título de la muestra",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "A",
+      "top": 653.4125366210938,
+      "withinViewport": true
+    },
+    {
+      "bottom": 855.4125022888184,
+      "focusVisible": true,
+      "id": "ds-name",
+      "label": "",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "INPUT",
+      "top": 805.8125,
+      "withinViewport": true
+    },
+    {
+      "bottom": 486.81249618530273,
+      "focusVisible": true,
+      "id": "ds-email",
+      "label": "",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "INPUT",
+      "top": 437.2124938964844,
+      "withinViewport": true
+    },
+    {
+      "bottom": 640.8125,
+      "focusVisible": true,
+      "id": "ds-organization",
+      "label": "Selecciona una opciónEmpresa que capta leadsAgenciaOtro",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "SELECT",
+      "top": 592.8125,
+      "withinViewport": true
+    },
+    {
+      "bottom": 840.8125,
+      "focusVisible": true,
+      "id": "ds-problem",
+      "label": "",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px",
+      "tag": "TEXTAREA",
+      "top": 696.8125,
+      "withinViewport": true
+    }
+  ],
+  "reduced": {
+    "animation": "none",
+    "scroll": "auto",
+    "transition": "0s"
+  },
+  "forced": {
+    "outline": "rgb(26, 235, 255) solid 1.6px",
+    "shadow": "none"
+  },
+  "buttonSpaceTogglesDisabled": true
+}

@@ -83,3 +83,64 @@ Estado global de criterios MVP: NOT VALIDATED salvo D-08; los subcasos anteriore
 - Sin Git/commit/CI. Noindex no protege preview público; no publicar esta base. CSP, privacidad y operación productiva pendientes.
 - Primer muestreo responsive leyó tamaños previos al repintado. Se repitió con screenshot antes de medir; las ocho filas conservadas tienen requested=width. No fallo de layout.
 - Sin evidencia de campo, proveedores ni accesibilidad completa. Limitaciones futuras de idempotencia, avisos y revocación del handoff siguen vigentes.
+
+---
+
+## Completion Report — Design System base, 10/10/2026
+
+Actualización incremental: la foundation anterior se conserva como informe histórico. Estado actual verificado: base commit `1a14f7f`, checkout limpio al iniciar; cambios de esta fase en working tree, sin nuevo commit. Windows / Node 22.17.0 / npm 10.9.2. QA en http://127.0.0.1:3000, Codex In-app Browser Chromium, desarrollo con flag explícito; build optimizado inspeccionado en disco. Sin deploy, proveedores, mocks ni medición. Sufijo `/DS` = subcaso acotado, nunca PASS global.
+
+### Implemented
+
+- Reutilizados tokens, Inter, Container, estilos H1/H2/H3, Header/Footer y Home mínima de foundation. Nuevos aliases de foco y transición con los valores de design; controles se incorporan a la transición consentida por preferencias del sistema.
+- `components/ui/Actions`, `Field`, `Card` y sus CSS Modules; `layout/Section` y CardGrid; `styles/typography.module.css`. Fuentes: design (presentación), technical (CSS Modules y límites server/client), content (extractos de muestra) y wireframe (sin formulario implementado).
+- Muestra claramente rotulada en `components/development`, solo development + `DESIGN_SYSTEM_PREVIEW=true`; sin ruta nueva, form, envío, almacenamiento o navegación comercial. `/` de build conserva contenido de foundation.
+- Autorización en decisions, API/clasificación en design-system-review y procedimiento en README. Siete fuentes originales mantienen hashes. No nuevas dependencias, carpetas vacías ni cierres de hallazgos posteriores.
+
+### Validated
+
+Evidencia: [checks](evidence/design-system/checks.md), [responsive](evidence/design-system/responsive.json), [teclado y preferencias](evidence/design-system/keyboard.json), [contraste parcial](evidence/design-system/contrast.json), [Network](evidence/design-system/network.json), [Console](evidence/design-system/console.json). Capturas [320](evidence/design-system/320.png), [768](evidence/design-system/768.png), [1024](evidence/design-system/1024.png), [1440](evidence/design-system/1440.png), [foco](evidence/design-system/focus.png), [forced colors](evidence/design-system/forced-colors.png).
+
+| ID / subcaso | Estado | Método / evidencia observada |
+| --- | --- | --- |
+| B-01/DS | PASS | Lectura y alcance registrados; SHA256 7/7 coinciden. No adopta otras propuestas. |
+| B-03/typecheck-DS | PASS | next typegen + tsc strict, exit 0 fuera sandbox. |
+| B-03/lint-DS | PASS | ESLint con max-warnings=0, exit 0. |
+| B-03/build-DS | PASS | Build exit 0, static `/` y `/_not-found`; repetido con flag true, sin muestra en HTML/RSC. |
+| B-04/DS, B-07/DS | PASS | Inspección código/rutas: primitives sin estado propio; único client nuevo es laboratorio. Sin API, formulario ni rutas comerciales añadidas. |
+| B-06/carga-interacción-DS | PASS | Console warnings/errors vacío en cargas y toggle observados. No prueba flujos MVP. |
+| R-01/muestra-DS | PASS | Anchos efectivos 320/375/767/768/1023/1024/1280/1440; scrollWidth igual al viewport, contenido sin recorte observado. Solo muestra. |
+| R-02/DS | PASS | H1 36–56, H2 28–40; gutter 20/32/40; sección 56/72/96; input/select ≥48 y textarea 144, UI 16; grids 1/2/3 y 1/2/2; cards 24/32, radio 10, shadow none en serie cardMeasures. |
+| A-02/teclado-primitives-DS | PASS | Tab en nueve destinos desde skip hasta textarea, Shift+Tab y Space en toggle; disabled omitido; foco doble visible. Recorrido estable con reduce, sin foco fuera del viewport. No menú/CMP. |
+| A-03/asociaciones-DOM-DS | PASS | Labels for/id; ayuda/error por aria-describedby; error explícito y aria-invalid. Solo DOM, sin lector ni avisos funcionales. |
+| A-04/default-error-disabled-DS | PASS | Contraste de texto usado 5.64–16.29; borde input 4.76; error con texto además de borde. Subconjunto calculado, no todos los estados. |
+| A-05/botones-campos-preferencias-DS | PASS | Botones multilinea ≥48, input/select ≥48; reduce scroll auto/transition 0s/animation none; forced-colors outline visible sin shadow. No cubre todos los links/targets del MVP. |
+| M-11/ausencia-integraciones-DS | PASS | Fuente y Network: sin GTM/GA/píxeles, requests locales GET. Ausencia no acredita tracking o consentimiento. |
+| B-03/typecheck-build-sandbox-DS | FAIL ambiental, repetición PASS | SWC canonicalize jsc.baseUrl, Acceso denegado. Mismo código ejecutado con permisos fuera sandbox. |
+
+### Not Validated
+
+Los criterios globales de la matriz mantienen NOT VALIDATED; ninguno recibe PASS global por esta fase. B-02 instalación limpia nueva/CI; B-03 flujos críticos; R-01/R-02 Home/privacidad/formulario completos; R-03 zoom 200%; R-04–R-06 diagrama/barra/móvil físico; N-01–N-06 navegación/rutas finales; C-01–C-03; F-01–F-11; E-01–E-07; A-01–A-07 recorrido integral, lector/axe, hover/active completos y targets; S/P, M/CO/PR y D siguen fuera de esta evidencia. Los resultados históricos foundation no se recertifican por inferencia. No se acredita WCAG, performance, GA4, integración, producción o campo.
+
+### Pending
+
+| IDs | Responsable / condición | Bloquea |
+| --- | --- | --- |
+| FND-02 / FND-03 | José: label visible del menú y copy 404/privacidad adoptados. | Navegación/rutas finales, no primitives entregados |
+| H-02 restante | José: adoptar decisiones aplicables antes del código dependiente. | Implementación de fases correspondientes |
+| H-03/H-04/H-05/H-06 | José: proveedores/planes/regiones, contacto/dominio, privacidad, receptor y aviso reales probados. | Captación pública/lanzamiento |
+| H-07/H-08/H-09 | José: política, CMP/copy/revocación y cuentas/configuración QA. | Medición |
+| H-10/H-11/H-14/H-15 | José: parámetros/retries, mensajes HTTP, historial manual y OG. | API/formulario/operación/SEO respectivos |
+| DS-03 / DS-04 | Codex al autorizar fase: estados funcionales, iconos, navegación/diagrama/cards adicionales solo si necesarios. | FUTURE, no esta fase |
+
+### Known Issues
+
+- Error ambiental SWC dentro sandbox reportado y repetido con éxito fuera; no se modificaron reglas/tests para ocultarlo.
+- Primer arranque con puerto personalizado falló por forwarding npm/PowerShell; muestra validada en 3000. Connection refused inicial correspondía al puerto sin servidor. Procedimiento README usa script estándar.
+- DevTools de Next aparece en las capturas y carga Geist local además de Inter; recursos de desarrollo, sin afirmar que pertenezcan a producción. Next generó cambios en AGENTS/next-env; retirado el bloque automático y regenerados tipos con build.
+- La muestra muestra un error estático inicial y controles de prueba; no demuestra validación ni un formulario operativo. Activación de loading/feedback es futura.
+- FND-02/FND-03 y bloqueos operativos existentes siguen abiertos. No hay Home completa, privacidad final, captación ni release. Sin fallos de layout detectados en la muestra y anchos revisados; no afirmación universal.
+
+### Recommended Next Step
+
+Revisar los primitives con la evidencia guardada y autorizar una fase acotada de composición de secciones de Home. Antes de incorporar navegación, cerrar FND-02; antes de rutas/captación, cerrar sus decisiones aplicables. No comenzar formulario, backend o medición por esta entrega.

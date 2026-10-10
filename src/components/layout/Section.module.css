@@ -1,0 +1,7 @@
+.section { padding-block: var(--section-padding); }
+.first { padding-block: var(--hero-padding); }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--grid-gap); }
+.grid > * { min-width: 0; }
+@media (min-width: 48rem) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .three { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.two { align-items: stretch; }

@@ -25,3 +25,11 @@ Se adopta el uso de las fuentes actuales para esa foundation local en `C:\Users\
 
 Se conserva `acceptance.md` raíz como matriz canónica existente; `docs/acceptance.md` será una referencia a esa matriz, sin duplicar criterios. La revisión y las limitaciones de esta fase se registran en `foundation-review.md`.
 
+## Autorización de Design System base — 10/10/2026
+
+Fuente: solicitud explícita de José en este chat de implementar exclusivamente los primitives, tokens y componentes reutilizables de `docs/design.md`, sobre la foundation completada y validada. Se adopta esa fuente para este alcance local; H-02 no se cierra para el resto del MVP. No autoriza la Home completa, publicación, navegación funcional, formulario, backend, measurement, CMP ni integraciones.
+
+Base actual verificada: commit `1a14f7f` (`chore: initialize website foundation`), checkout limpio al iniciar. La mención histórica de ausencia de Git en la revisión de foundation ya no describe el estado actual; no implica remoto/CI verificados.
+
+Se permite una muestra local de desarrollo aislada, sin contenido comercial nuevo. Interpretaciones acotadas y subcasos de aceptación: `docs/design-system-review.md` y actualización incremental de `docs/validation-report.md`. FND-02/FND-03 y hallazgos H-* de fases posteriores conservan sus puertas.
+

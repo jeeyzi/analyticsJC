@@ -1,0 +1,8 @@
+.lead { font-size: var(--font-lead); font-weight: 400; line-height: 1.55; }
+.body { font-size: var(--font-body); font-weight: 400; line-height: 1.65; }
+.ui { font-size: var(--font-ui); font-weight: 500; line-height: 1.5; }
+.caption { font-size: var(--font-caption); font-weight: 400; line-height: 1.5; }
+.eyebrow { font-size: var(--font-caption); font-weight: 500; line-height: 1.5; letter-spacing: 0.02em; }
+.technical { font-family: var(--font-mono); overflow-wrap: anywhere; }
+.titleText { display: flex; flex-direction: column; gap: var(--space-4); }
+.reading { width: 100%; max-width: var(--reading-max); }

@@ -55,6 +55,9 @@
   --section-content-gap: 1.5rem;
   --panel-padding: 1.5rem;
   --shadow-menu: 0 8px 24px rgb(23 33 43 / 10%);
+  --focus-ring: 0 0 0 2px var(--color-surface), 0 0 0 5px var(--color-primary);
+  --motion-duration: 150ms;
+  --motion-easing: ease-out;
 }
 
 @media (min-width: 48rem) {
