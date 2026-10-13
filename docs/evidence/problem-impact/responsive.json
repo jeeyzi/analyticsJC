@@ -1,0 +1,826 @@
+[
+  {
+    "clientWidth": 305,
+    "containerWidth": 264.8000183105469,
+    "contentGap": "24px",
+    "gap": "16px",
+    "gridColumns": "264.8px",
+    "headings": [
+      {
+        "lineHeight": "33.04px",
+        "size": "28px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "56px",
+    "scrollWidth": 305,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "28px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 320
+  },
+  {
+    "clientWidth": 360,
+    "containerWidth": 320,
+    "contentGap": "24px",
+    "gap": "16px",
+    "gridColumns": "320px",
+    "headings": [
+      {
+        "lineHeight": "33.04px",
+        "size": "28px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "56px",
+    "scrollWidth": 360,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "28px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 375
+  },
+  {
+    "clientWidth": 752,
+    "containerWidth": 712,
+    "contentGap": "24px",
+    "gap": "16px",
+    "gridColumns": "712px",
+    "headings": [
+      {
+        "lineHeight": "33.04px",
+        "size": "28px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "28.6px",
+        "size": "22px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "56px",
+    "scrollWidth": 752,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "28px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "22px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 767
+  },
+  {
+    "clientWidth": 753,
+    "containerWidth": 688.7999877929688,
+    "contentGap": "32px",
+    "gap": "24px",
+    "gridColumns": "332.4px 332.4px",
+    "headings": [
+      {
+        "lineHeight": "37.76px",
+        "size": "32px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "72px",
+    "scrollWidth": 753,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "32px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 768
+  },
+  {
+    "clientWidth": 1008,
+    "containerWidth": 944,
+    "contentGap": "32px",
+    "gap": "24px",
+    "gridColumns": "460px 460px",
+    "headings": [
+      {
+        "lineHeight": "38.636px",
+        "size": "32.7424px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "72px",
+    "scrollWidth": 1008,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "32.7424px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "containerWidth": 928.7999877929688,
+    "contentGap": "40px",
+    "gap": "32px",
+    "gridColumns": "288.263px 288.263px 288.275px",
+    "headings": [
+      {
+        "lineHeight": "38.6662px",
+        "size": "32.768px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "96px",
+    "scrollWidth": 1009,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "32.768px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "clientWidth": 1265,
+    "containerWidth": 1184.800048828125,
+    "contentGap": "40px",
+    "gap": "32px",
+    "gridColumns": "373.6px 373.6px 373.6px",
+    "headings": [
+      {
+        "lineHeight": "47.2px",
+        "size": "40px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "96px",
+    "scrollWidth": 1265,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "40px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "clientWidth": 1425,
+    "containerWidth": 1200,
+    "contentGap": "40px",
+    "gap": "32px",
+    "gridColumns": "378.663px 378.663px 378.675px",
+    "headings": [
+      {
+        "lineHeight": "47.2px",
+        "size": "40px",
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "lineHeight": "31.2px",
+        "size": "24px",
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      }
+    ],
+    "interactive": 0,
+    "padding": "96px",
+    "scrollWidth": 1425,
+    "sectionOverflow": false,
+    "texts": [
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "40px",
+        "overflow": false,
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "24px",
+        "overflow": false,
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable."
+      },
+      {
+        "color": "rgb(23, 33, 43)",
+        "font": "inter, \"inter Fallback\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18px",
+        "overflow": false,
+        "text": "Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+      }
+    ],
+    "width": 1440
+  }
+]

@@ -272,3 +272,62 @@ Ninguna decisión nueva necesaria para este alcance. HERO-01/02/03/04 son interp
 ### Recommended Next Step
 
 Revisar el Hero y su evidencia; autorizar por separado la siguiente sección según el orden del wireframe (Problema e impacto). Mantener CTA y navegación condicionados a destinos reales; no adelantar formulario, diagrama ni medición por esta entrega.
+
+---
+
+## Completion Report — Problem + Impact, 13/10/2026
+
+America/Santiago. Base `40a9e71`, checkout limpio al iniciar; cambios locales sin commit nuevo. Windows, Node v22.17.0/npm 10.9.2. Chromium Codex In-app Browser emulado, build optimizado local en `http://127.0.0.1:3002`. Sin deployment, proveedores o mocks de captación. Servidor de esta sesión detenido al finalizar. Subcasos `/ProblemImpact` no cambian estados globales de acceptance.
+
+### Implemented
+
+- `src/components/sections/ProblemImpact.tsx` y CSS Module mínimo; Server Component con Section, Container, CardGrid y typography existentes. Composición después de Hero en page.tsx.
+- `site.problem` y `site.impact`: título, introducción, tres síntomas con sus consecuencias y cierre de Impact literales de content. Wireframe §02: una sola sección `#problema`, H2 y tres H3, sin CTA ni visual requerido. Impact sin título inventado, dentro de la misma progresión narrativa.
+- Grid textual sin Card, conforme a design §Cards; spacing, tipografía y responsive del Design System. Sin Header/Hero refactorizados, nuevas dependencias, tokens, rutas, servicios o instrumentación. Fuentes originales intactas.
+- Autorización limitada y PI-01/02/03 SAFE ASSUMPTION documentadas en [problem-impact-review.md](problem-impact-review.md). Evidencia: [checks](evidence/problem-impact/checks.md), [browser](evidence/problem-impact/browser.md), JSON y capturas en esa carpeta.
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/ProblemImpact | PASS | Solicitud explícita y revisión previa; siete hashes coincidentes con snapshot. Adopción solo para esta fase. |
+| B-03/typecheck-ProblemImpact | PASS | next typegen + tsc --noEmit, exit 0 fuera del sandbox. |
+| B-03/lint-ProblemImpact | PASS | ESLint max-warnings=0, exit 0. |
+| B-03/build-ProblemImpact | PASS | Build optimizado exit 0 fuera del sandbox; `/` prerenderizada e inspeccionada en navegador. |
+| B-04/ProblemImpact, B-07/ProblemImpact | PASS | Componente server, copy literal cotejado contra DOM, sin nueva interactividad ni contenido fuera del alcance. |
+| B-06/ProblemImpact | PASS parcial | Cargas/recargas/resize: console warn/error=[] y sin excepciones CDP capturadas. console.json/network.json. |
+| R-01/ProblemImpact, R-02/ProblemImpact | PASS parcial | 320,375,767,768,1023,1024,1280,1440 medidos; cinco anchos solicitados revisados visualmente. Sin overflow; grid 1/2/3, orden lógico y cierre continuo. responsive.json y capturas. No Home/privacidad completa. |
+| N-02/problema-ProblemImpact | PASS parcial | #inicio→#problema únicos en DOM; H2 asociado a región. No ocho anclas finales. |
+| A-01/DOM-ProblemImpact | PASS parcial | lang=es, H1 único, H2→tres H3; bloques estáticos con contenido textual completo. Sin lector ni auditoría integral. |
+| A-04/default-ProblemImpact | PASS parcial | Contraste de todo el contenido nuevo 15.57:1; sin controles/estados nuevos. semantics-contrast.json. |
+| M-11/ausencia-integraciones-ProblemImpact | PASS parcial | Network observado: 50 GET locales de cinco cargas, sin POST/GTM/GA4/píxeles. No acredita medición o consentimiento. |
+| B-03/sandbox-ProblemImpact | FAIL ambiental, repetición PASS | Typecheck/build/start: SWC canonicalize jsc.baseUrl, Acceso denegado os error 5. Mismo código fuera del sandbox pasó. |
+
+### Not Validated
+
+- R-03 zoom real 200%, R-06 iOS Safari/Android Chrome físicos; A-03 lector, A-07 axe y revisión WCAG integral. No PASS global de accesibilidad.
+- B-02 nueva instalación limpia/CI, B-03 pruebas críticas del MVP, B-06 flujos finales, R/A globales, N-01/rutas finales y N-02 ocho anclas. La evidencia solo cubre ProblemImpact y su composición visible con Hero.
+- R-04/diagrama, R-05/barra, C/F/E/S/P/M/CO/PR/D funcionales de fases futuras. No backend, captación, servicios reales, GA4, performance, producción ni campo acreditados. Sin simulación de integración.
+
+### Pending
+
+| ID | Responsable / condición | Bloquea |
+| --- | --- | --- |
+| HN-04 / HERO-01 | Codex en fases autorizadas: destinos reales de Header y formulario; habilitar puertas y repetir recorrido integrado. | CTA/navegación final, no esta fase |
+| R-03/R-06/A-03/A-07 | Implementador/QA: zoom, dispositivos, lector y auditoría integral. | Aceptación responsive/accesibilidad completa |
+| H-03/H-04/H-05/H-06/FND-03 | José: proveedores/planes, dominio/contacto, privacidad/copy de rutas y recepción reales. | Captación/lanzamiento; no ProblemImpact |
+| H-07/H-08/H-09/H-10/H-11/H-14/H-15 | José: decisiones/configuración operativa según registros vigentes. | Medición/API/operación/SEO de fases correspondientes |
+
+### Known Issues
+
+- SWC falla en sandbox Windows; validaciones requeridas repetidas fuera con exit 0. Start local también requirió esa ejecución. No cambios a reglas/configuración para ocultarlo. next-env.d.ts generado por build restaurado a la base.
+- CTA/navegación normal siguen condicionados a destinos reales, por decisiones previas. No recorrido comercial completo ni lanzamiento acreditado.
+- Sin overflow, problemas de legibilidad o errores de consola detectados en la muestra revisada; no afirmación universal. Validaciones integrales y dispositivos siguen pendientes.
+
+### Decisions Needed
+
+Ninguna decisión nueva bloquea Problem + Impact. PI-01/02/03 documentan interpretaciones acotadas sustentadas por fuentes; PI-04 FUTURE conserva límites. Pendientes históricos no quedan adoptados por esta fase.
+
+### Recommended Next Step
+
+Revisar esta entrega y su evidencia; autorizar por separado Solution + capacidades según wireframe §03 y decisiones del diagrama ya confirmadas. No iniciar Services, formulario, backend ni medición por esta solicitud.

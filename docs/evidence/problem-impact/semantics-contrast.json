@@ -1,0 +1,22 @@
+{
+  "background": "rgb(248, 250, 252)",
+  "contrast": 15.57284930074157,
+  "foreground": "rgb(23, 33, 43)",
+  "formCount": 0,
+  "futureAnchors": 0,
+  "h1": 1,
+  "headingOrder": [
+    "H1",
+    "H2",
+    "H3",
+    "H3",
+    "H3"
+  ],
+  "lang": "es",
+  "problemCount": 1,
+  "sections": [
+    "inicio",
+    "problema"
+  ],
+  "text": "Tu medición puede terminar donde empieza la venta.\n\nUn formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando.\n\nMides contactos, pero no resultados comerciales\n\nSabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial.\n\nLos datos de publicidad, web y CRM no encajan\n\nLas plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir.\n\nTus campañas reciben señales incompletas\n\nSi las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable.\n\nCon esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas."
+}

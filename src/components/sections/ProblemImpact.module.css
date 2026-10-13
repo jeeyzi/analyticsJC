@@ -1,0 +1,2 @@
+.content { display: flex; flex-direction: column; gap: var(--section-content-gap); }
+.symptom { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
