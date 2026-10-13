@@ -1,0 +1,1658 @@
+[
+  {
+    "clientWidth": 305,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 305,
+    "sections": [
+      {
+        "box": {
+          "bottom": 6490.012451171875,
+          "height": 1454.550048828125,
+          "left": 0,
+          "right": 304.8000183105469,
+          "top": 5035.46240234375,
+          "width": 304.8000183105469,
+          "x": 0,
+          "y": 5035.46240234375
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 5452.812789916992,
+              "height": 205.1999969482422,
+              "left": 52,
+              "right": 284.8000030517578,
+              "top": 5247.61279296875,
+              "width": 232.8000030517578,
+              "x": 52,
+              "y": 5247.61279296875
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": 5655.612503051758,
+              "height": 178.8000030517578,
+              "left": 52,
+              "right": 284.8000030517578,
+              "top": 5476.8125,
+              "width": 232.8000030517578,
+              "x": 52,
+              "y": 5476.8125
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": 5911.212799072266,
+              "height": 231.6000061035156,
+              "left": 52,
+              "right": 284.8000030517578,
+              "top": 5679.61279296875,
+              "width": 232.8000030517578,
+              "x": 52,
+              "y": 5679.61279296875
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": 6140.412399291992,
+              "height": 205.1999969482422,
+              "left": 52,
+              "right": 284.8000030517578,
+              "top": 5935.21240234375,
+              "width": 232.8000030517578,
+              "x": 52,
+              "y": 5935.21240234375
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 7445.362731933594,
+          "height": 955.3500366210938,
+          "left": 0,
+          "right": 304.8000183105469,
+          "top": 6490.0126953125,
+          "width": 304.8000183105469,
+          "x": 0,
+          "y": 6490.0126953125
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 7198.962699890137,
+              "height": 79.20000457763672,
+              "left": 44,
+              "right": 284.8000030517578,
+              "top": 7119.7626953125,
+              "width": 240.8000030517578,
+              "x": 44,
+              "y": 7119.7626953125
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 7294.162406921387,
+              "height": 79.20000457763672,
+              "left": 44,
+              "right": 284.8000030517578,
+              "top": 7214.96240234375,
+              "width": 240.8000030517578,
+              "x": 44,
+              "y": 7214.96240234375
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 7389.362602233887,
+              "height": 79.20000457763672,
+              "left": 44,
+              "right": 284.8000030517578,
+              "top": 7310.16259765625,
+              "width": 240.8000030517578,
+              "x": 44,
+              "y": 7310.16259765625
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 320,
+    "requestedWidth": 320
+  },
+  {
+    "clientWidth": 360,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 360,
+    "sections": [
+      {
+        "box": {
+          "bottom": 2394.875,
+          "height": 1260.9124755859375,
+          "left": 0,
+          "right": 360,
+          "top": 1133.9625244140625,
+          "width": 360,
+          "x": 0,
+          "y": 1133.9625244140625
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 1491.8750762939453,
+              "height": 178.8000030517578,
+              "left": 52,
+              "right": 340,
+              "top": 1313.0750732421875,
+              "width": 288,
+              "x": 52,
+              "y": 1313.0750732421875
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": 1639.6750030517578,
+              "height": 123.8000030517578,
+              "left": 52,
+              "right": 340,
+              "top": 1515.875,
+              "width": 288,
+              "x": 52,
+              "y": 1515.875
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": 1868.8750457763672,
+              "height": 205.1999969482422,
+              "left": 52,
+              "right": 340,
+              "top": 1663.675048828125,
+              "width": 288,
+              "x": 52,
+              "y": 1663.675048828125
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": 2071.675003051758,
+              "height": 178.8000030517578,
+              "left": 52,
+              "right": 340,
+              "top": 1892.875,
+              "width": 288,
+              "x": 52,
+              "y": 1892.875
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 3158.7875366210938,
+          "height": 763.9125366210938,
+          "left": 0,
+          "right": 360,
+          "top": 2394.875,
+          "width": 360,
+          "x": 0,
+          "y": 2394.875
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 2938.7875480651855,
+              "height": 52.79999923706055,
+              "left": 44,
+              "right": 340,
+              "top": 2885.987548828125,
+              "width": 296,
+              "x": 44,
+              "y": 2885.987548828125
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 3007.5875968933105,
+              "height": 52.79999923706055,
+              "left": 44,
+              "right": 340,
+              "top": 2954.78759765625,
+              "width": 296,
+              "x": 44,
+              "y": 2954.78759765625
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 3102.7876510620117,
+              "height": 79.20000457763672,
+              "left": 44,
+              "right": 340,
+              "top": 3023.587646484375,
+              "width": 296,
+              "x": 44,
+              "y": 3023.587646484375
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 375,
+    "requestedWidth": 375
+  },
+  {
+    "clientWidth": 752,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 752,
+    "sections": [
+      {
+        "box": {
+          "bottom": 220.02496337890625,
+          "height": 851.6749877929688,
+          "left": 0,
+          "right": 752,
+          "top": -631.6500244140625,
+          "width": 752,
+          "x": 0,
+          "y": -631.6500244140625
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": -388.17501068115234,
+              "height": 97.4000015258789,
+              "left": 52,
+              "right": 732,
+              "top": -485.5750122070313,
+              "width": 680,
+              "x": 52,
+              "y": -485.5750122070313
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": -266.77501678466797,
+              "height": 97.4000015258789,
+              "left": 52,
+              "right": 732,
+              "top": -364.1750183105469,
+              "width": 680,
+              "x": 52,
+              "y": -364.1750183105469
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": -145.37500762939453,
+              "height": 97.4000015258789,
+              "left": 52,
+              "right": 732,
+              "top": -242.77500915527344,
+              "width": 680,
+              "x": 52,
+              "y": -242.77500915527344
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": -23.974998474121097,
+              "height": 97.4000015258789,
+              "left": 52,
+              "right": 732,
+              "top": -121.375,
+              "width": 680,
+              "x": 52,
+              "y": -121.375
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 739.6999969482422,
+          "height": 519.6749877929688,
+          "left": 0,
+          "right": 752,
+          "top": 220.02500915527344,
+          "width": 752,
+          "x": 0,
+          "y": 220.02500915527344
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 598.8999996185303,
+              "height": 26.399999618530273,
+              "left": 44,
+              "right": 732,
+              "top": 572.5,
+              "width": 688,
+              "x": 44,
+              "y": 572.5
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 641.3000240325928,
+              "height": 26.399999618530273,
+              "left": 44,
+              "right": 732,
+              "top": 614.9000244140625,
+              "width": 688,
+              "x": 44,
+              "y": 614.9000244140625
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 683.699987411499,
+              "height": 26.399999618530273,
+              "left": 44,
+              "right": 732,
+              "top": 657.2999877929688,
+              "width": 688,
+              "x": 44,
+              "y": 657.2999877929688
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 767,
+    "requestedWidth": 767
+  },
+  {
+    "clientWidth": 753,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 753,
+    "sections": [
+      {
+        "box": {
+          "bottom": 123.79998779296876,
+          "height": 962.4000244140624,
+          "left": 0,
+          "right": 752.7999877929688,
+          "top": -838.6000366210938,
+          "width": 752.7999877929688,
+          "x": 0,
+          "y": -838.6000366210938
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": -552.5000381469727,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 720.7999877929688,
+              "top": -659.1000366210938,
+              "width": 656.7999877929688,
+              "x": 64,
+              "y": -659.1000366210938
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": -421.9000015258789,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 720.7999877929688,
+              "top": -528.5,
+              "width": 656.7999877929688,
+              "x": 64,
+              "y": -528.5
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": -291.2999954223633,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 720.7999877929688,
+              "top": -397.8999938964844,
+              "width": 656.7999877929688,
+              "x": 64,
+              "y": -397.8999938964844
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": -160.70001983642578,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 720.7999877929688,
+              "top": -267.3000183105469,
+              "width": 656.7999877929688,
+              "x": 64,
+              "y": -267.3000183105469
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 752.3000030517578,
+          "height": 628.5,
+          "left": 0,
+          "right": 752.7999877929688,
+          "top": 123.8000030517578,
+          "width": 752.7999877929688,
+          "x": 0,
+          "y": 123.8000030517578
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 559.2000007629395,
+              "height": 29.700000762939453,
+              "left": 56,
+              "right": 720.7999877929688,
+              "top": 529.5,
+              "width": 664.7999877929688,
+              "x": 56,
+              "y": 529.5
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 604.9000129699707,
+              "height": 29.700000762939453,
+              "left": 56,
+              "right": 720.7999877929688,
+              "top": 575.2000122070312,
+              "width": 664.7999877929688,
+              "x": 56,
+              "y": 575.2000122070312
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 680.3000259399414,
+              "height": 59.400001525878906,
+              "left": 56,
+              "right": 720.7999877929688,
+              "top": 620.9000244140625,
+              "width": 664.7999877929688,
+              "x": 56,
+              "y": 620.9000244140625
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 768,
+    "requestedWidth": 768
+  },
+  {
+    "clientWidth": 1008,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 1008,
+    "sections": [
+      {
+        "box": {
+          "bottom": 139.29998779296875,
+          "height": 964.1500244140624,
+          "left": 0,
+          "right": 1008,
+          "top": -824.8500366210938,
+          "width": 1008,
+          "x": 0,
+          "y": -824.8500366210938
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": -537.0000381469727,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 792,
+              "top": -643.6000366210938,
+              "width": 728,
+              "x": 64,
+              "y": -643.6000366210938
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": -406.4000015258789,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 792,
+              "top": -513,
+              "width": 728,
+              "x": 64,
+              "y": -513
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": -275.7999954223633,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 792,
+              "top": -382.3999938964844,
+              "width": 728,
+              "x": 64,
+              "y": -382.3999938964844
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": -145.20000457763672,
+              "height": 106.5999984741211,
+              "left": 64,
+              "right": 792,
+              "top": -251.8000030517578,
+              "width": 728,
+              "x": 64,
+              "y": -251.8000030517578
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 739.8499908447266,
+          "height": 600.5499877929688,
+          "left": 0,
+          "right": 1008,
+          "top": 139.3000030517578,
+          "width": 1008,
+          "x": 0,
+          "y": 139.3000030517578
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 576.4500007629395,
+              "height": 29.700000762939453,
+              "left": 56,
+              "right": 792,
+              "top": 546.75,
+              "width": 736,
+              "x": 56,
+              "y": 546.75
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 622.1500129699707,
+              "height": 29.700000762939453,
+              "left": 56,
+              "right": 792,
+              "top": 592.4500122070312,
+              "width": 736,
+              "x": 56,
+              "y": 592.4500122070312
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 667.850025177002,
+              "height": 29.700000762939453,
+              "left": 56,
+              "right": 792,
+              "top": 638.1500244140625,
+              "width": 736,
+              "x": 56,
+              "y": 638.1500244140625
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 1023,
+    "requestedWidth": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 1009,
+    "sections": [
+      {
+        "box": {
+          "bottom": 83.02508544921875,
+          "height": 1028.2000732421875,
+          "left": 0,
+          "right": 1008.7999877929688,
+          "top": -945.1749877929688,
+          "width": 1008.7999877929688,
+          "x": 0,
+          "y": -945.1749877929688
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": -625.2750015258789,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": -731.875,
+              "width": 728,
+              "x": 72,
+              "y": -731.875
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": -494.6750259399414,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": -601.2750244140625,
+              "width": 728,
+              "x": 72,
+              "y": -601.2750244140625
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": -364.0750198364258,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": -470.6750183105469,
+              "width": 728,
+              "x": 72,
+              "y": -470.6750183105469
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": -233.47501373291016,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": -340.07501220703125,
+              "width": 728,
+              "x": 72,
+              "y": -340.07501220703125
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 739.6250381469727,
+          "height": 656.6000366210938,
+          "left": 0,
+          "right": 1008.7999877929688,
+          "top": 83.0250015258789,
+          "width": 1008.7999877929688,
+          "x": 0,
+          "y": 83.0250015258789
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 552.225025177002,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 522.5250244140625,
+              "width": 736,
+              "x": 64,
+              "y": 522.5250244140625
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 597.9250373840332,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 568.2250366210938,
+              "width": 736,
+              "x": 64,
+              "y": 568.2250366210938
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 643.6249885559082,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 613.9249877929688,
+              "width": 736,
+              "x": 64,
+              "y": 613.9249877929688
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 1024,
+    "requestedWidth": 1024
+  },
+  {
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 1265,
+    "sections": [
+      {
+        "box": {
+          "bottom": 997.0000495910645,
+          "height": 1045.300048828125,
+          "left": 0,
+          "right": 1264.800048828125,
+          "top": -48.29999923706055,
+          "width": 1264.800048828125,
+          "x": 0,
+          "y": -48.29999923706055
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 288.7000045776367,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": 182.1000061035156,
+              "width": 728,
+              "x": 72,
+              "y": 182.1000061035156
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": 419.30001068115234,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": 312.70001220703125,
+              "width": 728,
+              "x": 72,
+              "y": 312.70001220703125
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": 549.900016784668,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": 443.3000183105469,
+              "width": 728,
+              "x": 72,
+              "y": 443.3000183105469
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": 680.5000228881836,
+              "height": 106.5999984741211,
+              "left": 72,
+              "right": 800,
+              "top": 573.9000244140625,
+              "width": 728,
+              "x": 72,
+              "y": 573.9000244140625
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 1670.7000122070312,
+          "height": 673.7000122070312,
+          "left": 0,
+          "right": 1264.800048828125,
+          "top": 997,
+          "width": 1264.800048828125,
+          "x": 0,
+          "y": 997
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 1483.299976348877,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 1453.5999755859375,
+              "width": 736,
+              "x": 64,
+              "y": 1453.5999755859375
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 1529.0000495910645,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 1499.300048828125,
+              "width": 736,
+              "x": 64,
+              "y": 1499.300048828125
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 1574.7000007629397,
+              "height": 29.700000762939453,
+              "left": 64,
+              "right": 800,
+              "top": 1545,
+              "width": 736,
+              "x": 64,
+              "y": 1545
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 1280,
+    "requestedWidth": 1280
+  },
+  {
+    "clientWidth": 1425,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+      },
+      {
+        "tag": "H2",
+        "text": "Tu medición puede terminar donde empieza la venta."
+      },
+      {
+        "tag": "H3",
+        "text": "Mides contactos, pero no resultados comerciales"
+      },
+      {
+        "tag": "H3",
+        "text": "Los datos de publicidad, web y CRM no encajan"
+      },
+      {
+        "tag": "H3",
+        "text": "Tus campañas reciben señales incompletas"
+      },
+      {
+        "tag": "H2",
+        "text": "Una medición que conecta la captación con el resultado comercial."
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de trazabilidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Auditoría de calidad de datos"
+      },
+      {
+        "tag": "H3",
+        "text": "Implementación y corrección de medición"
+      },
+      {
+        "tag": "H3",
+        "text": "Reporting de marketing y ventas"
+      },
+      {
+        "tag": "H3",
+        "text": "Conexión entre campañas y CRM"
+      },
+      {
+        "tag": "H2",
+        "text": "Primero entendemos la brecha. Después definimos el trabajo."
+      },
+      {
+        "tag": "H3",
+        "text": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisamos tu solicitud"
+      },
+      {
+        "tag": "H3",
+        "text": "Conversamos sobre tu caso"
+      },
+      {
+        "tag": "H3",
+        "text": "Recibes una propuesta de alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+      }
+    ],
+    "links": [
+      "#contenido",
+      "/#inicio"
+    ],
+    "scrollWidth": 1425,
+    "sections": [
+      {
+        "box": {
+          "bottom": 996.900047302246,
+          "height": 1045.300048828125,
+          "left": 0,
+          "right": 1424.800048828125,
+          "top": -48.400001525878906,
+          "width": 1424.800048828125,
+          "x": 0,
+          "y": -48.400001525878906
+        },
+        "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+        "id": "proceso",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 288.5999984741211,
+              "height": 106.5999984741211,
+              "left": 144.40000915527344,
+              "right": 872.4000091552734,
+              "top": 182,
+              "width": 728,
+              "x": 144.40000915527344,
+              "y": 182
+            },
+            "text": "Cuéntanos qué necesitas resolverCompleta la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar."
+          },
+          {
+            "box": {
+              "bottom": 419.2000045776367,
+              "height": 106.5999984741211,
+              "left": 144.40000915527344,
+              "right": 872.4000091552734,
+              "top": 312.6000061035156,
+              "width": 728,
+              "x": 144.40000915527344,
+              "y": 312.6000061035156
+            },
+            "text": "Revisamos tu solicitudEvaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación."
+          },
+          {
+            "box": {
+              "bottom": 549.8000106811523,
+              "height": 106.5999984741211,
+              "left": 144.40000915527344,
+              "right": 872.4000091552734,
+              "top": 443.2000122070313,
+              "width": 728,
+              "x": 144.40000915527344,
+              "y": 443.2000122070313
+            },
+            "text": "Conversamos sobre tu casoSi hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas."
+          },
+          {
+            "box": {
+              "bottom": 680.3999862670898,
+              "height": 106.5999984741211,
+              "left": 144.40000915527344,
+              "right": 872.4000091552734,
+              "top": 573.7999877929688,
+              "width": 728,
+              "x": 144.40000915527344,
+              "y": 573.7999877929688
+            },
+            "text": "Recibes una propuesta de alcanceDefinimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar."
+          }
+        ]
+      },
+      {
+        "box": {
+          "bottom": 1670.6000366210938,
+          "height": 673.7000122070312,
+          "left": 0,
+          "right": 1424.800048828125,
+          "top": 996.9000244140624,
+          "width": 1424.800048828125,
+          "x": 0,
+          "y": 996.9000244140624
+        },
+        "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+        "id": "experiencia",
+        "interactive": 0,
+        "items": [
+          {
+            "box": {
+              "bottom": 1483.2000007629397,
+              "height": 29.700000762939453,
+              "left": 136.40000915527344,
+              "right": 872.4000091552734,
+              "top": 1453.5,
+              "width": 736,
+              "x": 136.40000915527344,
+              "y": 1453.5
+            },
+            "text": "Medición de recorridos de generación de leads y sus puntos de conversión."
+          },
+          {
+            "box": {
+              "bottom": 1528.900074005127,
+              "height": 29.700000762939453,
+              "left": 136.40000915527344,
+              "right": 872.4000091552734,
+              "top": 1499.2000732421875,
+              "width": 736,
+              "x": 136.40000915527344,
+              "y": 1499.2000732421875
+            },
+            "text": "Implementación y QA de tracking en sitios SPA y recorridos entre dominios."
+          },
+          {
+            "box": {
+              "bottom": 1574.600025177002,
+              "height": 29.700000762939453,
+              "left": 136.40000915527344,
+              "right": 872.4000091552734,
+              "top": 1544.9000244140625,
+              "width": 736,
+              "x": 136.40000915527344,
+              "y": 1544.9000244140625
+            },
+            "text": "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+          }
+        ]
+      }
+    ],
+    "width": 1440,
+    "requestedWidth": 1440
+  }
+]

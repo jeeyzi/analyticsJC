@@ -1,0 +1,370 @@
+{
+  "cursor": 305,
+  "events": [
+    {
+      "sequence": 173,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "type": "other"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "headers": {
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "requestId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "timestamp": 39113.405112,
+        "type": "Document",
+        "wallTime": 1791931650.029565
+      }
+    },
+    {
+      "sequence": 184,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 292,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Origin": "http://127.0.0.1:3005",
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "High",
+          "isLinkPreload": true,
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2"
+        },
+        "requestId": "11832.121",
+        "timestamp": 39113.428595,
+        "type": "Font",
+        "wallTime": 1791931650.05313
+      }
+    },
+    {
+      "sequence": 189,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 385,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/3fzmplmqocgo3.css"
+        },
+        "requestId": "11832.122",
+        "timestamp": 39113.428889,
+        "type": "Stylesheet",
+        "wallTime": 1791931650.053338
+      }
+    },
+    {
+      "sequence": 194,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 478,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "Blocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "VeryHigh",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/0ggeybaqnbtfx.css"
+        },
+        "requestId": "11832.123",
+        "timestamp": 39113.429007,
+        "type": "Stylesheet",
+        "wallTime": 1791931650.053457
+      }
+    },
+    {
+      "sequence": 199,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 576,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "NonBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isLinkPreload": true,
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/3cfn99dbrcvvp.js"
+        },
+        "requestId": "11832.124",
+        "timestamp": 39113.429047,
+        "type": "Script",
+        "wallTime": 1791931650.053494
+      }
+    },
+    {
+      "sequence": 204,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 637,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "PotentiallyBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/3c4xol65z2da2.js"
+        },
+        "requestId": "11832.125",
+        "timestamp": 39113.429089,
+        "type": "Script",
+        "wallTime": 1791931650.053535
+      }
+    },
+    {
+      "sequence": 209,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 707,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "PotentiallyBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/3dmm3v_fq28gc.js"
+        },
+        "requestId": "11832.126",
+        "timestamp": 39113.429123,
+        "type": "Script",
+        "wallTime": 1791931650.053569
+      }
+    },
+    {
+      "sequence": 214,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 787,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "PotentiallyBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/turbopack-3-ry682tkyiqk.js"
+        },
+        "requestId": "11832.127",
+        "timestamp": 39113.429157,
+        "type": "Script",
+        "wallTime": 1791931650.053605
+      }
+    },
+    {
+      "sequence": 219,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 857,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "PotentiallyBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/3o4vw52mgwovq.js"
+        },
+        "requestId": "11832.128",
+        "timestamp": 39113.42919,
+        "type": "Script",
+        "wallTime": 1791931650.053636
+      }
+    },
+    {
+      "sequence": 224,
+      "source": {
+        "tabId": 1
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:3005/",
+        "frameId": "AC3A7D53EC48C50D9678950B2BA87F38",
+        "hasUserGesture": false,
+        "initiator": {
+          "columnNumber": 927,
+          "lineNumber": 0,
+          "type": "parser",
+          "url": "http://127.0.0.1:3005/"
+        },
+        "loaderId": "833AEEFF5515C3998F8B1A9670D7A9B8",
+        "redirectHasExtraInfo": false,
+        "renderBlockingBehavior": "PotentiallyBlocking",
+        "request": {
+          "headers": {
+            "Referer": "http://127.0.0.1:3005/"
+          },
+          "initialPriority": "Low",
+          "isSameSite": true,
+          "method": "GET",
+          "mixedContentType": "none",
+          "referrerPolicy": "strict-origin",
+          "url": "http://127.0.0.1:3005/_next/static/chunks/2z79ynefs93y5.js"
+        },
+        "requestId": "11832.129",
+        "timestamp": 39113.429219,
+        "type": "Script",
+        "wallTime": 1791931650.053665
+      }
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}

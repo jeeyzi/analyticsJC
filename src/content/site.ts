@@ -62,4 +62,43 @@ export const site = {
     scope: "Cada proyecto aborda las capacidades que requiere el problema detectado. El diagnóstico inicial orienta el alcance; la auditoría técnica detallada se acuerda por separado.",
     cta: { label: "Solicitar diagnóstico inicial", href: "#diagnostico" },
   },
+  process: {
+    "initialScope": "El diagnóstico inicial permite orientar el alcance. Una auditoría técnica detallada se acuerda por separado. Para enviar la solicitud no necesitas compartir accesos ni credenciales.",
+    "heading": "Primero entendemos la brecha. Después definimos el trabajo.",
+    "steps": [
+      {
+        "body": "Completa la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar.",
+        "heading": "Cuéntanos qué necesitas resolver"
+      },
+      {
+        "body": "Evaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación.",
+        "heading": "Revisamos tu solicitud"
+      },
+      {
+        "body": "Si hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas.",
+        "heading": "Conversamos sobre tu caso"
+      },
+      {
+        "body": "Definimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar.",
+        "heading": "Recibes una propuesta de alcance"
+      }
+    ],
+    "participation": "Los accesos y la participación de marketing, desarrollo o ventas se acuerdan según el proyecto."
+  },
+  experience: {
+    "heading": "Soy José Cubillo, especialista en Digital Analytics y Tracking.",
+    "evidence": [
+      "Medición de recorridos de generación de leads y sus puntos de conversión.",
+      "Implementación y QA de tracking en sitios SPA y recorridos entre dominios.",
+      "Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales."
+    ],
+    "paragraphs": [
+      "Soy especialista en Digital Analytics y Tracking, con experiencia en entornos B2B y generación de leads. Mi trabajo abarca planes de medición, implementación y revisión de eventos, análisis de funnels y trazabilidad entre la captación digital y el proceso comercial.",
+      "En esta consultora participo directamente en la evaluación, la definición del alcance y la ejecución técnica de cada proyecto."
+    ],
+    "cta": {
+      "href": "#diagnostico",
+      "label": "Solicitar diagnóstico inicial"
+    }
+  },
 } as const;

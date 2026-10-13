@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    {
+      "count": 1,
+      "id": "proceso"
+    },
+    {
+      "count": 1,
+      "id": "experiencia"
+    }
+  ],
+  "forms": 0,
+  "h1": 1,
+  "lang": "es",
+  "missingCopy": [],
+  "styles": [
+    {
+      "background": "rgb(248, 250, 252)",
+      "color": "rgb(23, 33, 43)",
+      "id": "proceso",
+      "list": "decimal"
+    },
+    {
+      "background": "rgb(248, 250, 252)",
+      "color": "rgb(23, 33, 43)",
+      "id": "experiencia",
+      "list": "disc"
+    }
+  ],
+  "unexpectedFocus": []
+}

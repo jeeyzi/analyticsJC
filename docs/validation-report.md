@@ -396,3 +396,67 @@ Ninguna decisión nueva bloquea este alcance. SS-01–04 son interpretaciones ac
 ### Recommended Next Step
 
 Revisar Solution + Services y su evidencia. La siguiente sección canónica es Encaje para agencias (§04); autorizar su alcance por separado antes de avanzar a Process (§05). Mantener las puertas del CTA/formulario y no activar medición por esta entrega.
+
+---
+
+## Completion Report — Process + Trust / Expertise, 13/10/2026
+
+America/Santiago. Base 192b9a4, checkout limpio al iniciar; cambios locales sin commit. Windows/Node 22.17.0/npm 10.9.2. Build optimizado local 3005 y QA sintético dev previo 3000, Chromium emulado. Sufijo /ProcessTrust delimita evidencia parcial; matriz global intacta.
+
+### Implemented
+
+- Process.tsx y CSS Module: #proceso, H2 y cuatro H3 en OL vertical, alcance inicial y participación literales de content. Fuentes product/wireframe §05, content §Process, design/technical.
+- Experience.tsx y CSS Module: #experiencia, H2 y primera persona, rol directo y tres antecedentes existentes. Fuentes product/wireframe §06, content §Expertise/Trust y strategy. Sin casos, cifras, logos, credenciales o foto inventados.
+- site.process/site.experience y composición después de Solution. Section/Container/typography/Actions/tokens reutilizados; Server Components. CTA con diagnosisReady falso salvo QA existente. Preview omite anclas sintéticas duplicadas. Header y secciones anteriores intactos.
+- Solo revisión/evidencia/documentación de esta fase: process-trust-review.md y evidence/process-trust/. PT-01–05 registrados. Sin AI-First, Agencias, FAQ, formulario, backend, analytics, dependencias o cambios de fuentes.
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/ProcessTrust | PASS parcial | Solicitud explícita/reconciliación limitada, siete hashes coincidentes. process-trust-review.md/checks.md. |
+| B-03/typecheck-ProcessTrust | PASS | npm run typecheck fuera sandbox, exit 0. |
+| B-03/lint-ProcessTrust | PASS | npm run lint, exit 0. |
+| B-03/build-ProcessTrust | PASS | npm run build fuera sandbox, exit 0, Home prerenderizada. |
+| B-04/ProcessTrust, B-07/ProcessTrust | PASS parcial | Server Components, copy literal, sin integraciones/interactividad nuevas. copy-semantics.json. |
+| B-06/carga-ProcessTrust | PASS parcial | Sin excepciones ni console warnings/errors en cargas/resize build registrados. network-console.json. |
+| R-01/ProcessTrust, R-02/ProcessTrust | PASS parcial | Ocho anchos medidos, cinco solicitados inspeccionados visualmente, sin overflow, orden y lectura conservados. responsive.json/capturas. |
+| N-02/proceso-experiencia-ProcessTrust, A-01/DOM-ProcessTrust | PASS parcial | Anclas únicas; H1 único y H2→H3, listas semánticas/árbol accesible; no ocho secciones finales ni lector. |
+| A-04/default-ProcessTrust | PASS parcial | Contraste 15.57:1 texto/marcadores sobre fondo, sin PASS global de estados. |
+| C-01/CTA-QA-ProcessTrust, C-02/CTA-QA-ProcessTrust, A-02/CTA-QA-ProcessTrust | PASS parcial | Label literal, enlace real, Tab/Shift+Tab/Enter, foco y hash al destino sintético. cta-qa.json/png; no formulario real. |
+| A-05/target-QA-ProcessTrust | PASS parcial | CTA QA 49.6px alto, anillo de foco visible; sin dispositivos físicos. |
+| M-11/ausencia-integraciones-ProcessTrust | PASS parcial | Network build local sin destinos externos/POST; no medición acreditada. |
+| B-03/sandbox-ProcessTrust | FAIL ambiental, repetición PASS | SWC canonicalize jsc.baseUrl, acceso denegado os error 5. Mismo código pasó fuera. |
+
+### Not Validated
+
+- R-03 zoom real 200%, R-06 móviles iOS/Android físicos; A-03 lector y A-07 axe/WCAG integral. No PASS global de accesibilidad.
+- C-01/C-02 finales, C-03, N-02–04 integrados: sin formulario real. QA sintético no acredita captación. Agencias/FAQ y ocho anclas completas pendientes.
+- B-02 reinstalación/CI, B-03 pruebas críticas del MVP, B-06 flujos finales, Home/privacidad/rutas completas y F/E/S/P/M/CO/PR/D correspondientes. Sin servicios reales, GA4, producción o campo.
+- Trayectoria profesional específica/publicable no verificada externamente: se conservan antecedentes literales existentes, sin convertirlos en casos probados.
+
+### Pending
+
+| ID | Responsable / condición | Bloquea |
+| --- | --- | --- |
+| PT-03/HN-04/HERO-01 | Codex: formulario/destino real en fase autorizada, activar puertas y repetir navegación/CTA integrados. | CTA/navegación final, no contenido actual |
+| PT-02/H-15 | José: especificar antecedentes/proyectos verificables y autorización publicable. | Evidencia profesional de lanzamiento; no presentación local del copy existente |
+| PT-04 | José: autorizar Agencias, AI-First y FAQ por separado. | Home completa; fuera del alcance actual |
+| R-03/R-06/A-03/A-07 | QA: zoom, dispositivos, lector y auditoría integral. | Aceptación responsive/accesibilidad global |
+| H-03/H-04/H-05/H-06/FND-03 | José: proveedores, dominio/contacto, privacidad/copy de rutas y receptor reales. | Captación pública/lanzamiento |
+| H-07/H-08/H-09/H-10/H-11/H-14/H-15 | José: decisiones/configuración según registros vigentes. | Medición/API/operación/SEO correspondientes |
+
+### Known Issues
+
+- SWC falló dentro del sandbox; repetición fuera pasó sin cambios para esconderlo. next-env generado restaurado.
+- Muestreo inicial de viewport/scroll fue inestable; se repitió y las capturas finales corresponden a tamaños/scroll estables. No defecto de UI identificado por ese muestreo.
+- CTA normal sigue oculto por ausencia del destino real; Agencias permanece pendiente. Home no completa ni publicada.
+- No overflow o errores de consola detectados en el alcance revisado; no afirmación universal. Sin evidencia global de accesibilidad o de trayectoria profesional específica.
+
+### Decisions Needed
+
+Ninguna decisión nueva bloquea el contenido local autorizado. PT-01–05 documentan interpretaciones y exclusiones; pendientes operativos y evidencia profesional mantienen sus puertas.
+
+### Recommended Next Step
+
+Revisar esta fase y su evidencia. Resolver evidencia profesional publicable y completar Agencias según el orden canónico en una fase autorizada. Mantener AI-First/FAQ/formulario/medición para solicitudes posteriores.

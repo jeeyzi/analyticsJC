@@ -1,0 +1,41 @@
+{
+  "beforeFocus": {
+    "focus": "<a href=\"#diagnostico\" class=\"Actions-module__Aq6qIa__action Actions-module__Aq6qIa__primary \">Solicitar diagnóstico inicial</a>",
+    "rect": {
+      "bottom": 440.3625144958496,
+      "height": 49.60000228881836,
+      "left": 20,
+      "right": 340,
+      "top": 390.7625122070313,
+      "width": 320,
+      "x": 20,
+      "y": 390.7625122070313
+    },
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(29, 78, 216) 0px 0px 0px 5px"
+  },
+  "after": {
+    "anchors": [
+      {
+        "count": 1,
+        "id": "solucion"
+      },
+      {
+        "count": 1,
+        "id": "proceso"
+      },
+      {
+        "count": 1,
+        "id": "experiencia"
+      },
+      {
+        "count": 1,
+        "id": "diagnostico"
+      }
+    ],
+    "focus": "diagnostico",
+    "forms": 0,
+    "hash": "#diagnostico",
+    "href": "#diagnostico",
+    "label": "Solicitar diagnóstico inicial"
+  }
+}
