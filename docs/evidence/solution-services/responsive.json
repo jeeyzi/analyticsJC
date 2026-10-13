@@ -1,0 +1,762 @@
+[
+  {
+    "clientWidth": 320,
+    "interactive": 0,
+    "journeyColumns": "280px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 280,
+        "x": 20,
+        "y": 2756.362548828125
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 280,
+        "x": 20,
+        "y": 2844.362548828125
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 280,
+        "x": 20,
+        "y": 2932.362548828125
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 280,
+        "x": 20,
+        "y": 3020.3624267578125
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 280,
+        "x": 20,
+        "y": 3108.3624267578125
+      }
+    ],
+    "overflow": [],
+    "padding": "56px",
+    "scrollWidth": 320,
+    "section": {
+      "height": 2608.949951171875,
+      "scale": 1,
+      "width": 320,
+      "x": 0,
+      "y": 2272.012451171875
+    },
+    "services": [
+      {
+        "display": "flex",
+        "heading": "Auditoría de trazabilidad",
+        "height": 146.1999969482422,
+        "width": 280,
+        "x": 20,
+        "y": 3325.9625244140625
+      },
+      {
+        "display": "flex",
+        "heading": "Auditoría de calidad de datos",
+        "height": 227.6000061035156,
+        "width": 280,
+        "x": 20,
+        "y": 3496.1624755859375
+      },
+      {
+        "display": "flex",
+        "heading": "Implementación y corrección de medición",
+        "height": 201.1999969482422,
+        "width": 280,
+        "x": 20,
+        "y": 3747.762573242187
+      },
+      {
+        "display": "flex",
+        "heading": "Reporting de marketing y ventas",
+        "height": 201.1999969482422,
+        "width": 280,
+        "x": 20,
+        "y": 3972.9625244140625
+      },
+      {
+        "display": "flex",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 201.1999969482422,
+        "width": 280,
+        "x": 20,
+        "y": 4198.1624755859375
+      }
+    ],
+    "width": 320
+  },
+  {
+    "clientWidth": 375,
+    "interactive": 0,
+    "journeyColumns": "335.2px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2382.5250244140625
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2470.5250244140625
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2558.5250244140625
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2646.5250244140625
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2734.5250244140625
+      }
+    ],
+    "overflow": [],
+    "padding": "56px",
+    "scrollWidth": 375,
+    "section": {
+      "height": 2228.3125,
+      "scale": 1,
+      "width": 375,
+      "x": 0,
+      "y": 1957.612548828125
+    },
+    "services": [
+      {
+        "display": "flex",
+        "heading": "Auditoría de trazabilidad",
+        "height": 119.8000030517578,
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 2952.1251220703125
+      },
+      {
+        "display": "flex",
+        "heading": "Auditoría de calidad de datos",
+        "height": 146.1999969482422,
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 3095.9249267578125
+      },
+      {
+        "display": "flex",
+        "heading": "Implementación y corrección de medición",
+        "height": 148.40000915527344,
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 3266.1251220703125
+      },
+      {
+        "display": "flex",
+        "heading": "Reporting de marketing y ventas",
+        "height": 146.1999969482422,
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 3438.5250244140625
+      },
+      {
+        "display": "flex",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 174.8000030517578,
+        "width": 335.20001220703125,
+        "x": 20,
+        "y": 3608.7249755859375
+      }
+    ],
+    "width": 375
+  },
+  {
+    "clientWidth": 767,
+    "interactive": 0,
+    "journeyColumns": "727.2px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 1615.050048828125
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 1703.050048828125
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 1791.050048828125
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 1879.050048828125
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 1967.050048828125
+      }
+    ],
+    "overflow": [],
+    "padding": "56px",
+    "scrollWidth": 767,
+    "section": {
+      "height": 1662.875,
+      "scale": 1,
+      "width": 767,
+      "x": 0,
+      "y": 1328.7749633789062
+    },
+    "services": [
+      {
+        "display": "flex",
+        "heading": "Auditoría de trazabilidad",
+        "height": 93.4000015258789,
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 2131.8499755859375
+      },
+      {
+        "display": "flex",
+        "heading": "Auditoría de calidad de datos",
+        "height": 119.8000030517578,
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 2249.25
+      },
+      {
+        "display": "flex",
+        "heading": "Implementación y corrección de medición",
+        "height": 93.4000015258789,
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 2393.050048828125
+      },
+      {
+        "display": "flex",
+        "heading": "Reporting de marketing y ventas",
+        "height": 93.4000015258789,
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 2510.449951171875
+      },
+      {
+        "display": "flex",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 93.4000015258789,
+        "width": 727.2000122070312,
+        "x": 20,
+        "y": 2627.8499755859375
+      }
+    ],
+    "width": 767
+  },
+  {
+    "clientWidth": 768,
+    "interactive": 0,
+    "journeyColumns": "704px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 704,
+        "x": 32,
+        "y": 2005.0999755859375
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 704,
+        "x": 32,
+        "y": 2093.0999755859375
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 704,
+        "x": 32,
+        "y": 2181.0999755859375
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 704,
+        "x": 32,
+        "y": 2269.0999755859375
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 704,
+        "x": 32,
+        "y": 2357.0999755859375
+      }
+    ],
+    "overflow": [],
+    "padding": "72px",
+    "scrollWidth": 768,
+    "section": {
+      "height": 1843.5999755859375,
+      "scale": 1,
+      "width": 768,
+      "x": 0,
+      "y": 1645.800048828125
+    },
+    "services": [
+      {
+        "display": "flex",
+        "heading": "Auditoría de trazabilidad",
+        "height": 102.5999984741211,
+        "width": 704,
+        "x": 32,
+        "y": 2536.5
+      },
+      {
+        "display": "flex",
+        "heading": "Auditoría de calidad de datos",
+        "height": 132.3000030517578,
+        "width": 704,
+        "x": 32,
+        "y": 2663.0999755859375
+      },
+      {
+        "display": "flex",
+        "heading": "Implementación y corrección de medición",
+        "height": 102.5999984741211,
+        "width": 704,
+        "x": 32,
+        "y": 2819.4000244140625
+      },
+      {
+        "display": "flex",
+        "heading": "Reporting de marketing y ventas",
+        "height": 102.5999984741211,
+        "width": 704,
+        "x": 32,
+        "y": 2946.0001220703125
+      },
+      {
+        "display": "flex",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 102.5999984741211,
+        "width": 704,
+        "x": 32,
+        "y": 3072.5999755859375
+      }
+    ],
+    "width": 768
+  },
+  {
+    "clientWidth": 1023,
+    "interactive": 0,
+    "journeyColumns": "959.2px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 1866.8500366210935
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 1954.8500366210935
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2042.8500366210935
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2130.8500366210938
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2218.8500366210938
+      }
+    ],
+    "overflow": [],
+    "padding": "72px",
+    "scrollWidth": 1023,
+    "section": {
+      "height": 1815.6500244140625,
+      "scale": 1,
+      "width": 1023,
+      "x": 0,
+      "y": 1535.5
+    },
+    "services": [
+      {
+        "display": "flex",
+        "heading": "Auditoría de trazabilidad",
+        "height": 102.5999984741211,
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2398.250061035156
+      },
+      {
+        "display": "flex",
+        "heading": "Auditoría de calidad de datos",
+        "height": 132.3000030517578,
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2524.8500366210938
+      },
+      {
+        "display": "flex",
+        "heading": "Implementación y corrección de medición",
+        "height": 102.5999984741211,
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2681.1500854492188
+      },
+      {
+        "display": "flex",
+        "heading": "Reporting de marketing y ventas",
+        "height": 102.5999984741211,
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2807.749938964844
+      },
+      {
+        "display": "flex",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 102.5999984741211,
+        "width": 959.2000122070312,
+        "x": 32,
+        "y": 2934.3500366210938
+      }
+    ],
+    "width": 1023
+  },
+  {
+    "clientWidth": 1024,
+    "interactive": 0,
+    "journeyColumns": "298.663px 298.663px 298.675px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 298.6625061035156,
+        "x": 40,
+        "y": 1882.9249877929688
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 298.6625061035156,
+        "x": 362.6625061035156,
+        "y": 1882.9249877929688
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 298.6750183105469,
+        "x": 685.3250122070312,
+        "y": 1882.9249877929688
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 298.6625061035156,
+        "x": 40,
+        "y": 1994.9249877929688
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 298.6625061035156,
+        "x": 362.6625061035156,
+        "y": 1994.9249877929688
+      }
+    ],
+    "overflow": [],
+    "padding": "96px",
+    "scrollWidth": 1024,
+    "section": {
+      "height": 1520.800048828125,
+      "scale": 1,
+      "width": 1024,
+      "x": 0,
+      "y": 1519.5250244140625
+    },
+    "services": [
+      {
+        "display": "grid",
+        "heading": "Auditoría de trazabilidad",
+        "height": 59.400001525878906,
+        "width": 944,
+        "x": 40,
+        "y": 2182.3250122070312
+      },
+      {
+        "display": "grid",
+        "heading": "Auditoría de calidad de datos",
+        "height": 89.0999984741211,
+        "width": 944,
+        "x": 40,
+        "y": 2265.7250366210938
+      },
+      {
+        "display": "grid",
+        "heading": "Implementación y corrección de medición",
+        "height": 89.0999984741211,
+        "width": 944,
+        "x": 40,
+        "y": 2378.8250122070312
+      },
+      {
+        "display": "grid",
+        "heading": "Reporting de marketing y ventas",
+        "height": 89.0999984741211,
+        "width": 944,
+        "x": 40,
+        "y": 2491.9249877929688
+      },
+      {
+        "display": "grid",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 89.0999984741211,
+        "width": 944,
+        "x": 40,
+        "y": 2605.0249633789062
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "clientWidth": 1280,
+    "interactive": 0,
+    "journeyColumns": "384px 384px 384px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 384,
+        "x": 40,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 384,
+        "x": 448,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 384,
+        "x": 856,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 384,
+        "x": 40,
+        "y": 2002.5
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 384,
+        "x": 448,
+        "y": 2002.5
+      }
+    ],
+    "overflow": [],
+    "padding": "96px",
+    "scrollWidth": 1280,
+    "section": {
+      "height": 1448.800048828125,
+      "scale": 1,
+      "width": 1280,
+      "x": 0,
+      "y": 1510
+    },
+    "services": [
+      {
+        "display": "grid",
+        "heading": "Auditoría de trazabilidad",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 40,
+        "y": 2189.9000244140625
+      },
+      {
+        "display": "grid",
+        "heading": "Auditoría de calidad de datos",
+        "height": 89.0999984741211,
+        "width": 1200,
+        "x": 40,
+        "y": 2273.300048828125
+      },
+      {
+        "display": "grid",
+        "heading": "Implementación y corrección de medición",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 40,
+        "y": 2386.4000244140625
+      },
+      {
+        "display": "grid",
+        "heading": "Reporting de marketing y ventas",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 40,
+        "y": 2469.800048828125
+      },
+      {
+        "display": "grid",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 40,
+        "y": 2553.199951171875
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "clientWidth": 1440,
+    "interactive": 0,
+    "journeyColumns": "384px 384px 384px",
+    "nodes": [
+      {
+        "height": 64,
+        "text": "Campaña",
+        "width": 384,
+        "x": 120,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "Lead",
+        "width": 384,
+        "x": 528,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "CRM",
+        "width": 384,
+        "x": 936,
+        "y": 1890.5
+      },
+      {
+        "height": 64,
+        "text": "Oportunidad",
+        "width": 384,
+        "x": 120,
+        "y": 2002.5
+      },
+      {
+        "height": 64,
+        "text": "Venta",
+        "width": 384,
+        "x": 528,
+        "y": 2002.5
+      }
+    ],
+    "overflow": [],
+    "padding": "96px",
+    "scrollWidth": 1440,
+    "section": {
+      "height": 1448.800048828125,
+      "scale": 1,
+      "width": 1440,
+      "x": 0,
+      "y": 1510
+    },
+    "services": [
+      {
+        "display": "grid",
+        "heading": "Auditoría de trazabilidad",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 120,
+        "y": 2189.9000244140625
+      },
+      {
+        "display": "grid",
+        "heading": "Auditoría de calidad de datos",
+        "height": 89.0999984741211,
+        "width": 1200,
+        "x": 120,
+        "y": 2273.300048828125
+      },
+      {
+        "display": "grid",
+        "heading": "Implementación y corrección de medición",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 120,
+        "y": 2386.4000244140625
+      },
+      {
+        "display": "grid",
+        "heading": "Reporting de marketing y ventas",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 120,
+        "y": 2469.800048828125
+      },
+      {
+        "display": "grid",
+        "heading": "Conexión entre campañas y CRM",
+        "height": 59.400001525878906,
+        "width": 1200,
+        "x": 120,
+        "y": 2553.199951171875
+      }
+    ],
+    "width": 1440
+  }
+]

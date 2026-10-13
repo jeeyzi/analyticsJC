@@ -1,0 +1,15 @@
+{
+  "cta": {
+    "height": 49.60000228881836,
+    "href": "#diagnostico",
+    "text": "Solicitar diagnóstico inicial"
+  },
+  "diagnosisCount": 1,
+  "focus": {
+    "tag": "H2",
+    "text": "Solicitar diagnóstico inicial"
+  },
+  "formCount": 0,
+  "hash": "#diagnostico",
+  "solutionCount": 1
+}

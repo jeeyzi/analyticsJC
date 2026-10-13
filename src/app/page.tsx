@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { ProblemImpact } from "@/components/sections/ProblemImpact";
+import { SolutionServices } from "@/components/sections/SolutionServices";
 import { DesignSystemPreview } from "@/components/development/DesignSystemPreview";
 import { HeaderNavigationPreview } from "@/components/development/HeaderNavigationPreview";
 
@@ -9,8 +10,9 @@ export default function Home() {
     <>
       <Hero diagnosisReady={headerPreview} />
       <ProblemImpact />
+      <SolutionServices diagnosisReady={headerPreview} />
       {process.env.NODE_ENV === "development" && process.env.DESIGN_SYSTEM_PREVIEW === "true" && <DesignSystemPreview />}
-      {headerPreview && <HeaderNavigationPreview />}
+      {headerPreview && <HeaderNavigationPreview solutionReady />}
     </>
   );
 }

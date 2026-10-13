@@ -1,0 +1,20 @@
+{
+  "missingCopy": [],
+  "checked": [
+    "Una medición que conecta la captación con el resultado comercial.",
+    "Conectamos la información de tus campañas, tu sitio y tu CRM para seguir el recorrido del lead hasta la oportunidad y la venta. Según las brechas de tu operación, el proyecto puede incluir auditoría, implementación, corrección de datos y reporting.",
+    "Cuando la integración lo permite, los resultados comerciales también se envían a las plataformas publicitarias como señales de conversión.",
+    "Auditoría de trazabilidad",
+    "Identificamos dónde se pierde la conexión entre una campaña, el contacto que genera y su resultado en el CRM.",
+    "Auditoría de calidad de datos",
+    "Revisamos eventos y conversiones del sitio y las plataformas publicitarias para detectar registros duplicados, datos incompletos y diferencias que necesitan explicación.",
+    "Implementación y corrección de medición",
+    "Implementamos o corregimos eventos, conversiones e integraciones para recoger la información que necesita tu negocio.",
+    "Reporting de marketing y ventas",
+    "Organizamos los datos para comparar campañas por leads, oportunidades y ventas, con definiciones claras de cada indicador.",
+    "Conexión entre campañas y CRM",
+    "Vinculamos el origen de los leads con su avance comercial y evaluamos qué resultados pueden devolverse a las plataformas para optimizar.",
+    "Según el alcance, trabajamos con GA4, Google Tag Manager, integraciones con CRM, BigQuery y mecanismos de conversión online y offline. La tecnología se define después de entender qué información falta y para qué se necesita.",
+    "Cada proyecto aborda las capacidades que requiere el problema detectado. El diagnóstico inicial orienta el alcance; la auditoría técnica detallada se acuerda por separado."
+  ]
+}

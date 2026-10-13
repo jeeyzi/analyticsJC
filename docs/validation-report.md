@@ -331,3 +331,68 @@ Ninguna decisión nueva bloquea Problem + Impact. PI-01/02/03 documentan interpr
 ### Recommended Next Step
 
 Revisar esta entrega y su evidencia; autorizar por separado Solution + capacidades según wireframe §03 y decisiones del diagrama ya confirmadas. No iniciar Services, formulario, backend ni medición por esta solicitud.
+
+---
+
+## Completion Report — Solution + Services, 13/10/2026
+
+America/Santiago. Base `b272782`, checkout limpio al iniciar, cambios locales sin commit nuevo. Windows, Node 22.17.0/npm 10.9.2. Chromium 155 emulado: build optimizado en `http://127.0.0.1:3003/`; CTA en muestra de desarrollo existente en `http://127.0.0.1:3000/`. Sin deployment ni proveedores/mocks. Servidor de build de esta sesión detenido al finalizar; servidor de desarrollo preexistente conservado. Sufijo `/SolutionServices` delimita subcasos, sin PASS global.
+
+### Implemented
+
+- `src/components/sections/SolutionServices.tsx` y CSS Module: Section/Container/typography/Actions existentes. Una sección `#solucion` después de ProblemImpact, H2 de Solution y cinco H3/filas de Services; explicación general seguida por capacidades concretas, detalle técnico y alcance literales de content. Fuentes: product/wireframe §03, content §Solution/Services y design.
+- `src/components/MeasurementJourney.tsx` y CSS Module: Server Component HTML/CSS/SVG ligero; cinco nodos adoptados por H-12, tres+dos desktop/vertical móvil y tablet, equivalente textual y condición de retorno literal. No tecnología adicional ni diagrama de integración activa.
+- Copy centralizado en site.solution y composición en page.tsx. Header/Hero/ProblemImpact, primitives, tokens, dependencias/lockfile y fuentes originales intactos. Ajuste mínimo de HeaderNavigationPreview para no duplicar #solucion real. CTA condicionado a destino real según puerta previa; solo visible en QA sintético existente.
+- Adopción limitada y SS-01–05 en [solution-services-review.md](solution-services-review.md). Evidencia final en [checks](evidence/solution-services/checks.md), [navegador](evidence/solution-services/browser.md), JSON/capturas de esa carpeta. No Process, Trust, Agencias, AI-First, FAQ, formulario, backend ni medición.
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/SolutionServices | PASS | Solicitud explícita/reconciliación limitada y siete hashes coincidentes con snapshot. |
+| B-03/typecheck-SolutionServices | PASS | npm run typecheck, next typegen + tsc --noEmit, exit 0 fuera del sandbox. |
+| B-03/lint-SolutionServices | PASS | npm run lint, max-warnings=0, exit 0. |
+| B-03/build-SolutionServices | PASS | npm run build, exit 0; repetición final tras fix del conector; Home estática. checks.md. |
+| B-04/SolutionServices, B-07/SolutionServices | PASS | Server Components, contenido prerenderizado, copy literal (missingCopy=[]), cero nuevos destinos, servicios o dependencias. copy.json/static.json. |
+| B-06/carga-SolutionServices | PASS parcial | Console warn/error=[], sin excepciones Runtime durante cargas/resize observados del build. console.json/network.json. |
+| R-01/SolutionServices, R-02/SolutionServices | PASS parcial | Ocho anchos 320/375/767/768/1023/1024/1280/1440 sin overflow; cinco solicitados revisados visualmente. responsive.json, section-*.png y full-*.png. Filas/diagrama respetan orden, tokens y legibilidad. |
+| R-04/diagrama-SolutionServices | PASS parcial | Cinco nodos exactos, lectura vertical móvil/tablet y continuidad desktop en dos filas. No FAQ ni Home completa. |
+| N-02/solucion-SolutionServices | PASS parcial | inicio→problema→solucion únicos; preview omite duplicado; no ocho anclas reales finales. semantics.json/cta-qa.json. |
+| A-01/DOM-SolutionServices, A-06/diagrama-SolutionServices | PASS parcial | H1 único/lang=es/H2→cinco H3; OL con nombre textual exacto y condición legible; SVG decorativos excluidos del árbol accesible. DOM/árbol revisados, sin lector. |
+| A-04/default-SolutionServices | PASS parcial | Texto 15.57/16.29:1; conectores 4.55:1; CTA default QA 6.70:1. contrast.json. Sin PASS integral de estados. |
+| A-05/preferencias-SolutionServices | PASS parcial | Reduced motion sin animaciones/scroll auto y forced-colors visual legible. preferences.json/forced-colors.png. |
+| C-01/CTA-QA-SolutionServices, C-02/CTA-QA-SolutionServices, A-02/CTA-QA-SolutionServices | PASS parcial | Enter activa enlace literal de 49.6px, hash y foco en H2 sintético de diagnóstico; un destino de cada tipo, cero formularios. cta-qa.json/png. No captación real. |
+| M-11/ausencia-integraciones-SolutionServices | PASS parcial | Network final diez GET locales, sin POST/GTM/GA4/píxeles/externos; buffer completo. No acredita medición ni consentimiento. |
+| B-03/sandbox-SolutionServices | FAIL ambiental, repetición PASS | SWC canonicalize jsc.baseUrl, acceso denegado os error 5; mismo código fuera del sandbox pasó. |
+| R-04/conector-inicial-SolutionServices | FAIL corregido, repetición PASS | SVG limitado por max-width global hacía partir continuidad del nodo incorrecto. Excepción local para conector y recaptura final 1024/1440 correctas. |
+
+### Not Validated
+
+- C-01/C-02 finales y C-03: destino/formulario real y tracking fuera de alcance. QA no acredita recepción; CTA normal oculto. N-02–04 integrados completos siguen pendientes de destinos reales.
+- R-03 zoom real 200%, R-06 iOS Safari/Android Chrome físicos, A-03 lector, A-07 axe y revisión WCAG integral. No PASS global de accesibilidad.
+- B-02 instalación limpia/CI, B-03 pruebas críticas de captación, B-06 flujos finales, Home/privacidad/rutas completas y sus criterios R/N/A; R-04 FAQ y R-05 barra; F/E/S/P/M/CO/PR/D de fases futuras. Sin backend, servicios reales, GA4, performance, producción ni campo acreditados. Matriz global sin cambios.
+
+### Pending
+
+| ID | Responsable / condición de cierre | Bloquea |
+| --- | --- | --- |
+| SS-04 / HERO-01 / HN-04 | Codex en fases autorizadas: formulario/destinos reales, activar puertas y repetir CTA/navegación integrados. #solucion real ya implementado. | CTA/navegación final; no contenido de esta fase |
+| R-03/R-06/A-03/A-07 | Implementador/QA: zoom real, dispositivos, lector y auditoría integral antes de aceptación global. | Responsive/accesibilidad completa |
+| H-03/H-04/H-05/H-06/FND-03 | José: planes/proveedores, dominio/contacto, privacidad, copy de rutas y recepción/avisos reales. | Captación pública/lanzamiento; no esta fase |
+| H-07/H-08/H-09/H-10/H-11/H-14/H-15 | José: decisiones/configuración vigente de consentimiento, cuentas, parámetros, mensajes, operación y OG. | Medición/API/operación/SEO correspondientes |
+| SS-05 | José: autorizar siguiente fase acotada según product/wireframe; agencias es §04. | Implementación posterior, FUTURE |
+
+### Known Issues
+
+- Fallo visual inicial del conector corregido y revisado de nuevo; capturas conservadas corresponden al build final. Sin overflow o errores de consola detectados en el subconjunto observado, sin afirmación universal.
+- SWC falla dentro del sandbox Windows; typecheck pasó fuera. Intento adicional de dev en 3004 falló por servidor preexistente en 3000; se reutilizó su muestra y se conservó el proceso. Navegación antes de iniciar 3003 dio connection refused y pasó con servidor activo. Sin cambios de configuración/tests para ocultar fallos.
+- CTA normal oculto por ausencia de formulario real; MVP/recorrido comercial y lanzamiento incompletos. Tecnologías citadas en copy son capacidades, no integraciones instaladas.
+- next-env generado restaurado; emulación/viewport temporales restablecidos. Sin evidencia integral de zoom, lector, móviles físicos o servicios/producción.
+
+### Decisions Needed
+
+Ninguna decisión nueva bloquea este alcance. SS-01–04 son interpretaciones acotadas registradas, no cambios de negocio/copy/diseño. Pendientes operativos históricos conservan responsable y puerta.
+
+### Recommended Next Step
+
+Revisar Solution + Services y su evidencia. La siguiente sección canónica es Encaje para agencias (§04); autorizar su alcance por separado antes de avanzar a Process (§05). Mantener las puertas del CTA/formulario y no activar medición por esta entrega.

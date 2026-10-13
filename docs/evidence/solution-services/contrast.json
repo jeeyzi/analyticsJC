@@ -1,0 +1,26 @@
+[
+  {
+    "use": "texto/fondo",
+    "foreground": "#17212B",
+    "background": "#F8FAFC",
+    "ratio": 15.57284930074157
+  },
+  {
+    "use": "texto/nodo",
+    "foreground": "#17212B",
+    "background": "#FFFFFF",
+    "ratio": 16.293495425950333
+  },
+  {
+    "use": "conector/fondo",
+    "foreground": "#64748B",
+    "background": "#F8FAFC",
+    "ratio": 4.548363604249587
+  },
+  {
+    "use": "CTA/default-QA",
+    "foreground": "#FFFFFF",
+    "background": "#1D4ED8",
+    "ratio": 6.701618401398807
+  }
+]
