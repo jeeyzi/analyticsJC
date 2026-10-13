@@ -2,6 +2,7 @@ import { Container } from "@/components/layout/Container";
 import { site } from "@/content/site";
 import styles from "./page.module.css";
 import { DesignSystemPreview } from "@/components/development/DesignSystemPreview";
+import { HeaderNavigationPreview } from "@/components/development/HeaderNavigationPreview";
 
 // Muestra de foundation local: el recorrido y formulario se implementan después.
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         </Container>
       </section>
       {process.env.NODE_ENV === "development" && process.env.DESIGN_SYSTEM_PREVIEW === "true" && <DesignSystemPreview />}
+      {process.env.NODE_ENV === "development" && process.env.HEADER_NAVIGATION_PREVIEW === "true" && <HeaderNavigationPreview />}
     </>
   );
 }

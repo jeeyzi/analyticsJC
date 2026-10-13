@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="es" className={inter.variable}>
       <body>
         <a className="skip-link" href="#contenido">{site.skipLink}</a>
-        <Header />
+        <Header navigationReady={process.env.NODE_ENV === "development" && process.env.HEADER_NAVIGATION_PREVIEW === "true"} />
         <main id="contenido" tabIndex={-1}>{children}</main>
         <Footer />
       </body>
