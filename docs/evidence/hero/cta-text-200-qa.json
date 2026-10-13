@@ -1,0 +1,52 @@
+[
+  {
+    "client": 305,
+    "cta": {
+      "height": 193.6000061035156,
+      "text": "Solicitar diagnóstico inicial",
+      "width": 224.8000030517578
+    },
+    "scroll": 305,
+    "width": 320
+  },
+  {
+    "client": 360,
+    "cta": {
+      "height": 193.6000061035156,
+      "text": "Solicitar diagnóstico inicial",
+      "width": 280
+    },
+    "scroll": 360,
+    "width": 375
+  },
+  {
+    "client": 753,
+    "cta": {
+      "height": 97.5999984741211,
+      "text": "Solicitar diagnóstico inicial",
+      "width": 489.4624938964844
+    },
+    "scroll": 753,
+    "width": 768
+  },
+  {
+    "client": 1009,
+    "cta": {
+      "height": 97.5999984741211,
+      "text": "Solicitar diagnóstico inicial",
+      "width": 489.4624938964844
+    },
+    "scroll": 1009,
+    "width": 1024
+  },
+  {
+    "client": 1425,
+    "cta": {
+      "height": 97.5999984741211,
+      "text": "Solicitar diagnóstico inicial",
+      "width": 489.4624938964844
+    },
+    "scroll": 1425,
+    "width": 1440
+  }
+]

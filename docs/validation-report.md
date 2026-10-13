@@ -210,3 +210,65 @@ Ninguna decisión nueva pendiente para el componente preparado. FND-02 y HN-01 c
 ### Recommended Next Step
 
 Revisar esta fase con su evidencia y autorizar por separado la siguiente composición de Home. Activar navegación en la página normal cuando existan sus destinos y ejecutar validación integrada; completar lector/axe/zoom/dispositivos antes de aceptar los criterios correspondientes. No iniciar Hero, formulario, backend o medición sin su fase autorizada.
+
+---
+
+## Completion Report — Hero de Home, 13/10/2026
+
+America/Santiago. Base `13fcac9`, checkout limpio al iniciar; cambios sin commit nuevo. Windows / Node 22.17.0 / npm 10.9.2. Chromium Codex In-app Browser emulado. QA development en 3000 con fixture Header existente; build normal en 3001 sin destinos sintéticos. Sin deployment, captación, proveedores ni mocks de servicios. Subcasos `/Hero` no cambian estados globales de acceptance.
+
+### Implemented
+
+- Hero server en `src/components/sections/Hero.tsx` y CSS Module mínimo; Section first, Container, typography y Actions del Design System. Página `/` sustituye muestra de foundation por Hero; elimina CSS de página reemplazado por primitives. Copy completo literal de content §Hero centralizado en site.hero.
+- Una columna de lectura (máximo 760px), sin visual: wireframe reserva el diagrama para Solución. H1, eyebrow, supporting copy, audience, microcopy e identidad; sin claims nuevos ni CTA secundario. Tokens responsive existentes, sin nuevos valores visuales.
+- CTA exacto preparado a `#diagnostico`; puerta HERO-01 basada en HN-01: oculto en página normal hasta existir el destino. QA lo activa únicamente contra fixture de desarrollo existente. Header/layout y sus decisiones intactos. Sin tracking, backend, sección futura, dependencia o cambio de fuentes originales.
+- Reconciliación, autorización limitada y clasificaciones en [hero-review.md](hero-review.md); evidencia en [checks](evidence/hero/checks.md) y [browser](evidence/hero/browser.md).
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/Hero | PASS | Solicitud explícita limita adopción a Hero; registro previo y hashes 7/7 coincidentes. Fuentes/matriz intactas. |
+| B-03/typecheck-Hero | PASS | next typegen + tsc strict exit 0 fuera sandbox; checks.md. |
+| B-03/lint-Hero | PASS | ESLint max-warnings=0 exit 0, repetición final. |
+| B-03/build-Hero | PASS | Build exit 0, `/` prerenderizada; DOM del build normal sin fixture/CTA futuro. |
+| B-04/Hero, B-07/Hero | PASS | Hero server, semántico; únicamente componente/copy de esta fase. Header/DS/dependencias intactos. |
+| B-06/Hero | PASS | Console warn/error=[] en cargas/interacciones ejecutadas, console.json. |
+| R-01/Hero, R-02/Hero | PASS | Capturas mobile/desktop y estilos calculados en ocho anchos; scrollWidth=clientWidth, texto completo, Inter/tokens/lectura/padding correctos. responsive-qa/normal.json y capturas *-normal/*-qa.png. |
+| R-03/texto-Hero | PASS parcial | Font-size raíz temporal 200%, cinco anchos sin overflow; texto completo y CTA multilínea. text-200.json y cta-text-200-qa.json; no zoom real. |
+| N-02/inicio-Hero, N-05/puerta-Hero | PASS | Un #inicio con H1; build normal sin links a destinos pendientes. No ocho anclas completas. |
+| C-01/CTA-fixture-Hero, C-02/CTA-fixture-Hero | PASS parcial | Label literal, enlace nativo único en Hero a #diagnostico sintético; Enter/clic navegan, foco en h2 sintético. No formulario real. |
+| A-01/DOM-Hero, A-02/teclado-Hero | PASS parcial | Un H1, lang/landmarks; skip enfoca main normal. Tab/Enter y foco visible del CTA en QA. browser.md y focus-qa.png. |
+| A-04/default-Hero | PASS | Contraste usado 6.07–15.57:1; CTA default 6.70:1, contrast.json. No auditoría integral de estados. |
+| A-05/targets-preferencias-Hero | PASS parcial | CTA ≥49.6px alto; reduced motion auto/0s y forced colors outline visible, screenshot archivado. |
+| M-11/ausencia-integraciones-Hero | PASS parcial | Network build 10 GET locales sin GA/GTM/píxeles/POST; fuente sin instrumentación. No acredita medición ni consentimiento. |
+| B-03/sandbox-Hero | FAIL ambiental, repetición PASS | SWC Acceso denegado al canonicalizar jsc.baseUrl; mismo código fuera del sandbox pasó. |
+
+### Not Validated
+
+- C-01/C-02 integrados, N-02/N-03/N-04 completos: faltan secciones/formulario; CTA normal permanece oculto. QA sintético no demuestra captación ni navegación final.
+- R-03 zoom real 200%, R-06 móviles físicos Safari/iOS y Chrome/Android; A-03 lector y A-07 axe/revisión WCAG integral. Aumento de texto no sustituye zoom real.
+- C-03/tracking y M/CO/PR; no se instrumentan por alcance explícito. B-02 reinstalación/CI, B-03 tests críticos de captación, R/A globales, R-04 diagrama de Solución, R-05 barra móvil, N-01/rutas finales, F/E/S/P/D permanecen NOT VALIDATED en lo no cubierto. No GA4, servicios reales, performance, producción ni campo acreditados.
+
+### Pending
+
+| ID | Responsable / condición | Bloquea |
+| --- | --- | --- |
+| HERO-01 / HN-04 | Codex en fase autorizada: construir #diagnostico real y destinos del Header; habilitar respectivas puertas y repetir CTA/teclado integrados. | CTA/navegación final; no bloque de lectura |
+| R-03/R-06/A-03/A-07 | Implementador/QA: zoom real, dispositivos, lector y auditoría automatizada antes de aceptación integral. | Aceptación accesibilidad/responsive completa |
+| H-03/H-04/H-05/H-06/FND-03 | José: proveedores, dominio/contacto, privacidad y recepción/rutas finales. | Captación pública/lanzamiento; fuera de Hero |
+| H-07/H-08/H-09/H-10/H-11/H-14/H-15 | José: decisiones/configuración según registros vigentes. | Medición/API/operación/SEO respectivos; fuera de Hero |
+
+### Known Issues
+
+- CTA oculto en Home normal hasta contar con destino; microcopy literal conservado. No declarar recorrido de solicitud operativo ni Hero comercial integrado final.
+- Typecheck inicial falló por sandbox SWC y pasó fuera; no alteración de tests/configuración para ocultarlo. Arranque npm ignoró puerto y dio EADDRINUSE; Next directo en 3001 funcionó. Cambios automáticos next-env restaurados al contenido previo.
+- Sin overflow ni errores de consola detectados en los estados/ancho revisados; sin afirmación universal. Zoom, lector, auditoría completa y móviles físicos siguen sin evidencia. Fuentes originales, Header y primitives preservados.
+
+### Decisions Needed
+
+Ninguna decisión nueva necesaria para este alcance. HERO-01/02/03/04 son interpretaciones acotadas explícitas en hero-review, no nueva estrategia/copy/diseño. Pendientes históricos mantienen sus puertas y responsables.
+
+### Recommended Next Step
+
+Revisar el Hero y su evidencia; autorizar por separado la siguiente sección según el orden del wireframe (Problema e impacto). Mantener CTA y navegación condicionados a destinos reales; no adelantar formulario, diagrama ni medición por esta entrega.
