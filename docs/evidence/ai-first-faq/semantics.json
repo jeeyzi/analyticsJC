@@ -1,0 +1,147 @@
+{
+  "faqControls": 0,
+  "forms": 0,
+  "headings": [
+    {
+      "id": "titulo-inicio",
+      "tag": "H1",
+      "text": "Conecta tus campañas con las oportunidades y ventas de tu CRM."
+    },
+    {
+      "id": "titulo-problema",
+      "tag": "H2",
+      "text": "Tu medición puede terminar donde empieza la venta."
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Mides contactos, pero no resultados comerciales"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Los datos de publicidad, web y CRM no encajan"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Tus campañas reciben señales incompletas"
+    },
+    {
+      "id": "titulo-solucion",
+      "tag": "H2",
+      "text": "Una medición que conecta la captación con el resultado comercial."
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Auditoría de trazabilidad"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Auditoría de calidad de datos"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Implementación y corrección de medición"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Reporting de marketing y ventas"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Conexión entre campañas y CRM"
+    },
+    {
+      "id": "titulo-proceso",
+      "tag": "H2",
+      "text": "Primero entendemos la brecha. Después definimos el trabajo."
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Cuéntanos qué necesitas resolver"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Revisamos tu solicitud"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Conversamos sobre tu caso"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "Recibes una propuesta de alcance"
+    },
+    {
+      "id": "titulo-experiencia",
+      "tag": "H2",
+      "text": "Soy José Cubillo, especialista en Digital Analytics y Tracking."
+    },
+    {
+      "id": "titulo-metodo",
+      "tag": "H2",
+      "text": "Medición que puedes verificar y mantener"
+    },
+    {
+      "id": "titulo-preguntas",
+      "tag": "H2",
+      "text": "Antes de solicitar el diagnóstico"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+    },
+    {
+      "id": "",
+      "tag": "H3",
+      "text": "¿Cuánto tendrá que participar mi equipo?"
+    }
+  ],
+  "lang": "es",
+  "sections": [
+    {
+      "id": "inicio",
+      "label": "titulo-inicio"
+    },
+    {
+      "id": "problema",
+      "label": "titulo-problema"
+    },
+    {
+      "id": "solucion",
+      "label": "titulo-solucion"
+    },
+    {
+      "id": "proceso",
+      "label": "titulo-proceso"
+    },
+    {
+      "id": "experiencia",
+      "label": "titulo-experiencia"
+    },
+    {
+      "id": "",
+      "label": "titulo-metodo"
+    },
+    {
+      "id": "preguntas",
+      "label": "titulo-preguntas"
+    }
+  ]
+}

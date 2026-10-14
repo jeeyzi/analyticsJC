@@ -1,0 +1,29 @@
+{
+  "expected": [
+    "Medición que puedes verificar y mantener",
+    "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo.",
+    "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana.",
+    "Antes de solicitar el diagnóstico",
+    "¿Tiene sentido si mi agencia o equipo ya configura el tracking?",
+    "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto.",
+    "¿Cómo evaluamos si el proyecto justifica su costo?",
+    "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse.",
+    "¿Cuánto tendrá que participar mi equipo?",
+    "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+  ],
+  "rendered": [
+    "Medición que puedes verificar y mantener",
+    "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo.",
+    "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana.",
+    "Antes de solicitar el diagnóstico",
+    "¿Tiene sentido si mi agencia o equipo ya configura el tracking?",
+    "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto.",
+    "¿Cómo evaluamos si el proyecto justifica su costo?",
+    "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse.",
+    "¿Cuánto tendrá que participar mi equipo?",
+    "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+  ],
+  "missing": [],
+  "unexpected": [],
+  "literal": true
+}

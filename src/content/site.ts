@@ -101,4 +101,28 @@ export const site = {
       "label": "Solicitar diagnóstico inicial"
     }
   },
+  aiFirst: {
+    heading: "Medición que puedes verificar y mantener",
+    paragraphs: [
+      "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo.",
+      "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana.",
+    ],
+  },
+  faq: {
+    heading: "Antes de solicitar el diagnóstico",
+    items: [
+      {
+        question: "¿Tiene sentido si mi agencia o equipo ya configura el tracking?",
+        answer: "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto.",
+      },
+      {
+        question: "¿Cómo evaluamos si el proyecto justifica su costo?",
+        answer: "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse.",
+      },
+      {
+        question: "¿Cuánto tendrá que participar mi equipo?",
+        answer: "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas.",
+      },
+    ],
+  },
 } as const;

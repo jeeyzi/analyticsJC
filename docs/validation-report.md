@@ -460,3 +460,68 @@ Ninguna decisión nueva bloquea el contenido local autorizado. PT-01–05 docume
 ### Recommended Next Step
 
 Revisar esta fase y su evidencia. Resolver evidencia profesional publicable y completar Agencias según el orden canónico en una fase autorizada. Mantener AI-First/FAQ/formulario/medición para solicitudes posteriores.
+
+---
+
+## Completion Report — AI-First + FAQ, 13/10/2026
+
+America/Santiago. Base `751bbb3`, checkout limpio al iniciar; cambios locales sin commit. Windows/Node 22.17.0/npm 10.9.2; Chromium Codex In-app Browser emulado, build optimizado local `http://127.0.0.1:3006/`. Sin deployment, captación ni proveedores/mocks. Sufijo `/AIFirstFAQ` delimita subcasos, no PASS global. Servidor de esta sesión detenido al finalizar; servidor dev preexistente conservado.
+
+### Implemented
+
+- `src/components/sections/AIFirst.tsx`: H2 y dos párrafos literales de content. Expertise y supervisión humana conservados, apoyo a análisis/documentación/QA sin claims nuevos. Ubicación después de Experience y antes de FAQ adoptada explícitamente por José (AF-01); excepción registrada en `ai-first-faq-review.md`, fuentes originales intactas.
+- `src/components/sections/FAQ.tsx` y CSS Module: #preguntas, título literal y tres preguntas/respuestas completas, H2→H3, columna de lectura sin acordeón. Server Components; Section/Container/typography/tokens existentes. Ningún control, visual de IA, animación, CTA o dependencia nueva.
+- `site.aiFirst/site.faq` y composición en page.tsx. Archivos de las secciones anteriores intactos; puertas de Header/CTA preservadas. No Agencias, formulario, backend, API, email, CRM, CMP ni medición.
+- Solo documentación de revisión/evidencia/validación de esta fase; aceptación raíz/referencia y fuentes estratégicas, copy, diseño, dependencias y lockfile intactos. Evidencia en `evidence/ai-first-faq/`.
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/AIFirstFAQ | PASS parcial | Reconciliación de fuentes y decisión AF-01 cerrada; siete SHA-256 coincidentes. review/source-hashes.json. |
+| B-03/typecheck-AIFirstFAQ | PASS | npm run typecheck fuera del sandbox, exit 0; next typegen + tsc --noEmit. checks.md. |
+| B-03/lint-AIFirstFAQ | PASS | npm run lint, max-warnings=0, exit 0. checks.md. |
+| B-03/build-AIFirstFAQ | PASS | npm run build fuera del sandbox, exit 0; Home prerenderizada. checks.md. |
+| B-04/AIFirstFAQ, B-07/AIFirstFAQ | PASS parcial | Server Components, diez textos literales y en orden en DOM/HTML inicial; sin nuevos controles, destinos o claims. copy.json/static.json. |
+| B-06/carga-AIFirstFAQ | PASS parcial | Cero excepciones Runtime, console entries o logs warn/error en cargas/navegación/resize observados. network-console.json. |
+| R-01/AIFirstFAQ, R-02/AIFirstFAQ | PASS parcial | Ocho anchos medidos, cinco solicitados inspeccionados visualmente, sin overflow; copy, jerarquía, gutters, spacing y orden conservados. responsive.json y ai/faq-*.png. |
+| R-04/FAQ-AIFirstFAQ | PASS parcial | Tres respuestas visibles a todos los anchos, sin carrusel/acordeón; ningún contenido depende de expansión. DOM/capturas. No recertifica diagrama ni Home completa. |
+| N-02/preguntas-AIFirstFAQ, A-01/DOM-AIFirstFAQ | PASS parcial | #preguntas único; orden Experience→AI-First→FAQ por AF-01, H1 único/lang es y H2→tres H3, regiones con nombre. semantics.json/árbol accesible. No ocho anclas finales ni lector. |
+| A-02/teclado-AIFirstFAQ | PASS parcial | A 375px: Tab al skip link, Enter a MAIN/#contenido, End lectura, Tab/Shift+Tab sin trampa; cero tabindex positivo y controles nuevos. keyboard.json/skip-focus.png. No recorrido final completo. |
+| A-04/default-AIFirstFAQ | PASS parcial | Texto y títulos sobre bg: 15.57:1. contrast.json; sin estados interactivos nuevos ni PASS global. |
+| A-05/preferencias-AIFirstFAQ | PASS parcial | Reduced motion: none/scroll auto; forced-colors mantiene lectura; foco visible del skip link de 50.4px. preferences.json/png. Sin nuevos touch targets en secciones. |
+| M-11/ausencia-integraciones-AIFirstFAQ | PASS parcial | Network: 20 GET locales, cero externos/POST/GTM/GA4/píxeles, buffer no truncado. network-console.json. No acredita consentimiento/medición activa. |
+| B-03/sandbox-AIFirstFAQ | FAIL ambiental, repetición PASS | SWC canonicalize jsc.baseUrl, acceso denegado os error 5; mismo código fuera pasó. checks.md. |
+| B-06/inicio-local-AIFirstFAQ | FAIL de comando, corregido | npm no transmitió --port y trató 3006 como directorio; inicio directo Next y nueva carga PASS. Navegación previa al servidor dio connection refused. checks.md. |
+
+### Not Validated
+
+- R-03 zoom real 200%, R-06 Safari iOS/Chrome Android físicos; A-03 lector y A-07 axe/WCAG integral. Sin PASS global de accesibilidad. Viewports son emulados.
+- Procesos IA reales y resultados operativos de consultoría: render/copy no verifican herramientas, ejecución, velocidad, ahorros ni capacidades propias. AF-05 conserva esa dependencia comercial de lanzamiento.
+- B-02 reinstalación/CI, B-03 flujos críticos del MVP, B-06 flujos finales, R/N/A globales y privacidad/rutas completas. C-01/C-02/N-02–04 integrados pendientes de formulario; no captación acreditada.
+- F/E/S/P/M/CO/PR/D operativos, servicios reales, GA4, performance, producción y campo. No simulación de integración. Matriz global conserva NOT VALIDATED.
+
+### Pending
+
+| ID | Responsable / condición para cerrar | Bloquea |
+| --- | --- | --- |
+| AF-05 | José: distinguir y verificar procesos IA operativos/publicables frente a capacidades planificadas. | Veracidad comercial de lanzamiento, no UI local |
+| AF-06 / HN-04 / HERO-01 | José autoriza fases posteriores; Codex implementa Agencias/formulario/destinos reales y repite CTA/navegación integrados. | Home y recorrido comercial completos |
+| R-03/R-06/A-03/A-07 | QA: zoom real, dispositivos, lector y auditoría integral. | Aceptación responsive/accesibilidad global |
+| H-03/H-04/H-05/H-06/FND-03 | José: proveedores/planes, dominio/contacto, privacidad/copy de rutas y receptor/avisos reales. | Captación pública/lanzamiento |
+| H-07/H-08/H-09/H-10/H-11/H-14/H-15 | José: decisiones/cuentas/configuración operativa según registros vigentes. | Medición/API/operación/SEO correspondientes |
+
+### Known Issues
+
+- SWC dentro del sandbox y argumento npm de inicio fallaron; repetición fuera e inicio directo aprobaron sin modificar configuración/tests. next-env generado restaurado.
+- Clips iniciales inconsistentes por scrollbar/repintado, corregidos en el muestreo final mediante override temporal; intento requestAnimationFrame no disponible descartado. No defecto de UI atribuido a esas capturas. Overrides restaurados y capturas finales estables en browser.md.
+- Sin overflow ni errores de consola detectados en el alcance observado, sin afirmación universal. CTA normal sigue oculto hasta destino real; Agencias y formulario pendientes. No MVP completo ni release acreditado.
+- Copy IA conserva compromisos del contenido solicitado; su operación real queda pendiente de verificación por José antes de publicar (AF-05).
+
+### Decisions Needed
+
+AF-01 cerrado por respuesta explícita de José: AI-First después de Experience y antes de FAQ. Ninguna decisión nueva bloquea estas secciones locales. AF-05 y pendientes operativos históricos conservan sus puertas de lanzamiento/fases posteriores.
+
+### Recommended Next Step
+
+Revisar esta entrega y resolver prácticas IA publicables. Completar Agencias en una fase autorizada; preparar decisiones/copy/privacidad del Lead Form antes de implementar captación. No activar backend ni medición por esta fase.

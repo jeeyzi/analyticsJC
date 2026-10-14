@@ -1,0 +1,1210 @@
+[
+  {
+    "ai": {
+      "height": 516.4750366210938,
+      "width": 320,
+      "x": 0,
+      "y": 7116.9873046875
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 320,
+    "controls": 0,
+    "faq": {
+      "height": 1081.2750244140625,
+      "width": 320,
+      "x": 0,
+      "y": 7633.462310791016
+    },
+    "scrollWidth": 320,
+    "texts": [
+      {
+        "box": {
+          "height": 66.07500457763672,
+          "width": 280,
+          "x": 20,
+          "y": 7172.9873046875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 132,
+          "width": 280,
+          "x": 20,
+          "y": 7255.062309265137
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 158.40000915527344,
+          "width": 280,
+          "x": 20,
+          "y": 7419.062316894531
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 66.07500457763672,
+          "width": 280,
+          "x": 20,
+          "y": 7689.462341308594
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 85.80000305175781,
+          "width": 280,
+          "x": 20,
+          "y": 7779.537292480469
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 184.8000030517578,
+          "width": 280,
+          "x": 20,
+          "y": 7881.337341308594
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 85.80000305175781,
+          "width": 280,
+          "x": 20,
+          "y": 8090.137329101563
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 211.1999969482422,
+          "width": 280,
+          "x": 20,
+          "y": 8191.937377929688
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 57.20000076293945,
+          "width": 280,
+          "x": 20,
+          "y": 8427.137329101562
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 158.40000915527344,
+          "width": 280,
+          "x": 20,
+          "y": 8500.337280273438
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 320
+  },
+  {
+    "ai": {
+      "height": 463.6750183105469,
+      "width": 375.2000122070313,
+      "x": 0,
+      "y": 6129.35009765625
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 375,
+    "controls": 0,
+    "faq": {
+      "height": 892.0750122070312,
+      "width": 375.2000122070313,
+      "x": 0,
+      "y": 6593.025115966797
+    },
+    "scrollWidth": 375,
+    "texts": [
+      {
+        "box": {
+          "height": 66.07500457763672,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6185.35009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 105.5999984741211,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6267.425102233887
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 132,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6405.025100708008
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 66.07500457763672,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6649.025115966797
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 57.20000076293945,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6739.10009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 158.40000915527344,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6812.300109863281
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 57.20000076293945,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 6994.700134277344
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 158.40000915527344,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 7067.900085449219
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 57.20000076293945,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 7250.300170898437
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 105.5999984741211,
+          "width": 335.20001220703125,
+          "x": 20,
+          "y": 7323.500122070312
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 375
+  },
+  {
+    "ai": {
+      "height": 358.07501220703125,
+      "width": 767.2000122070312,
+      "x": 0,
+      "y": 4363.000194549561
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 767,
+    "controls": 0,
+    "faq": {
+      "height": 562.0375366210938,
+      "width": 767.2000122070312,
+      "x": 0,
+      "y": 4721.0751953125
+    },
+    "scrollWidth": 767,
+    "texts": [
+      {
+        "box": {
+          "height": 66.07500457763672,
+          "width": 517.1749877929688,
+          "x": 20,
+          "y": 4419.000196456909
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 52.79999923706055,
+          "width": 656.0875244140625,
+          "x": 20,
+          "y": 4501.0751953125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 79.20000457763672,
+          "width": 656.0875244140625,
+          "x": 20,
+          "y": 4585.875198364258
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 33.03750228881836,
+          "width": 517.1749877929688,
+          "x": 20,
+          "y": 4777.0751953125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "28px",
+        "lineHeight": "33.04px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 28.600000381469727,
+          "width": 727.2000122070312,
+          "x": 20,
+          "y": 4834.112701416016
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 79.20000457763672,
+          "width": 656.0875244140625,
+          "x": 20,
+          "y": 4878.712707519531
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 28.600000381469727,
+          "width": 727.2000122070312,
+          "x": 20,
+          "y": 4981.9127197265625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 79.20000457763672,
+          "width": 656.0875244140625,
+          "x": 20,
+          "y": 5026.5126953125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 28.600000381469727,
+          "width": 727.2000122070312,
+          "x": 20,
+          "y": 5129.712707519531
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "22px",
+        "lineHeight": "28.6px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 52.79999923706055,
+          "width": 656.0875244140625,
+          "x": 20,
+          "y": 5174.312683105469
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "16px",
+        "lineHeight": "26.4px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 767
+  },
+  {
+    "ai": {
+      "height": 445.7000122070313,
+      "width": 768,
+      "x": 0,
+      "y": 5050.6002197265625
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 768,
+    "controls": 0,
+    "faq": {
+      "height": 686.6500244140625,
+      "width": 768,
+      "x": 0,
+      "y": 5496.3001708984375
+    },
+    "scrollWidth": 768,
+    "texts": [
+      {
+        "box": {
+          "height": 75.5,
+          "width": 591.0625,
+          "x": 32,
+          "y": 5122.6002197265625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32px",
+        "lineHeight": "37.76px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 704,
+          "x": 32,
+          "y": 5214.1002197265625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 704,
+          "x": 32,
+          "y": 5335.2001953125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 37.75,
+          "width": 591.0625,
+          "x": 32,
+          "y": 5568.3001708984375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32px",
+        "lineHeight": "37.76px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 704,
+          "x": 32,
+          "y": 5638.0501708984375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 704,
+          "x": 32,
+          "y": 5685.250244140625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 704,
+          "x": 32,
+          "y": 5806.3502197265625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 704,
+          "x": 32,
+          "y": 5853.5501708984375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 704,
+          "x": 32,
+          "y": 5974.6502685546875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 704,
+          "x": 32,
+          "y": 6021.8502197265625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 768
+  },
+  {
+    "ai": {
+      "height": 417.75,
+      "width": 1023.2000122070312,
+      "x": 0,
+      "y": 4915.849792480469
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 1023,
+    "controls": 0,
+    "faq": {
+      "height": 657.8250122070312,
+      "width": 1023.2000122070312,
+      "x": 0,
+      "y": 5333.599853515625
+    },
+    "scrollWidth": 1023,
+    "texts": [
+      {
+        "box": {
+          "height": 77.25,
+          "width": 604.6500244140625,
+          "x": 32,
+          "y": 4987.849792480469
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32.7424px",
+        "lineHeight": "38.636px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 32,
+          "y": 5081.099792480469
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 32,
+          "y": 5172.499816894531
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 38.625,
+          "width": 604.6500244140625,
+          "x": 32,
+          "y": 5405.599853515625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32.7424px",
+        "lineHeight": "38.636px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 32,
+          "y": 5476.224853515625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 32,
+          "y": 5523.4248046875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 32,
+          "y": 5644.5247802734375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 32,
+          "y": 5691.724853515625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 32,
+          "y": 5812.8248291015625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 32,
+          "y": 5860.0247802734375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 1023
+  },
+  {
+    "ai": {
+      "height": 465.8000183105469,
+      "width": 1024,
+      "x": 0,
+      "y": 4725.124816894531
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 1024,
+    "controls": 0,
+    "faq": {
+      "height": 729.8500366210938,
+      "width": 1024,
+      "x": 0,
+      "y": 5190.9248046875
+    },
+    "scrollWidth": 1024,
+    "texts": [
+      {
+        "box": {
+          "height": 77.30000305175781,
+          "width": 605.2374877929688,
+          "x": 40,
+          "y": 4821.124816894531
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32.768px",
+        "lineHeight": "38.6662px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 4914.4248046875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5005.8248291015625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 38.650001525878906,
+          "width": 605.2374877929688,
+          "x": 40,
+          "y": 5286.9248046875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "32.768px",
+        "lineHeight": "38.6662px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5365.5748291015625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5412.7747802734375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5541.8748779296875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5589.0748291015625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5718.1748046875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5765.3748779296875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "ai": {
+      "height": 482.8999938964844,
+      "width": 1280,
+      "x": 0,
+      "y": 4677.800109863281
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 1280,
+    "controls": 0,
+    "faq": {
+      "height": 738.4000244140625,
+      "width": 1280,
+      "x": 0,
+      "y": 5160.700134277344
+    },
+    "scrollWidth": 1280,
+    "texts": [
+      {
+        "box": {
+          "height": 94.4000015258789,
+          "width": 738.8250122070312,
+          "x": 40,
+          "y": 4773.800109863281
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "40px",
+        "lineHeight": "47.2px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 4884.200134277344
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 4975.60009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 47.20000076293945,
+          "width": 738.8250122070312,
+          "x": 40,
+          "y": 5256.7000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "40px",
+        "lineHeight": "47.2px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5343.900146484375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5391.10009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5520.2000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5567.400146484375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 40,
+          "y": 5696.5001220703125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 40,
+          "y": 5743.7000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 1280
+  },
+  {
+    "ai": {
+      "height": 482.8999938964844,
+      "width": 1440,
+      "x": 0,
+      "y": 4677.800109863281
+    },
+    "background": "rgb(248, 250, 252)",
+    "clientWidth": 1440,
+    "controls": 0,
+    "faq": {
+      "height": 738.4000244140625,
+      "width": 1440,
+      "x": 0,
+      "y": 5160.700134277344
+    },
+    "scrollWidth": 1440,
+    "texts": [
+      {
+        "box": {
+          "height": 94.4000015258789,
+          "width": 738.8250122070312,
+          "x": 120,
+          "y": 4773.800109863281
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "40px",
+        "lineHeight": "47.2px",
+        "text": "Medición que puedes verificar y mantener"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 120,
+          "y": 4884.200134277344
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo."
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 120,
+          "y": 4975.60009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana."
+      },
+      {
+        "box": {
+          "height": 47.20000076293945,
+          "width": 738.8250122070312,
+          "x": 120,
+          "y": 5256.7000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "40px",
+        "lineHeight": "47.2px",
+        "text": "Antes de solicitar el diagnóstico"
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 120,
+          "y": 5343.900146484375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Tiene sentido si mi agencia o equipo ya configura el tracking?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 120,
+          "y": 5391.10009765625
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 120,
+          "y": 5520.2000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cómo evaluamos si el proyecto justifica su costo?"
+      },
+      {
+        "box": {
+          "height": 89.0999984741211,
+          "width": 738.1000366210938,
+          "x": 120,
+          "y": 5567.400146484375
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "box": {
+          "height": 31.200000762939453,
+          "width": 760,
+          "x": 120,
+          "y": 5696.5001220703125
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "24px",
+        "lineHeight": "31.2px",
+        "text": "¿Cuánto tendrá que participar mi equipo?"
+      },
+      {
+        "box": {
+          "height": 59.400001525878906,
+          "width": 738.1000366210938,
+          "x": 120,
+          "y": 5743.7000732421875
+        },
+        "color": "rgb(23, 33, 43)",
+        "display": "block",
+        "font": "18px",
+        "lineHeight": "29.7px",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "width": 1440
+  }
+]

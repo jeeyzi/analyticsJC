@@ -1,0 +1,51 @@
+[
+  {
+    "active": "Saltar al contenido",
+    "box": {
+      "bottom": 50.400001525878906,
+      "height": 50.400001525878906,
+      "left": 0,
+      "right": 375.2000122070313,
+      "top": 0,
+      "width": 375.2000122070313,
+      "x": 0,
+      "y": 0
+    },
+    "href": "#contenido",
+    "shadow": "rgb(29, 78, 216) 0px 0px 0px 3px inset",
+    "step": "Tab al skip link",
+    "tag": "A"
+  },
+  {
+    "hash": "#contenido",
+    "id": "contenido",
+    "scrollY": 40,
+    "step": "Enter al contenido",
+    "tag": "MAIN"
+  },
+  {
+    "faqAnswers": [
+      {
+        "display": "block",
+        "text": "Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto."
+      },
+      {
+        "display": "block",
+        "text": "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+      },
+      {
+        "display": "block",
+        "text": "Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas."
+      }
+    ],
+    "positiveTabindex": 0,
+    "scrollY": 6771.2001953125,
+    "step": "End lectura FAQ"
+  },
+  {
+    "href": "/#inicio",
+    "step": "Tab y Shift+Tab",
+    "tag": "A",
+    "text": "José Cubillo"
+  }
+]

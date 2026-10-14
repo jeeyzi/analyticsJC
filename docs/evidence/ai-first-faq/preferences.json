@@ -1,0 +1,36 @@
+[
+  {
+    "animations": [
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none",
+      "none"
+    ],
+    "mode": "reduce",
+    "scrollBehavior": "auto",
+    "textCount": 5
+  },
+  {
+    "answers": [
+      "block",
+      "block",
+      "block"
+    ],
+    "background": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "mode": "forced-colors"
+  }
+]
