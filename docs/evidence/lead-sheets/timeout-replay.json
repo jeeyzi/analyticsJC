@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "method": "Real Sheets commit followed by injected lost response and failed reconciliation; manual replay",
+  "submission_id": "ad2e3901-950a-45f5-8abe-e132ea7db931",
+  "lead_id": "57b20c6f-2e78-4887-919e-3959f1477c30",
+  "rows": 1,
+  "stateBeforeRetry": "unconfirmed_reception",
+  "stateAfterRetry": "accepted"
+}

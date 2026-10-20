@@ -125,4 +125,15 @@ export const site = {
       },
     ],
   },
+  leadForm: {
+    heading: "Solicitar diagnóstico inicial",
+    introduction: "Cuéntanos cómo captas leads y qué necesitas conectar o corregir en tu medición. Revisaremos tu solicitud y te contactaremos si hay encaje para una conversación.",
+    labels: { name: "Nombre", email: "Email de contacto", website: "Sitio web de tu empresa o agencia", organization_type: "Tipo de organización", ad_spend_context: "Inversión publicitaria mensual aproximada (opcional)", crm_context: "CRM utilizado (opcional)", problem: "¿Qué problema quieres resolver?" },
+    options: ["Selecciona una opción", "Empresa que capta leads", "Agencia", "Otro"],
+    help: { ad_spend_context: "Indica un monto o rango y la moneda. Si eres una agencia, aclara si corresponde a un cliente o a tu cartera.", crm_context: "Puedes indicar el nombre, “no usamos CRM” o “no sé”.", problem: "En dos o tres frases, explica qué información te falta y qué necesitas poder medir." },
+    errors: { name: "Indica tu nombre.", email: "Indica un email válido para que podamos contactarte.", website: "Indica un dominio o una dirección web válida.", organization_type: "Selecciona una opción.", problem: "Cuéntanos qué problema quieres resolver." },
+    validationSummary: "Revisa los campos indicados para enviar tu solicitud.",
+    privacyNotice: "Usaremos los datos que compartas para evaluar tu solicitud y contactarte sobre ella. Consulta la información de privacidad.",
+    submit: "Solicitar diagnóstico inicial",
+  },
 } as const;

@@ -1,0 +1,307 @@
+[
+  {
+    "box": {
+      "height": 2025.2750244140625,
+      "width": 304.8000183105469,
+      "x": 0,
+      "y": 9352.14960861206
+    },
+    "clientWidth": 305,
+    "controls": [
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "name",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "email",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "website",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 48,
+        "name": "organization_type",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "ad_spend_context",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "crm_context",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 144,
+        "name": "problem",
+        "width": 215.1999969482422
+      },
+      {
+        "font": "16px",
+        "height": 73.5999984741211,
+        "name": "BUTTON",
+        "width": 215.1999969482422
+      }
+    ],
+    "scrollWidth": 305,
+    "width": 320
+  },
+  {
+    "box": {
+      "height": 1824.2750244140625,
+      "width": 360,
+      "x": 0,
+      "y": 8038.337695300579
+    },
+    "clientWidth": 360,
+    "controls": [
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "name",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "email",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "website",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 48,
+        "name": "organization_type",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "ad_spend_context",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "crm_context",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 144,
+        "name": "problem",
+        "width": 270.3999938964844
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "BUTTON",
+        "width": 270.3999938964844
+      }
+    ],
+    "scrollWidth": 360,
+    "width": 375
+  },
+  {
+    "box": {
+      "height": 1580.050048828125,
+      "width": 752.7999877929688,
+      "x": 0,
+      "y": 6483.050193786621
+    },
+    "clientWidth": 753,
+    "controls": [
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "name",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "email",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "website",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 48,
+        "name": "organization_type",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "ad_spend_context",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "crm_context",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 144,
+        "name": "problem",
+        "width": 590.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "BUTTON",
+        "width": 590.4000244140625
+      }
+    ],
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "box": {
+      "height": 1623.25,
+      "width": 1008.7999877929688,
+      "x": 0,
+      "y": 6203.275196075439
+    },
+    "clientWidth": 1009,
+    "controls": [
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "name",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "email",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "website",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 48,
+        "name": "organization_type",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "ad_spend_context",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "crm_context",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 144,
+        "name": "problem",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "BUTTON",
+        "width": 574.4000244140625
+      }
+    ],
+    "scrollWidth": 1009,
+    "width": 1024
+  },
+  {
+    "box": {
+      "height": 1631.800048828125,
+      "width": 1424.800048828125,
+      "x": 0,
+      "y": 6151.900001525879
+    },
+    "clientWidth": 1425,
+    "controls": [
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "name",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "email",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "website",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 48,
+        "name": "organization_type",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "ad_spend_context",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "crm_context",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 144,
+        "name": "problem",
+        "width": 574.4000244140625
+      },
+      {
+        "font": "16px",
+        "height": 49.60000228881836,
+        "name": "BUTTON",
+        "width": 574.4000244140625
+      }
+    ],
+    "scrollWidth": 1425,
+    "width": 1440
+  }
+]

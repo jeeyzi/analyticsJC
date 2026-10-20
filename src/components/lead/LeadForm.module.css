@@ -1,0 +1,12 @@
+.panel { max-width: var(--form-max); margin-top: var(--section-content-gap); padding: var(--panel-padding); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); }
+.notice { margin-block: var(--space-6); font-size: var(--font-caption); line-height: 1.5; color: var(--color-text-muted); }
+.feedback { margin-bottom: var(--space-6); padding: var(--space-4); border: 1px solid var(--color-error); border-radius: var(--radius-control); background: var(--color-error-soft); color: var(--color-error); }
+.local { margin-bottom: var(--space-6); font-size: var(--font-caption); line-height: 1.5; }
+.submit { width: 100%; }
+.step { margin-bottom: var(--space-6); }
+.radios { border: 0; padding: 0; margin: 0 0 var(--space-6); min-width: 0; }
+.radios legend { font-weight: 500; margin-bottom: var(--space-3); }
+.radio { display: flex; align-items: center; gap: var(--space-3); min-height: 3rem; padding: var(--space-3); border: 1px solid var(--color-border-control); border-radius: var(--radius-control); margin-bottom: var(--space-3); cursor: pointer; }
+.radio input { width: 1.25rem; height: 1.25rem; flex-shrink: 0; accent-color: var(--color-text); }
+.error { color: var(--color-error); font-size: var(--font-caption); }
+.actions { display: flex; flex-direction: column; gap: var(--space-3); }

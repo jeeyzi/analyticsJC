@@ -1,0 +1,95 @@
+{
+  "colors": [
+    {
+      "background": "rgb(254, 242, 242)",
+      "color": "rgb(185, 28, 28)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(185, 28, 28)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(23, 33, 43)"
+    },
+    {
+      "background": "rgb(29, 78, 216)",
+      "color": "rgb(255, 255, 255)"
+    }
+  ],
+  "fields": [
+    {
+      "autoComplete": "name",
+      "label": "Nombre",
+      "name": "name",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "autoComplete": "email",
+      "label": "Email de contacto",
+      "name": "email",
+      "required": true,
+      "type": "email"
+    },
+    {
+      "autoComplete": "",
+      "label": "Sitio web de tu empresa o agencia",
+      "name": "website",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "autoComplete": "",
+      "label": "Tipo de organización",
+      "name": "organization_type",
+      "required": true,
+      "type": "select-one"
+    },
+    {
+      "autoComplete": "",
+      "label": "Inversión publicitaria mensual aproximada (opcional)",
+      "name": "ad_spend_context",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "autoComplete": "",
+      "label": "CRM utilizado (opcional)",
+      "name": "crm_context",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "autoComplete": "",
+      "label": "¿Qué problema quieres resolver?",
+      "name": "problem",
+      "required": true,
+      "type": "textarea"
+    }
+  ]
+}

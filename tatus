@@ -1,0 +1,145 @@
+warning: in the working copy of 'docs/decisions.md', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/docs/decisions.md b/docs/decisions.md[m
+[1mindex ea287d8..942d026 100644[m
+[1m--- a/docs/decisions.md[m
+[1m+++ b/docs/decisions.md[m
+[36m@@ -33,3 +33,139 @@[m [mBase actual verificada: commit `1a14f7f` (`chore: initialize website foundation`[m
+ [m
+ Se permite una muestra local de desarrollo aislada, sin contenido comercial nuevo. Interpretaciones acotadas y subcasos de aceptación: `docs/design-system-review.md` y actualización incremental de `docs/validation-report.md`. FND-02/FND-03 y hallazgos H-* de fases posteriores conservan sus puertas.[m
+ [m
+[32m+[m[32m# Lead Flow MVP — Decisions[m
+[32m+[m
+[32m+[m[32m## H-10 — Limits, retries and retention[m
+[32m+[m
+[32m+[m[32mStatus: PARTIALLY RESOLVED[m
+[32m+[m
+[32m+[m[32mDecisions:[m
+[32m+[m
+[32m+[m[32m- All form fields must have explicit server-side maximum lengths.[m
+[32m+[m[32m- The request payload must have an explicit maximum size.[m
+[32m+[m[32m- The browser must not perform automatic submission retries.[m
+[32m+[m[32m- Each submission must receive a unique `submission_id`.[m
+[32m+[m[32m- Retries of the same submission must reuse the same `submission_id`.[m
+[32m+[m[32m- Backend processing must be idempotent.[m
+[32m+[m[32m- The same `submission_id` must never create multiple leads.[m
+[32m+[m[32m- QA data must use short-lived/test retention.[m
+[32m+[m[32m- Production retention remains unresolved until the privacy policy and operational retention policy are approved.[m
+[32m+[m
+[32m+[m[32mOpen:[m
+[32m+[m
+[32m+[m[32m- Final production retention period.[m
+[32m+[m[32m- Final operational retention policy.[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## H-11 — Form response states[m
+[32m+[m
+[32m+[m[32mStatus: RESOLVED[m
+[32m+[m
+[32m+[m[32mThe form must distinguish these states:[m
+[32m+[m
+[32m+[m[32m1. `validation_error`[m
+[32m+[m[32m2. `recoverable_error`[m
+[32m+[m[32m3. `unconfirmed_reception`[m
+[32m+[m[32m4. `confirmed_success`[m
+[32m+[m
+[32m+[m[32mA timeout must NOT automatically be treated as definitive submission failure.[m
+[32m+[m
+[32m+[m[32m### Confirmed success[m
+[32m+[m
+[32m+[m[32mTitle:[m
+[32m+[m
+[32m+[m[32m`Solicitud recibida`[m
+[32m+[m
+[32m+[m[32mMessage:[m
+[32m+[m
+[32m+[m[32m`Recibimos correctamente tu información. Te indicaremos el siguiente paso utilizando los datos de contacto proporcionados.`[m
+[32m+[m
+[32m+[m[32m### Unconfirmed reception[m
+[32m+[m
+[32m+[m[32mTitle:[m
+[32m+[m
+[32m+[m[32m`No pudimos confirmar la recepción`[m
+[32m+[m
+[32m+[m[32mMessage:[m
+[32m+[m
+[32m+[m[32m`La solicitud pudo haberse recibido, pero no logramos confirmarlo. Puedes volver a intentarlo sin necesidad de completar nuevamente la información.`[m
+[32m+[m
+[32m+[m[32m### Recoverable error[m
+[32m+[m
+[32m+[m[32mTitle:[m
+[32m+[m
+[32m+[m[32m`No pudimos enviar la solicitud`[m
+[32m+[m
+[32m+[m[32mMessage:[m
+[32m+[m
+[32m+[m[32m`Tus datos se mantienen en el formulario. Intenta nuevamente.`[m
+[32m+[m
+[32m+[m[32m### Validation error[m
+[32m+[m
+[32m+[m[32mTitle:[m
+[32m+[m
+[32m+[m[32m`Revisa los campos indicados`[m
+[32m+[m
+[32m+[m[32mMessage:[m
+[32m+[m
+[32m+[m[32m`Hay información que necesitamos corregir antes de enviar la solicitud.`[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## H-14 — Operational history[m
+[32m+[m
+[32m+[m[32mStatus: RESOLVED[m
+[32m+[m
+[32m+[m[32mStore only the minimum operational history required to diagnose lead processing.[m
+[32m+[m
+[32m+[m[32mAllowed operational fields:[m
+[32m+[m
+[32m+[m[32m- `submission_id`[m
+[32m+[m[32m- `lead_id`[m
+[32m+[m[32m- `status`[m
+[32m+[m[32m- `created_at`[m
+[32m+[m[32m- `updated_at`[m
+[32m+[m[32m- `attempt_number`[m
+[32m+[m[32m- processing timestamps[m
+[32m+[m[32m- provider/result code when applicable[m
+[32m+[m[32m- sanitized error code[m
+[32m+[m
+[32m+[m[32mRules:[m
+[32m+[m
+[32m+[m[32m- Do not duplicate form PII in operational logs.[m
+[32m+[m[32m- Do not log form field values unnecessarily.[m
+[32m+[m[32m- Operational history must follow the final retention/governance policy once approved.[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## QA Lead Receiver[m
+[32m+[m
+[32m+[m[32mStatus: DECISION NEEDED[m
+[32m+[m
+[32m+[m[32mFor QA, use a private receiver controlled by José.[m
+[32m+[m
+[32m+[m[32mRequirements:[m
+[32m+[m
+[32m+[m[32m- Must not be exposed publicly on the website.[m
+[32m+[m[32m- Must be configured server-side.[m
+[32m+[m[32m- Must use environment variables when applicable.[m
+[32m+[m[32m- QA receiver must not be hardcoded into frontend code.[m
+[32m+[m
+[32m+[m[32mProduction receiver remains pending until explicitly approved.[m
+[32m+[m
+[32m+[m[32m---[m
+[32m+[m
+[32m+[m[32m## Production Privacy / Retention[m
+[32m+[m
+[32m+[m[32mStatus: BLOCKER FOR LAUNCH[m
+[32m+[m
+[32m+[m[32mThe following remain unresolved:[m
+[32m+[m
+[32m+[m[32m- final privacy policy;[m
+[32m+[m[32m- final production retention period;[m
+[32m+[m[32m- final production lead receiver;[m
+[32m+[m[32m- final operational retention policy.[m
+[32m+[m
+[32m+[m[32mThese items do not necessarily block isolated local/QA implementation,[m
+[32m+[m[32mbut they block public production launch.[m

@@ -525,3 +525,201 @@ AF-01 cerrado por respuesta explícita de José: AI-First después de Experience
 ### Recommended Next Step
 
 Revisar esta entrega y resolver prácticas IA publicables. Completar Agencias en una fase autorizada; preparar decisiones/copy/privacidad del Lead Form antes de implementar captación. No activar backend ni medición por esta fase.
+
+---
+
+## Completion Report — Lead Form + Lead Flow local, 13/10/2026
+
+America/Santiago. Base `2d2766e`, checkout limpio al comenzar; working tree sin commit nuevo. Windows/Node 22.17.0/npm 10.9.2, Chromium In-app Browser emulado en http://127.0.0.1:3000. Build local inspeccionado en disco; no producción, backend, mocks ni proveedores. Sufijo /LeadLocal define únicamente subcasos: criterios globales conservan NOT VALIDATED.
+
+### Pre-flight Decisions
+
+José respondió explícitamente: «Mantener pendientes; solo UI y validación independiente». H-01 resuelto local; H-02 adoptado solo para ese alcance; H-13 resuelto documentalmente. H-03 DECISION NEEDED (stack confirmado, operación pendiente); H-04/H-05/H-06 BLOCKER para captación/backend real; H-10/H-11/H-14 DECISION NEEDED. H-07/H-08/H-09 siguen afectando medición; H-16/H-19 y LF-01/02/03 SAFE ASSUMPTION; H-21/H-22 FUTURE. Responsable de decisiones operativas: José. Clasificación completa y condiciones en [lead-form-review.md](lead-form-review.md).
+
+### Implemented
+
+- `src/components/lead/LeadForm.tsx` y CSS Module: siete campos exactos, cinco required/dos optional, labels/ayudas/errores literales, tipos/autocomplete, una columna y primitives/tokens existentes. Validación al submit y corrección de campo tras error, resumen alert, foco al primero y valores en memoria React. Estados idle/editing/validation_error/locally_valid, este último explica que no hubo envío. Sin request_id/POST/loading/error de recepción/uncertain/success ficticios.
+- `src/lib/lead/schema.ts`: schema parcial Zod de reglas independientes, trim y normalización URL sin visita. Sin límites H-10 ni contrato HTTP final. `tests/lead-draft.test.mjs`: obligatorios, formato, enum, extras, Unicode/opcionales y URLs inseguras/ambiguas.
+- `LeadFormPreview.tsx`, site.leadForm y dos líneas de integración en page: solo development + LEAD_FORM_PREVIEW o fixture HEADER_NAVIGATION_PREVIEW existente. Home normal/producción conserva puertas y no incluye laboratorio. No #diagnostico comercial, privacidad ficticia, mailto, backend, integraciones, dependencias nuevas o cambios a fuentes/aceptación. Secciones previas intactas.
+- Revisión y evidencia en [checks](evidence/lead-form/checks.md) y `evidence/lead-form/`. Copy de laboratorio identificado como QA; no nuevo copy comercial publicado.
+
+### Validated
+
+| ID / subcaso | Estado | Método / evidencia |
+| --- | --- | --- |
+| B-01/LeadLocal | PASS | Lectura/reconciliación, autorización limitada y siete hashes coincidentes. review/source-hashes.json. |
+| B-03/typecheck-LeadLocal | PASS | npm run typecheck final fuera sandbox, exit 0. |
+| B-03/lint-LeadLocal | PASS | npm run lint final, exit 0; reglas intactas. |
+| B-03/build-LeadLocal | PASS | npm run build fuera sandbox exit 0; ambos flags QA activos, laboratorio ausente de HTML/RSC. build-gate.json. |
+| B-03/schema-LeadLocal | PASS | node --experimental-strip-types --test tests/lead-draft.test.mjs: 3 PASS, 0 FAIL, exit 0. Solo schema local. |
+| B-04/LeadLocal, B-07/LeadLocal | PASS | Home sigue server/prerenderizada; cliente solo laboratorio. Sin rutas/dependencias/campos extra. |
+| F-01/campos-LeadLocal | PASS | Siete campos/orden/opciones/required correctos, labels literales; semantics.json y capturas. No formulario operativo. |
+| F-02/schema-cliente-LeadLocal, F-03/URL-cliente-LeadLocal | PASS | Casos del schema y rechazo de formatos en navegador. Sin límites/POST directo ni servidor: criterios globales NV. |
+| F-04/LeadLocal, A-03/asociaciones-DOM-LeadLocal | PASS | Vacío muestra cinco errores, foco name; email/URL inválidos enfocan email; aria-invalid/describedby y textos correctos. validation.json. Sin lector. |
+| F-11/botón-sin-JS-LeadLocal | PASS | Sin JS, disabled SSR + noscript; nojs.json. Soporte real sigue pendiente. |
+| R-01/LeadLocal, R-02/LeadLocal | PASS | Ocho anchos emulados sin overflow, una columna, controles ≥48 px/fuente 16 px. responsive/breakpoints/capturas. |
+| A-02/teclado-LeadLocal | PASS | Tab y Shift+Tab recorren siete campos y submit sin trampa, foco visible. keyboard.json/capturas. |
+| A-04/combinaciones-LeadLocal | PASS | Contrastes utilizados 4.76–16.29; error sobre panel 5.91. contrast.json. No todos los estados futuros. |
+| B-06/LeadLocal, M-11/ausencia-tags-LeadLocal | PASS | Console warn/error=[]; Network sin POST/GTM/GA/píxeles observado, buffer no truncado. No acredita consentimiento/medición. |
+| PR-02/cliente-local-LeadLocal | PASS | Sin datos sintéticos en storage/URL, sin dataLayer, fuente sin logs/fetch. privacy.json/network. No backend ni prueba de logs operativos. |
+| B-03/sandbox-LeadLocal | FAIL ambiental, repetición PASS | Typecheck/build fallaron SWC Acceso denegado os error 5; mismo código fuera pasó. |
+| B-03/schema-URL-inicial-LeadLocal | FAIL corregido, repetición PASS | Parser reinterpretaba barra invertida. Schema rechaza ambigüedad; mismo caso final pasa. |
+| B-03/lint-tests-inicial-LeadLocal | FAIL corregido, repetición PASS | Dos variables destructuradas sin uso en fixture; ajuste sin retirar pruebas/reglas, final exit 0. |
+
+### Not Validated
+
+- F-02/F-03 completos: máximos/servidor no adoptados ni implementados. F-05–F-10: loading, doble POST, accepted, transacción, idempotencia y success no disponibles; ningún PASS de backend.
+- E-01–E-07: catálogo HTTP, rate limit, payload/origin, timeout/replay, avisos y jobs reales pendientes. No se inventa recepción incierta cuando no hubo solicitud.
+- N-06 privacidad final/soporte, C-01–C-03 navegación comercial integrada/tracking y F-11 soporte operativo. #diagnostico existente en fixture sigue siendo sintético, no formulario real.
+- R-03 zoom/reflow real; R-05 barra, R-06 iOS/Android físicos; A-03 lector/avisos reales y A-07 axe/WCAG integral. No teclado móvil físico ni éxito/red lenta emulados.
+- M/CO/PR/D operativos, GA4, servicios reales, producción, rendimiento/campo, CI y aceptación global. Ausencia de eventos no equivale a implementación analytics. Matriz canónica intacta.
+
+### Pending
+
+| ID | Responsable / condición | Bloquea |
+| --- | --- | --- |
+| H-03/H-04/H-06 | José: región/plan/email/scheduler, dominio/remitente/destinatario/soporte y receptor QA probado. | Backend/captación/lanzamiento |
+| H-05 | José: privacidad final, proveedores/retención/borrado/backups y responsable operativo. | Captación pública/lanzamiento |
+| H-10 | José: adoptar límites, timeouts, antispam/rate limit y calendario retries. | Schema/API/flujo dependientes |
+| H-11 | José: catálogo HTTP/retry y mensajes opcionales de longitud. | Errores de red/uncertain/retry UI |
+| H-14 | José: historial/actor atómico y procedimiento manual. | Operación DB |
+| H-07/H-08/H-09 | José: consentimiento/revocación/cuentas QA. | Medición, desactivada en esta fase |
+| HN-04/HERO-01/LF-01 | Codex tras cierres: destino real, captación, navegación integrada y validación final. | Flujo comercial, no laboratorio |
+| R-03/R-06/A-03/A-07 | QA: dispositivos/zoom/lector/auditoría. | Aceptación integral |
+
+### Known Issues
+
+- Schema deliberadamente parcial sin máximos; no usar como protección servidor final. Sin API/DB ni captación: Lead Flow real no terminado.
+- Fallos SWC, test URL y lint descritos arriba, corregidos/repetidos con evidencia. Dev 3007 falló por servidor existente; se conservó/reutilizó 3000. Navegación inicial 3007 dio connection refused. No modificaciones para ocultar fallos.
+- Runner Node avisa sobre type stripping experimental y ESM sin type; tests pasan, configuración/dependencias intactas. No error de consola de la aplicación observado en flujos locales.
+- Privacidad/soporte todavía sin destinos operativos; laboratorio lo indica. Capturas iniciales largas desalineadas reemplazadas por screenshots de viewport; evidencia final no muestra overflow en tamaños revisados, sin afirmación universal.
+
+### Decisions Needed
+
+Se mantienen explícitamente H-03/H-04/H-05/H-06/H-10/H-11/H-14 y pendientes de medición. No se solicita otra adopción del stack ni de form_start. LF-01/02/03 son interpretaciones locales documentadas, sin resolver decisiones de José.
+
+### Recommended Next Step
+
+Cerrar decisiones de parámetros/mensajes/operación y configurar receptor privado QA con privacidad/contactos reales. Después implementar API/transacción/jobs y flujo cliente, probar concurrency/timeout+replay/fallo de aviso con servicios reales y habilitar destino comercial. No publicar ni activar tracking por esta entrega.
+
+---
+
+## Completion Report — Lead Flow v2 / Sheets readiness, 19/10/2026
+
+Working tree con cambios previos preservados, sin commit nuevo. Revisión previa entregada antes de código en chat; decisiones posteriores de José: tres categorías reconfirmadas y problema opcional; todavía no hay Sheet/Service Account. Evidencia actual: [checks](evidence/lead-flow-v2/checks.md), [captura paso2](evidence/lead-flow-v2/step2.png). Los PASS anteriores no se trasladan al nuevo flujo.
+
+### Implemented
+
+- LeadForm.tsx/CSS: dos pasos, seis obligatorios paso1, radios de inversión obligatorios paso2, problema opcional; conserva valores/selección, foco al heading/primer inválido, UUID en memoria estable por instancia. Formulario exclusivo del laboratorio development existente.
+- schema.ts y tests: nuevo contrato local estricto y máximos de referencia; no URL/CRM ni campos antiguos. Reglas teléfono locales explícitamente provisionales en LF2-LIMIT, no API final.
+- decisions.md: decisiones nuevas y cierres H-11/H-14 documentales, H-10 parcial. lead-form-review.md registra conflictos/sustituciones, pendientes y alcance. google-sheets-schema.md contiene ambos datasets y pasos de configuración; measurement-readiness.md separa señales/finalidades.
+- Sin API/adapter/DB/GTM/CMP, sin estados de red ni éxito simulado. Sin cambios de estrategia, diseño general, dependencias o lockfile.
+
+### Validated
+
+| ID / subcaso | Estado | Método / alcance |
+| --- | --- | --- |
+| B-03/typecheck-LF2 | PASS | npm run typecheck exit0 |
+| B-03/lint-LF2 | PASS | npm run lint exit0 |
+| B-03/build-LF2 | PASS | npm run build exit0, rutas estáticas |
+| F-02/schema-local-LF2 | PASS | tres tests Node: reglas, límites, catálogo y rechazo campos retirados; no servidor HTTP |
+| F-01/nuevo-schema-local-LF2 | PASS parcial | Navegador: dos pasos y ocho campos nuevos, problema opcional; criterio histórico incompatible documentado |
+| F-04/pasos-local-LF2 | PASS parcial | Vacío bloquea ambos pasos, foco primer inválido; avance y vuelta enfocan heading |
+| A-02/radios-vuelta-LF2 | PASS parcial | Flecha cambia selección, Volver conserva datos, Continuar conserva radio, ShiftTab llega a Volver |
+| B-06/console-local-LF2 | PASS parcial | tab.dev.logs warn/error vacío durante flujos observados |
+| git-diff/whitespace-LF2 | PASS | git diff --check exit0 |
+
+### Not Validated
+
+F-02 servidor; F-05–F-10, E-01–E-07 de recepción, idempotencia/concurrencia/doble POST/timeout/replay, estados loading/recoverable/uncertain/success; no receptor/configuración y LF2-IDEM abierto. F-03 URL, F-07 lead+job y E-05 scheduler requieren reconciliar criterio con alcance nuevo, no PASS ni retirada silenciosa.
+
+UUID estático revisado, estabilidad runtime no instrumentada. Sin prueba de secretos con credencial sintética, Network exhaustivo/storage/logs servidor (PR-02/B-05 completos). Responsive320/375/768/1024/1440, contraste y targets medidos, zoom, lector, axe y móviles reales NOT VALIDATED; solo captura del viewport actual. No QA/producción de Sheets ni plataformas/consentimiento. Matriz global sigue NOT VALIDATED.
+
+### Pending
+
+- LF2-STORE BLOCKER, José: crear Sheet privado/proyectoAPI/ServiceAccount, acceso servidor, ID y tabs configurados; bloquea recepción QA. Instrucciones en google-sheets-schema.md.
+- LF2-IDEM BLOCKER, José/implementador: adoptar exclusión/reconciliación que garantice idempotencia concurrente con Sheets; bloquea backend conforme. No mutex multiinstancia ficticio.
+- LF2-PHONE/LF2-OPS DECISION NEEDED, José/implementador: teléfono/normalización/mensajes, contrato HTTP/timeout y estados operativos; cerrar antes de API final.
+- LF2-IPUA DECISION NEEDED, José: privacidad/retención/necesidad; no persistir por defecto.
+- H-04/H-05 y Production Privacy / Retention BLOCKER FOR LAUNCH: contactos, privacidad, retención/borrado, receptor productivo y controles operativos.
+- H-07/H-08/H-09 pendientes de medición. H-10 parcial, H-11/H-14 resueltos documentalmente; no reabrir por informes históricos ni convertirlos en PASS.
+
+### Known Issues
+
+Flujo real incompleto: local valida pero no envía. Se informa antes del formulario y tras validar. Catálogo de errores por campo todavía genérico con título aprobado; teléfono aplica filtro de formato local, no validación/normalización definitiva. Dependencias backend no resueltas.
+
+Fuentes antiguas y acceptance contienen reglas sustituidas; mapa en lead-form-review.md señala cada documento afectado. Se mantienen intactas por alcance de documentación solicitado; usar addendum vigente, no tomar las reglas antiguas como implementación aprobada. No pruebas de recepción ni métricas de rendimiento, conversiones o cumplimiento. Avisos Node experimentales/CRLF no son fallos de checks.
+
+## Verificación de acceso a Google Sheets QA — 19/10/2026
+
+### Implemented
+
+Prueba puntual de autenticación servidor con la credencial local fuera del repositorio. No se copiaron secretos al proyecto, no se modificaron filas ni se conectó todavía el formulario. Sin cambios de código/configuración.
+
+### Validated
+
+LF2-STORE/auth-read: PASS. Identidad de Service Account coincide con la proporcionada por José; token OAuth de alcance spreadsheets.readonly obtenido y solicitud de metadata a Sheets API completada HTTP200. Archivo: analyticsJC - leads QA; pestañas leads y offline_events. Solo nombres/resultado saneado en salida, sin clave/token/filas.
+
+### Not Validated
+
+Permiso de escritura, persistencia de lead, schema físico/cabeceras, POST /api/leads, concurrencia, timeout/replay y éxito real. Lectura no acredita rol Editor ni idempotencia.
+
+### Pending
+
+LF2-STORE parcialmente resuelto: archivo y acceso lector acreditados. Configuración runtime y escritura QA pendientes. LF2-IDEM continúa BLOCKER de persistencia conforme. No cierres de privacidad/medición/lanzamiento.
+
+### Known Issues
+
+Primer intento restringido devolvió CONNECTION_CHECK_FAILED; repetición autorizada fuera del sandbox pasó. No cambio de código para ocultar el fallo. Formulario sigue solo local, sin envío.
+
+## Completion Report — Sheets server-side QA, 19/10/2026
+
+Solicitud explícita: integración real y prueba de persistencia; no deployment. Cambios previos preservados, sin commit nuevo. Evidencia [checks](evidence/lead-sheets/checks.md), [QA real](evidence/lead-sheets/real-qa.json), [timeout/replay](evidence/lead-sheets/timeout-replay.json), [seguridad](evidence/lead-sheets/security.json), [éxito navegador](evidence/lead-sheets/confirmed-success.png).
+
+### Implemented
+
+- src/app/api/leads/route.ts: POST Node server-only indirecto, gate QA local, Origin/Host, tipoJSON y body16KiB, validación compartida estricta, respuestas saneadas sin contacto. Sin logs body/proveedor.
+- src/lib/server/sheets.ts: OAuth JWT de Service Account exclusivamente servidor, ruta credencial externa, timeout8s, cache de token solo memoria, sin errores privados expuestos.
+- src/lib/server/lead-store.ts: lead_id UUID servidor y submission_id en fila; statusreceived, lifecycle sin decisión vacío; appendCells stringValue protege fórmulas y ceros. Unicidad mediante addNamedRange determinista+appendCells en mismo batch atómico; no DB adicional. Reconciliación por lectura tras error, sin segundo append automático; replay original y conflicto409. Señales ausentes permanecen vacías.
+- src/lib/lead/contract.ts y LeadForm: accepted estricto de submission activa; timeout15s ->unconfirmed, retry manual mismo ID/payload, guard de peticiones simultáneas, campos congelados tras envío, cuatro estados H11, foco a éxito y eliminación de contacto. Una incertidumbre anterior no se rebaja a fracaso definitivo por fallo posterior de retry.
+- .env.local privado/ignorado con ruta/ID/configuración QA, sin clave embebida; .env.example nombres vacíos. allowImportingTsExtensions permite ejecutar los mismos módulos TypeScript en Node22 sin segunda implementación ni dependencias nuevas. Scripts setup/tests/auditoría; offline_events contrato documental sin envío.
+- Registro decisions y revisiones actualizado con configuración suministrada y resolución técnica LF2-IDEM para QA probado. No cambios estrategia/generalcopy/DS ni medición.
+
+### Validated
+
+| ID / subcaso LF3 | Estado | Evidencia |
+| --- | --- | --- |
+| B-03/typecheck, lint, build | PASS | comandos exit0 finales;6testsPASS |
+| F-02/server-validation | PASS parcial | schema compartido,422 inválido,413>16KiB, catálogos/límites en unit tests |
+| F-07/Sheets-atomic | PASS | escritura real confirma fila+IDs, mapeo correcto; nueva semántica Sheets sustituye DB/job previo |
+| F-08/concurrency-replay | PASS |4POST simultáneos ->1fila/1lead_id; replay200; conflicto409 sin otra fila |
+| F-06/strict-accepted | PASS parcial | contrato rechaza202/malformed/otra submission; navegador éxito tras recepción real |
+| E-03/timeout-replay | PASS parcial | commit real con fallo inducido de respuesta+lectura ->uncertain; retry recupera mismo lead/fila |
+| E-02/request-security | PASS |403origen,415tipo,413body,405GET; sin insert extra |
+| B-05/client-secrets | PASS parcial | assets build/dev sin fragmentos de clave/ServiceAccount/SheetID;server-only; .env.local ignorado |
+| PR-02/local-logs | PASS parcial |log local disponible sin marcadores contacto QA; fuente sin logging de PII; no logs producción |
+| F-05/loading, F-10/success-focus | PASS parcial | navegador bloquea envío y enfoca éxito real, sustituye campos |
+| B-06/browser-console | PASS parcial |warn/error vacíos durante recorrido observado |
+| B-03/inicial / E-02/inicial | FAIL corregidos |lint globals, TS narrowing y403local por URL interna; repetidosPASS |
+| B-03/red-sandbox | FAIL ambiental, repeticiónPASS |setup/QA/timeout fallaron con restricción; autorizados fuera pasaron |
+
+### Not Validated
+
+Prueba de carga/volumen/cuotas/rangos, backup/restore y borrado/retención coordinados; privacidad/producción/hosting. Network navegador exhaustivo, pruebas con móviles físicos/viewport matrix/lector/axe/contraste de todos los nuevos estados. Timeout validado con fallo inducido y persistencia real, no caída observada de Google. Logs externos no accesibles.
+
+F-09 segunda solicitud intencional mismo email no probada en suite específica; el código deduplica solo submission_id. E-05 avisos/workers excluidos por alcance. GA4/Ads/Meta/CMP/ConsentMode/MP/CAPI/offline_events y métricas de campo NOT VALIDATED. Matriz original contiene criterios anteriores (DB/job/request_id); los subcasos LF3 no acreditan esos contratos obsoletos ni PASS global del MVP.
+
+### Pending
+
+- QA local: sin nueva credencial ni configuración necesaria para repetir uso normal. Utilizar solo sintéticos; revisar y retirar fixtures con sus marcadores mediante procedimiento coordinado tras revisión.
+- Public Launch: José debe cerrar privacidad/retención/contactos/receptor productivo, controles contra abuso, permisos/protección/backup y capacidad operativa. Gate producción permanece cerrado.
+- LF2-STORE cerrado para escritura/lectura QA. LF2-IDEM resuelto técnicamente para escenario probado; mantener marcadores/IDs íntegros y evaluar volumen antes de lanzar.
+- H-10 retenciones pendientes; H11 implementado en QA; H14 mínimos operativos sin política final de conservación. H07/H08/H09 siguen abiertos para medición.
+
+### Known Issues
+
+No flujo productivo. Lectura O(n), marcador técnico por submission y dependencia de cuotas/rangos; no prometer escalabilidad sin carga. Alterar/borrar manualmente filas e IDs/marcadores puede invalidar integridad; no restaurar solo CSV. No deduplicación tras recarga con IDnuevo. Mensajes por campo siguen genéricos, teléfono normaliza separadores sin validar existencia/país. Se conservan tres filas sintéticas para revisión; no datos de terceros ni eventos de plataformas.
+
+Fallos iniciales y límites descritos arriba. No secreto o PII detectados en el alcance escaneado; no afirmación universal sobre servicios externos o producción.
+
+Actualización final LF3: el último build restringido falló EPERM al crear carpeta generada de /_not-found (FAIL ambiental, Known Issue). Repetición del mismo código fuera del sandbox PASS exit0, TypeScript incluido; lint final PASS. Auditoría de secretos/logs repetida sobre build final PASS en su alcance. Sin cambios de código para ocultar el fallo ambiental.

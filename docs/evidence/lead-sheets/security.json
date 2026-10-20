@@ -1,0 +1,7 @@
+{
+  "clientFilesScanned": 117,
+  "credentialOrSheetDataFound": false,
+  "logFilesScanned": 1,
+  "syntheticPIIFound": false,
+  "scope": "Build/dev static assets and available Next dev logs; not production logs"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/strategy.md",
+    "match": true
+  },
+  {
+    "path": "docs/product.md",
+    "match": true
+  },
+  {
+    "path": "docs/wireframe.md",
+    "match": true
+  },
+  {
+    "path": "docs/content.md",
+    "match": true
+  },
+  {
+    "path": "docs/design.md",
+    "match": true
+  },
+  {
+    "path": "docs/technical.md",
+    "match": true
+  },
+  {
+    "path": "docs/measurement.md",
+    "match": true
+  }
+]

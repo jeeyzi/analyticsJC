@@ -1,0 +1,41 @@
+{
+  "http": [
+    {
+      "http": 200
+    },
+    {
+      "http": 200
+    },
+    {
+      "http": 201
+    },
+    {
+      "http": 200
+    }
+  ],
+  "persistence": {
+    "status": "PASS",
+    "submission_id": "1888c164-b76b-4985-a14b-697e5143f371",
+    "lead_id": "25173e1f-dce6-4021-a6b7-62811b900b5a",
+    "rowCount": 1,
+    "requests": [
+      200,
+      200,
+      201,
+      200
+    ],
+    "replay": 200,
+    "mapping": "PASS",
+    "unavailableSignals": "EMPTY",
+    "literalFormula": "PASS"
+  },
+  "security": {
+    "conflict": 409,
+    "validation": 422,
+    "payload": 413,
+    "origin": 403,
+    "contentType": 415,
+    "method": 405,
+    "noAdditionalRow": true
+  }
+}

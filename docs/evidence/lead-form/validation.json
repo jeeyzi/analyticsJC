@@ -1,0 +1,17 @@
+{
+  "errors": [
+    {
+      "describedby": "diagnosis-email-error",
+      "error": "Indica un email válido para que podamos contactarte.",
+      "name": "email"
+    },
+    {
+      "describedby": "diagnosis-website-error",
+      "error": "Indica un dominio o una dirección web válida.",
+      "name": "website"
+    }
+  ],
+  "focus": "diagnosis-email",
+  "preservedName": true,
+  "roleAlert": "Revisa los campos indicados para enviar tu solicitud."
+}
