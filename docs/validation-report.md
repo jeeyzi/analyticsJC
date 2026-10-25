@@ -1,5 +1,242 @@
 # Completion Report — foundation local
 
+## Cierre final Web Measurement local/QA — 25/10/2026
+
+### Documentation Updated
+
+Actualización exclusivamente documental. Nueva evidencia manual aportada por José en el chat: [WM-QA-FINAL-2026-10-25](evidence/acquisition/manual-final-qa-2026-10-25.json). Fecha de registro, sin inventar fecha de prueba, capturas, IDs ni nueva ejecución del agente. Evidencia histórica conservada; este cierre sustituye solo sus estados QA ya resueltos.
+
+### Final Measurement Status
+
+**LOCAL / QA MEASUREMENT: VALIDATED**. Recorrido Browser → GTM → GA identity → application → /api/leads → Google Sheets VALIDATED QA, incluyendo lead real QA con IDs reales confirmado por José. No production-ready. H-09 resuelto para integración QA de esta fase, no para producción ni toda configuración de plataforma.
+
+### Validated
+
+| Alcance / criterio | Resultado QA | Procedencia |
+| --- | --- | --- |
+| WM-01/02/03/04/05 arquitectura dataLayer, CTA/start/error/submit | VALIDATED | Pruebas previas del agente + confirmación manual final de eventos |
+| WM-06 generate_lead / prevención de duplicados / retry | VALIDATED | accepted válido, dedupe, timeout/replay previos; sin nueva ejecución |
+| GTM + GA4 + cookies first-party Google | VALIDATED | Confirmación manual José |
+| page_view automático | VALIDATED | Confirmación manual José; no implementación manual ni nueva matriz pathname/hash atribuida al agente |
+| ACQ-01/03/04/10 UTMs dinámicas / gclid / gbraid / wbraid → Sheets | VALIDATED | End-to-end manual José + fixtures/lecturas reales previas |
+| ID-01/02/03 último contexto válido / actualizaciones / fuente GTM | VALIDATED | Implementación/tests/recorridos previos y fuente real confirmada por José |
+| ID-04 GA IDs reales → Sheets | VALIDATED | Lead real QA confirmado por José con ambos IDs, submission_id/lead_id, acquisition disponible y contacto privado |
+| ID-05/06 snapshot/retry/ausencia | VALIDATED | identity/browser.json y sheets.json; retry idéntico, una fila y captación sin IDs |
+| ID-07 bridge / aislamiento de GA4 | VALIDATED en contrato QA | Usuario confirma evento técnico no enviado a GA4; mapper/tests previos sin user_data/GA IDs custom |
+
+GTM confirmado: Analytics Client ID; Analytics Storage → Session ID → Measurement ID específico de GA4. analytics_identity_ready entrega ga_client_id/ga_session_id solo a aplicación. get/callback500ms retirados; sin dos fuentes concurrentes ni parseo manual de cookies.
+
+Query antes del hash: `/?utm_source=test&utm_medium=test#diagnostico` soportado; `/#diagnostico?utm_source=test` no soportado. No cambia parser. generate_lead.user_data solo QA: email/phone_number y first_name/last_name en estructura existente (nombres en address); excluido de GA4. GA IDs exclusivamente contexto privado; GA4 solo parámetros analíticos aprobados.
+
+Checks técnicos anteriores:34/34tests, typecheck/lint/build PASS en implementación de identidad. No se ejecutaron otra vez para editar documentación. Revisión de esta tarea: JSON parseable, enlaces locales existentes, coherencia/diff documental y hashes SHA256 de archivos técnicos sin cambios.
+
+### Deferred
+
+NOT VALIDATED / DEFERRED: Meta Pixel/_fbp/_fbc/fbp/fbc, Consent Mode, CMP, producción/tráfico productivo real, offline event delivery, Google Ads offline conversions, Enhanced Conversions, Meta CAPI y GA4 Measurement Protocol. Sin fuente Meta validada; columnas vacías válidas, sin fabricación. No se infieren pruebas nuevas de dimensiones/key events, cada variante pathname/hash, saneamiento automático de URL/PII, revocación, dispositivos físicos, rendimiento o certificación de accesibilidad.
+
+### Production Blockers
+
+H-07/H-08: mecanismo/copy/política de consentimiento y revocación, a resolver por José con mecanismo/proveedor adoptado. H-04/H-05: dominio/contactos operativos e información real de privacidad, finalidades/destinos/retención/borrado. Operación/seguridad/credenciales y condiciones de Deployment pendientes según alcance vigente de Sheets, sin reintroducir arquitectura histórica sustituida. H-09 producción: permisos/configuración/entorno y validación de release no se cierran por QA. No despliegue ni tráfico productivo autorizados por este registro.
+
+### Known Issues / límites
+
+Nueva evidencia externa es confirmación manual del usuario, no captura Preview/DebugView/Network ni nueva lectura de proveedor por el agente. Los NOT VALIDATED antiguos de fuente/integración QA quedan cerrados mediante esta evidencia adicional; sus resultados originales, errores corregidos y fixtures sintéticos permanecen intactos. Sin afirmación de cumplimiento legal o readiness productivo.
+
+## GA identity mediante GTM — 25/10/2026
+
+### Implemented
+
+Solicitud explícita de José y arquitectura adoptada en decisions.md. Root cause: aplicación solo tenía gtag get/GoogleTagReady, no consumidor del evento GTM validado por José. Nuevo identity.ts observa último par completo válido histórico y push futuro, memoria documento y copia síncrona; runtime retira get/readiness/500ms y usa esa única fuente. LeadForm retira await previo al frozen JSON, sin cambiar demás contrato/retry. Env example deja de pedir Measurement ID. Backend/columnas/GA4mapper/UI/user_data/acquisition sin cambios. Informe completo con nueve secciones solicitadas en identity-review.md. Sin commit de esta tarea.
+
+### Validated
+
+ID-01/02/03 PASS:34tests totales y navegador pre/post-mount; validación de ambosIDs, inválidos/templates/ausentes, wrappers, par atómico y snapshots aislados. ID-04 PASS: tres leads sintéticos contra receptor y Sheets reales, exactamente una fila/submission; pre/post guardan ambosIDs, missing vacíos; cabecera36columnas intacta. ID-05 PASS: primer POST201 persistido, respuesta retrasada16s provoca timeout cliente15s/unconfirmed/0lead; evento posterior cambia memoria; retry JSON byte-idéntico,200replayed, mismo lead_id/una fila/1generate_lead. ID-06 PASS: ausenciaIDs no bloquea accepted ni confirmed_success. ID-07 PASS aplicación: evento técnico no allowlisted ni mapeado; IDs rechazados por mapper/eventos, sin keysIDs en eventos web de QA. ID-08 PASS:34/34tests, typecheck/lint/build exit0, git diff --check exit0, Next16.4.3. Evidencia docs/evidence/identity/browser.json,sheets.json,tests.tap; script identity-sheets-verify.mjs lee servicio real sin exponer contacto/credenciales.
+
+Fallos QA ejecutados:2tests iniciales por factory con defaults que ocultaban undefined explícito; corregida factory, expectativas preservadas y suite34/34PASS. Primera observación navegador antes de efecto daba runtime ausente: espera explícita de bootstrap solucionó harness. Primer ensayo timeout esperó mensaje histórico equivocado y agotó selector; aplicación sí mostró unconfirmed_reception correcto. Se repitió con copy real sin cambiar UI; ensayo previo dejó una fila sintética adicional no borrada.
+
+### Not Validated
+
+Origen Google real y destino GA4/Preview no repetidos por agente: carga normal localhost no tenía analytics_identity_ready. José aporta validación manual Preview de IDs reales y ningún tag para evento; se registra como evidencia aportada. QA inyectó identidades sintéticas y bloqueó Google en contextos aislados para evitar envío de fixtures. Por tanto ID-07 extremo externo/GA4/producción/Consent/campo NOT VALIDATED; PASS local no acredita recepción/ausencia de evento en propiedad GA4. Sin prueba de dispositivos físicos ni matriz responsive completa por cambio sin UI.
+
+### Pending
+
+José: confirmar Preview con aplicación actualizada/origen real y, si corresponde, revisar DebugView/Network sin analytics_identity_ready ni ep.ga_client_id/ep.ga_session_id (IDs nativos GA cid/sid son distintos de custom params). No bloquea implementación local; cierre externo H-09/activación conserva condiciones Privacy/H-07/H-08 y producción existentes.
+
+### Known Issues
+
+Sin polling/cookies/fallback get ni fuente concurrente. Terceros que reemplacen push sin delegar podrían evitar observación inmediata; snapshot rescanea historia y recupera último evento disponible. Documento nuevo sin IDs continúa sin medición privada. Node sigue con warnings experimentales/tipo módulo preexistentes. No se atribuye al agente validación real de fuente GTM aportada por José. Ver identity-review.md para Root Cause/Architecture/Sheets/Retry/Isolation/Fallback y límites.
+
+## Actualización de seguridad Next.js — 23/10/2026
+
+### Implemented
+
+Solicitud explícita de ejecutar next upgrade --agent=security. CLI selecciona Next.js16.4.3 exacto desde16.4.0. Instalado con npm y lockfile fijado; política experimental.agentUpgrade=security. Worktree aislado codex/next-security-16-4-3, commit a47d26a (solo package.json/lock/config). Mismo parche aplicado al checkout actual sin incorporar cambios previos al commit aislado. eslint.config.mjs declara tres globals reales para script Node GTM existente. decisions/technical/acceptance y next-security-review.md registran alcance. Sin despliegue ni cambios de UI/contratos.
+
+### Validated
+
+SEC-UP-01 PASS: npm install exit0 y next --version=16.4.3 en ambos árboles; npm audit actual exit0 con total0 conocidas (evidence/next-security/npm-audit.json). SEC-UP-02 PASS: worktree typecheck/lint/build y6/6tests; checkout actual typecheck/lint/build y31/31tests (tests.tap). SEC-UP-03 PASS parcial local: dev reiniciado en127.0.0.1:3000 muestra Next16.4.3; navegador Chromium abre Home/formulario, ChileCL/límite9; GTM bootstrap/externo ambos HEAD; vacío no CTA/API; sintéticos válidos avanzan Step2 con un click_to_action/continue_diagnosis y0form_submit/lead/API. Network gtm.js200 y ninguna solicitud /api/leads. browser.json/continue.json/network.txt. Sin error de hidratación observado.
+
+Fallos ejecutados: preparación sandbox sin npm; tests baseline sin condición react-server fallan guard server-only; repetir con condición correcta6/6PASS; lint checkout actual falla4globals Node del script deliverables/gtm existente. Entorno ESLint corregido declarativamente y lint/build repetidosPASS. No se modificaron tests para esconder fallos.
+
+### Not Validated
+
+SEC-UP-03 integración/producción/campo NOT VALIDATED: no envíos reales Sheets, concurrencia/timeout, GA4/Ads/Preview/Consent/despliegue ni pruebas de explotación por este parche. npm audit0 es estado del registro conocido, no certificación universal. No repetida matriz completa responsive/teclado/dispositivos físicos.
+
+### Pending
+
+Sin remoto: PR no aplica hasta configurar repositorio remoto. Commit aislado disponible a47d26a; checkout actual conserva cambios previos sin commit. H-07/H-08/H-09/Privacy y puertas de lanzamiento existentes conservadas; no bloquean parche local, sí activación correspondiente.
+
+### Known Issues
+
+Browser solicita /favicon.ico y recibe404; sin favicon en app actual, no bloquea formulario. Se deja fuera del parche de seguridad. Sin otros warnings/errores de consola observados en ventana probada. Warnings Node strip-types/tipo módulo existentes. Worktree/checkout preservan React19.3.0; CLI eligió Next16.4.3 y audit no reporta vulnerabilidades actuales. Script Node requiere globals ESLint; corregidos sin alterar ejecución. Historial completo de fallos y límites en next-security-review.md.
+
+## Primer CTA y teléfono internacional — 21/10/2026
+
+### Implemented
+
+Confirmaciones de José registradas en decisions.md: Continuar emite evento solo si Step1 válido permite avanzar; selector de países con Chile inicial. LeadForm/PhoneField/Field, schema compartido y contrato measurement implementan click_to_action (continue_diagnosis/form_step_1/diagnosis_step_2), prefijo +56 y 9 dígitos nacionales CL; otros países usan metadata fijada libphonenumber-js1.13.15. Opciones españolas serializadas por LeadFormPreview para mismo render servidor/cliente. Sin nuevas columnas/contacto en analytics ni cambios al accepted/replay. Detalle en form-phone-review.md. Sin commit.
+
+### Validated
+
+PHONE-01/02/03 y CTA-F1-01 PASS en alcance local: browser-final.json registra Chile inicial, límite9, US+1/límite10, inválido sin CTA, dobleclick válido con un CTA, Enter válido, form_start1 y cero form_submit/generate_lead/recursos API. No se envió formulario final. 31/31 tests PASS con `node --conditions=react-server --experimental-strip-types --test tests/*.test.mjs`; tests-final.tap. npm run typecheck/lint/build exit0. git diff --check exit0. Recarga final sin warnings/errors en consola durante ventana observada.
+
+FAIL ejecutados y resueltos: import metadata con atributo JSON incompatible con wrapper exportado; hidratación por diferencias ICU de Intl.DisplayNames servidor/navegador; comando de tests sin condición react-server. Corregidos import, opciones serializadas y comando respectivamente; repetición completa PASS sin modificar tests para ocultar fallos. browser.json conserva evidencia anterior del aviso de hidratación; browser-final.json documenta repetición limpia. phone-field.png muestra control vacío sin PII.
+
+### Not Validated
+
+GA4/Preview externo/Consent/producción/campo y existencia/titularidad telefónica NOT VALIDATED. No se repitió integración real Sheets ni concurrencia/timeout por esta modificación; no equivalen a PASS actual de esos flujos. No acredita dispositivos físicos, lector completo ni rendimiento de campo.
+
+### Pending
+
+José: H-09, configurar/validar parámetros CTA en GTM/GA4 para cerrar destino externo. H-07/H-08/Privacy y demás condiciones de lanzamiento mantienen sus puertas. No bloquean esta prueba local; sí la activación productiva correspondiente.
+
+### Known Issues
+
+Aviso de hidratación corregido usando props serializadas; ningún warning/error en recarga final observada. Runner Node emite advertencias experimentales de strip-types/tipo módulo; suite exit0. Longitud posible no acredita número real. Mensajes genéricos aprobados conservados; futuros cambios de planes telefónicos requieren actualizar metadata. Captura IAB incluye área vacía de su superficie; prueba de controles también documentada por DOM/CDP.
+
+## Corrección React script/HMR — 21/10/2026
+
+### Implemented
+
+RootLayout deja de renderizar script JSX. GtmHead devuelve null y useEffect instala bootstrap/gtm.js directamente en document.head con createElement. Gtm helper conserva gates, dedupe, dataLayer y exclusión de producción. Sin cambios UI/Lead Flow/GA4/Consent.
+
+### Validated
+
+GTM-H-01: FAIL anterior aportado por José (Encountered a script tag...) durante render cliente. Corregido; PASS IAB recarga y Fast Refresh real (logs rebuilding/done, mismo timeOrigin): ambos scripts HEAD, un gtm.start/recurso, sin console error/warning tras cambio. Evidencia browser-head-effect.json;4/4testsGTM y suite27/27, typecheck/lint/build PASS. No silenciar logs ni cambiar tests para esconder fallo. HTTP-client-head.json distingue instalador cliente de script SSR. Sin submits/PII.
+
+### Not Validated
+
+GA4/Tag Assistant completo/Consent/productivo/campo y flujos de captación completos no revalidados por este cambio. Carga tras hidratación: ausencia de snippet en HTML SSR es esperada y no equivale a ausencia en HEAD del navegador.
+
+### Pending
+
+H-09 destinos/configuración/QA externa y H-07/H-08/Privacy/operación conservan sus puertas. Ninguna autorización nueva de tracking productivo.
+
+### Known Issues
+
+La corrección anterior de HEAD omitió probar Fast Refresh; se reconoce y conserva evidencia. Error React corregido sin mover scripts a BODY. No errores/warnings en ventanas de recarga/HMR observadas; no afirmación universal sobre tags remotos.
+
+## Corrección ubicación real GTM HEAD — 21/10/2026
+
+### Implemented
+
+Bootstrap inline HTML nativo en root head, retirado next/script para ese snippet; gtm.js se inserta explícitamente en document.head. Gates/ID/dataLayer/dedupe/producción preservados. tests/gtm y verificador HTTP comprueban HEAD real, no ID serializado. Fuentes/adopción en decisions y gtm-head-review.
+
+### Validated
+
+GTM-H-01 previo FAIL: captura de José muestra script en BODY; verificación HTTP anterior insuficiente para DOM. Corregido y PASS IAB Chromium localhost tras recarga: parent HEAD para ambos scripts, bootstrap1/container1/gtm.start1/recurso1; una petición gtm.js200, contenedor registrado, warnings/errors=[] y Network sin truncación. Evidencia docs/evidence/gtm-head/browser-native-head.json.3/3tests helper, typecheck/lint/build PASS. Sin submits/contacto para QA. HTTP nativo/producción en http-native-head.json.
+
+### Not Validated
+
+GA4 DebugView/recepción/pageviews, tags remotos/Preview completo/PII, Consent/producción/campo no se acreditan por ubicar snippet. No nuevo QA de formulario/Sheets por este cambio aislado.
+
+### Pending
+
+H-09 configuración y QA de destinos por José; H-07/H-08/Privacy/lanzamiento siguen abiertos. Usuario puede comprobar document.getElementById('analyticsjc-gtm-bootstrap').parentElement.tagName y analyticsjc-gtm-container: ambos HEAD.
+
+### Known Issues
+
+Fallo BODY anterior corregido y limitación del verificador antiguo reconocida; evidencia histórica conservada. La nueva pestaña local válida se inspeccionó; no se reutilizó ni sorteó pestaña error bloqueada. Sin errores/warnings en la recarga observada; no afirmación universal sobre tags. El cambio no habilita producción.
+
+## GTM head QA — 21/10/2026
+
+### Implemented
+
+GTM-K5MZ4W66 solicitado por José integrado en root head mediante next/script beforeInteractive y helper gtm.ts. ID por entorno; GTM_QA_ENABLED únicamente development/local y guard navegador loopback/script único. .env.development.local local habilitado; no credenciales ni activación productiva. Contrato/Lead Flow anteriores preservados. Revisión en gtm-head-review.md.
+
+### Validated
+
+GTM-H-01 PASS:3tests nuevos gates/duplicación/mismo array/async/fallo seguro; suite26/26, typecheck/lint/build PASS. HTTP local200:1bootstrap en head con ID/estrategia correctos; gtm.js público200,335081bytes (lectura, no ejecución navegador). Artefacto producción sin GTM QA. Evidencia docs/evidence/gtm-head/http.json; script reproducible node --use-system-ca scripts/gtm-qa-verify.mjs con acceso red fuera sandbox y CA Windows, TLS verificado. Sin submits/contacto en QA loader.
+
+### Not Validated
+
+GTM-H-02 navegador/Preview/Tag Assistant/Network de tags, GA4 y su recepción/configuración/pageviews/PII/GA IDs, Consent y producción/campo. HTTP200 no PASS global M-02, H-09 ni ingestión GA4.
+
+### Pending
+
+José: revisar/configurar contenedor real y Preview, GA4 y readiness, allowlists y recogida automática desactivada antes de pruebas de lead. H-09 parcial (ID aportado); H-07/H-08/Privacy/operación bloquean lanzamiento. No autorización de Ads/Meta/user_data hacia plataformas.
+
+### Known Issues
+
+Lint del script HTTP inicialmente FAIL (AbortSignal/Buffer sin declarar), corregido con referencias/import explícitos; repetición final registrada. No cambios de tests para ocultar fallos.
+
+Política de navegador rechazó acceso a pestaña error; no workaround, ejecución navegador NOT VALIDATED. LocalHTTP inicialmente inaccesible por proceso sandbox; reinicio de proceso propio fuera en3000 resolvió. EADDRINUSE intermedio, resuelto. Google TLS inicial FAIL de CA Node; --use-system-ca PASS sin desactivar TLS. Warning filesystem lento, no medición de performance. Datos restringidos siguen en dataLayer compartido; comportamiento de tags remotos no acreditado.
+
+## Web Measurement local/QA — 20/10/2026
+
+### Implemented
+
+Decisiones explícitas registradas en decisions.md; contrato/diccionario/payloads/mapping y límites en web-measurement-review.md. Sin commit nuevo; cambios anteriores preservados. src/lib/measurement/{events,runtime}.ts y componentes measurement implementan dataLayer central/allowlist/dedupe/QA gates, CTA y eventos del formulario sin cambiar UI. ga privado opcional en contrato/lead-store mapea columnas existentes; no toca operación atómica, llave, adquisición ni replay. Sin tag loader ni eventos manuales de página, measurement_version, Ads/Meta/CMP/offline.
+
+### Validated
+
+Windows, Node22.17.0/npm10.9.2; desarrollo local existente http://127.0.0.1:3000, IAB Chromium desktop y375px emulado por teclado. Solo fixtures sintéticos; Sheets privado real. Evidencia saneada en docs/evidence/measurement: browser-replay.json, browser-isolation.json, sheets-verification.json, security.json, source-hashes.json y capturas de éxito. La pérdida de respuesta es inyección cliente DESPUÉS de HTTP201/commit real, no caída observada de Google. 422/503 de segundo recorrido son MOCKS explícitos; POST final201/lectura de fila sí reales.
+
+| ID | Resultado | Método/evidencia y límite |
+| --- | --- | --- |
+| WM-01/M-01 local | PASS | Inicialización idempotente, mismo array, schema runtime/tipos; rechaza eventos/keys no adoptados, sin measurement_version ni eventos de página propios |
+| WM-02/C-03 local | PASS | Hero dblclick →1evento, solución click →1, experiencia Enter →1, header click →1; cuatro ubicaciones correctas, sin evento submit como CTA |
+| WM-03/M-04 local | PASS | Foco por validación sin start; editar→1start, Step2/Volver/corrección/retry sin otro; bootstrap repetido y runtime compartido; unidad fallback+dedupe. Strict Mode desarrollo, no prueba de remount React completo entre rutas |
+| WM-04/M-05 local | PASS | Cliente vacío multiple, inversión requerida solo campo; Continuar inválido sin POST. 422mock→server/email/server_validation;503mock→reception/none/recoverable_error. Unitarios de formatos/opciones/límites y múltiples campos |
+| WM-05 local | PASS | POST initial y retry observados; doble click de submit →1POST activo. No submit de cambio de paso |
+| WM-06/M-06 local | PASS | 201real con respuesta descartada→uncertain/0lead; retry JSON idéntico→200replay/1lead. Nuevo accepted/evento de mismo lead rechazado por Set; unitarios malformed/202/otra submission |
+| WM-07/M-07/PR-02 local | PASS | PII solo cuatro campos user_data al generar lead; empresa/problema ausentes en measurement, sin PII fuera de estructura. Mapper probado con payloads/reset null; allowlist GA4 exacta sin user_data. No acredita contenedor externo |
+| WM-08/M-09 contrato | PASS parcial | get mock con ambos campos, undefined/error/timeout total500ms, bridge mismo array, callbacks tardíos ignorados; mapping privado unitario. Navegador sin tag: IDs omitidos/celdas vacías. Fuente real Google NOT VALIDATED |
+| WM-09/E-06 local | PASS | Push lanza2veces (submit/lead), UI confirma201real con foco éxito y fila real; medición perdida no se reenvía. Ocho replays HTTP concurrentes sobre2fixtures existentes→200/mismo lead/una fila/contexto inmutable |
+| ACQ/Lead baseline acotado | PASS | Cinco campos/IDs opcionales siguen saneador;2filas reales conservan snapshot esperado y retry exacto. Suite previa13tests incluida. GA/Meta/consent ausentes; no afirmar revisión global de baseline |
+| WM-10/B-03 | PASS | node --conditions=react-server --experimental-strip-types --test tests/*.test.mjs:23/23; npm run typecheck, npm run lint y npm run build exit0. Tests GA callbacks son mocks, no integración |
+| B-05/PR-02 escaneo local | PASS parcial |139assets y1log inspeccionados:sin credencial/SheetID ni marcadores contacto de esta fase. No logs de hosting/proveedor |
+| B-06/Network local | PASS parcial |104entradas request/response, sin truncación ni destinos externos; POST201/200; warn/error=[] en recorrido. Solo ventana observada |
+| Responsive/teclado local | PASS parcial |375px:sin overflow y errores/retry/éxito operables por teclado. No dispositivos físicos ni validación táctil |
+
+### Not Validated
+
+page_view automático inicial/pathname/hash en Google Tag real (M-03 sustituido), GTM/GA4 recepción real/Preview/Tag Assistant/DebugView/key event/Custom Dimensions; GA IDs reales y su persistencia real; H-07/H-08/CO-*, privacidad productiva, producción/campo/CWV/seguridad pública/CI/servicios excluidos. Remount React real entre rutas y autofill nativo completo pendientes (runtime/dedupe y fallback probados unitariamente). Fuente de GA no disponible no equivale a PASS integración. Ausencia de requests externos no acredita consentimiento. Móviles físicos, touch, lector de pantalla y auditoría WCAG completa no ejecutados.
+
+### Pending
+
+- José: H-09 contenedor/propiedad QA y permisos, autorización/configuración de prueba externa; verificar pageviews automáticos y URL/referrer saneados antes de cualquier request. Bloquea medición externa, no contrato local.
+- José: H-07/H-08 Consent/Storage Governance, revocación y política final; contactos/privacidad/retención/protección/operación productivas. Bloquean lanzamiento público.
+- Responsable QA/José: revisar2fixtures sintéticos nuevos y limpieza coordinada fila+marcador. No se borran registros ni rangos en esta fase;8replays de auditoría no crearon filas nuevas.
+
+### Known Issues
+
+- Lint inicial FAIL por prefer-rest-params en bridge arguments oficial; regla localizada/documentada y repetición PASS. No cambio de tests para ocultar fallos.
+- Intentos de servidor3100 fallaron: npm/PowerShell perdió --port; CLI directa detectó servidor previo3000. Acceso localhost restringido en sandbox. Se reutilizó servidor existente mediante flags QA temporales, sin detenerlo. Auditoría Sheets fuera sandbox PASS.
+- IAB device emulation375px: clicks de Continuar no activaron cambio visible; teclado Enter funcionó, sin overflow ni errores de consola. FAIL de recorrido inicial por click emulado. Repetición con capability viewport soportada: Continuar/Volver por click PASS, sin cambio de código ni nueva submission; solicitados375×812, observados417×902 CSSpx. Evidencia responsive.json; no afirmar375px por click/touch ni atribuir fallo inicial definitivamente a producto. Touch/dispositivo real pendiente.
+- Node22 conserva warnings experimentales strip-types/module type, tests exit0. No cambios de stack/dependencias para silenciarlos.
+- dataLayer es memoria compartida y conserva PII restringida de lead hasta destruir documento; sin tags de terceros activos. Fallo de push puede perder eventos, deliberadamente sin replay. No rendimiento ni cumplimiento universal acreditados.
+
+Actualización final: segundo typecheck/build PASS y tests23/23 PASS con salida tests.tap. production-artifact.json PASS sobre HTML generado: sin preview de formulario, MeasurementBootstrap, scripts GTM/GA ni eventos de página manuales/measurement_version. No es prueba de deployment. Archivo temporal .env.development.local retirado; .env.local y servidor previo preservados; fetch/push de QA y viewport restaurados. Secrets/log scan final se registra por separado con su conteo real. Los2fixtures de Sheets permanecen para revisión, sin limpieza destructiva.
+
+## Corrección valores dinámicos — 20/10/2026
+
+Ver acquisition-dynamic-values-review.md. 13/13 tests PASS, lint PASS, build con TypeScript PASS. Suite Sheets real con campaña/ID generados en runtime PASS: mapping, una fila por submission concurrente, replay sin cambios y ausencias vacías. Evidencia docs/evidence/acquisition/dynamic-values-qa.json. Dos filas sintéticas nuevas conservadas. Auditoría124 assets/1 log sin credenciales ni marcadores de PII de QA. Primera prueba UUID/defensa teléfono FAIL por falso positivo, corregida y regresión PASS. No nueva prueba de navegador en esta corrección; snapshot/retry UI no modificados. No garantías de ausencia universal de PII ni validación productiva/CMP/plataformas. Persistencia entre reloads no implementada, dependiente de futura decisión Consent/CMP.
+
+## Actualización Acquisition QA — 20/10/2026
+
+Clasificación, excepción local adoptada y evidencia ACQ-01..10: [acquisition-review.md](acquisition-review.md). PASS limitado a captura sintética, navegación interna corregida, persistencia real y replay. M-09/M-10/CO-* y producción NOT VALIDATED. Prueba inicial navegación FAIL; enlace corregido y repetición PASS. Baseline Sheets preservado. El informe foundation siguiente es histórico.
+
 Fecha: 10/10/2026, America/Santiago. Windows, Node 22.17.0, npm 10.9.2. Build optimizado en http://127.0.0.1:3000. Navegador: Codex In-app Browser (Chromium), viewports emulados; no dispositivos móviles reales. Commit: no existe; carpeta sin Git/remoto. Sin despliegue, mocks ni servicios de recepción.
 
 Los sufijos `/foundation` identifican subcasos limitados de criterios existentes; no son nuevos requisitos ni PASS del criterio completo del MVP. Foundation implementada y checks locales aprobados; MVP y release no terminados.
@@ -723,3 +960,36 @@ No flujo productivo. Lectura O(n), marcador técnico por submission y dependenci
 Fallos iniciales y límites descritos arriba. No secreto o PII detectados en el alcance escaneado; no afirmación universal sobre servicios externos o producción.
 
 Actualización final LF3: el último build restringido falló EPERM al crear carpeta generada de /_not-found (FAIL ambiental, Known Issue). Repetición del mismo código fuera del sandbox PASS exit0, TypeScript incluido; lint final PASS. Auditoría de secretos/logs repetida sobre build final PASS en su alcance. Sin cambios de código para ocultar el fallo ambiental.
+
+## Configuración exportable GTM → GA4 — 21/10/2026
+
+### Implemented
+
+Archivo deliverables/gtm/GTM-K5MZ4W66_workspace3_GA4.json generado desde el original de Downloads; 17 variables, 5 activadores Custom Event y 5 tags GA4 Event hacia el destino existente G-N0GCP60M3V. Eventos click_to_action/form_start/form_error/form_submit/generate_lead; mapeo explícito por evento, CTA Continuar incluido, sin user_data. Formularios automáticos y ogt_1p_data_v2 desactivados en el export. Fuentes: contrato vigente decisions/measurement/web-measurement-review/events.ts. Sin cambios de aplicación ni publicación. Generador y revisión en deliverables/gtm/build-ga4.mjs y README.md; sin commit.
+
+### Validated
+
+GTM-J-01/02/03 PASS local: node deliverables/gtm/build-ga4.mjs, Windows/Node22.17.0. JSON, IDs, referencias, destino conservado, tablas parameter/parameterValue, parámetros permitidos, ausencia de mapeo de contacto; funciones URL/referrer y opcional form_id ejecutadas con fixtures sintéticos en VM; hash del original intacto. Evidencia saneada deliverables/gtm/validation.json con hashes. Primer intento del generador FAIL por ENOENT/ruta %20, corregido con fileURLToPath; repetición PASS. No se ejecutan builds/tests frontend al no modificarlo.
+
+### Not Validated
+
+GTM-J-04: importación UI/formato optimizado. GTM-J-05: Preview/Tag Assistant/Network, omisión undefined y recepción GA4 DebugView. GTM-J-06: page_view automático inicial/SPA, saneamiento previo y duplicación por pathname/hash. GTM-J-07: Consent/revocación, producción/campo y dispositivos físicos. Ningún evento enviado a Google por esta tarea. Validación estática no equivale a integración acreditada.
+
+### Pending
+
+José/admin GTM: importar en workspace QA con Combinar, revisar conflictos y ajustes gtagConfig; no duplicar el destino al renombrar. Configurar/verificar saneamiento antes del page_view automático y probar los cinco eventos sintéticos con Network y DebugView. José/admin GA4: comprobar que el destino es el entorno autorizado, configurar dimensiones necesarias/evento clave cuando proceda; el JSON no modifica propiedad GA4. H-07/H-08/privacidad bloquean lanzamiento, H-09 sigue parcial hasta configuración y QA reales. Ver instrucciones completas en deliverables/gtm/README.md.
+
+### Known Issues
+
+El destino automático original no contiene saneamiento de URL/referrer previo al page_view. Los overrides de las cinco etiquetas añadidas solo cubren esos eventos; no corrigen ese page_view. Este límite bloquea declarar el contenedor listo para publicación. Otras detecciones automáticas del original se conservan y requieren revisar su payload. Error local de ruta corregido, no un fallo GTM observado. No se afirma exclusión universal de PII ni recepción GA4 sin Network real.
+
+## GTM API v2 readonly Python — 25/10/2026
+
+Solicitud independiente del sitio, registrada en decisions.md. Evidencia detallada y comandos: tools/gtm_readonly/validation.md. Windows + Python3.12.14, venv y dependencias fijadas; sin credenciales reales ni cambios de instrumentación.
+
+- GTM-API-01/02/04/05 PASS local: 21 tests unittest completos fuera del sandbox; siete listados paginados, OAuth desktop/PKCE/scope único y refresh mediante mocks, 401/403/429, límites, saneamiento y CLI mínimo.
+- GTM-API-03 PASS Windows real con datos sintéticos: DPAPI de usuario, archivo cifrado y roundtrip, corrupción rechazada, credenciales dentro del repo rechazadas.
+- GTM-API-06 PASS: pip check sin dependencias incompatibles; requirements.lock.txt generado desde venv.
+- GTM-API-07 NOT VALIDATED: check real devuelve código1 y falta autorización; no se listaron cuentas Google. BLOCKER, responsable José: crear/habilitar cliente desktop en Google Cloud, importar JSON fuera del repo y autorizar navegador.
+- GTM-API-08 NOT VALIDATED: renovación/paginación/errores contra Google real, comprobados solo con mocks. No prueba GTM Preview, Network del sitio, GA4, consentimiento ni producción y no cierra H-09.
+- Incidencias ejecutadas del entorno: ensurepip y DNS pip fallaron dentro del sandbox; rerun autorizado fuera del sandbox resuelto. Suite inicial bloqueada en almacén temporal del sandbox, interrumpida; rerun completo PASS (21 tests,0 fallos). Sin fallos funcionales detectados en esos 21 casos; límites: Windows, un proceso por almacén, cuotas compartidas entre instancias, OAuth real pendiente.

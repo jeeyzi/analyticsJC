@@ -1,0 +1,27 @@
+{
+  "environment": "local QA / real Sheets / synthetic URL identifiers",
+  "cases": [
+    {
+      "case": "all_url_signals",
+      "status": "PASS",
+      "submission_id": "56d6ce5b-7193-42e7-aa66-2ec7fc44965b",
+      "lead_id": "53201533-007a-4e45-bd72-d925a434a871",
+      "rows": 1,
+      "mapping": "PASS",
+      "replay": "PASS",
+      "contextImmutable": "PASS",
+      "missingSignals": "EMPTY"
+    },
+    {
+      "case": "no_campaign",
+      "status": "PASS",
+      "submission_id": "7c455c1d-c4e8-44ed-b898-6b7de12c193d",
+      "lead_id": "ee161b0f-3584-464a-9a28-0270aa0951b0",
+      "rows": 1,
+      "mapping": "PASS",
+      "replay": "PASS",
+      "contextImmutable": "PASS",
+      "missingSignals": "EMPTY"
+    }
+  ]
+}

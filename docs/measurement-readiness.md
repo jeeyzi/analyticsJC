@@ -1,5 +1,37 @@
 # Measurement readiness — Lead Flow / Sheets
 
+## Estado vigente — 25/10/2026
+
+**LOCAL / QA MEASUREMENT: VALIDATED**. Cierre basado en confirmaciones manuales de José más pruebas previas del agente; no nueva ejecución. Fuente [WM-QA-FINAL-2026-10-25](evidence/acquisition/manual-final-qa-2026-10-25.json), web-measurement-review.md, identity-review.md y validation-report.md.
+
+| Capacidad | Estado vigente | Evidencia / límite |
+| --- | --- | --- |
+| dataLayer, eventos, dedupe, accepted/generate_lead | VALIDATED QA | Contratos/tests y recorridos previos; sin lead por clic ni doble emisión por replay |
+| GTM + GA4 + cookies first-party Google | VALIDATED QA | Confirmación manual José; no evidencia de activación productiva |
+| page_view | VALIDATED QA automático | Google Tag/GA4; ninguna implementación manual |
+| click_to_action/form_start/form_error/form_submit/generate_lead | VALIDATED QA | Eventos acordados; user_data restringido solo QA y excluido de GA4 |
+| UTMs dinámicas / gclid / gbraid / wbraid → Sheets | VALIDATED QA | End-to-end confirmado manualmente; presentes antes del hash |
+| ga_client_id / ga_session_id → Sheets | VALIDATED QA | Analytics Client ID + Analytics Storage Session ID del Measurement ID GA4; bridge analytics_identity_ready |
+| Snapshot / retry / ausencia IDs | VALIDATED QA | Último contexto válido, par congelado y retry idéntico; ausencia no bloquea lead |
+| submission_id / lead_id / contacto privado → Sheets | VALIDATED QA | Persistencia real con señales disponibles, columnas existentes |
+| Meta Pixel / _fbp / _fbc / fbp / fbc / CAPI | DEFERRED, sin fuente validada | Columnas pueden estar vacías; no fabricar |
+| Consent Mode / CMP / producción / tráfico productivo | NOT VALIDATED / DEFERRED | H-07/H-08, privacidad, operación y release pendientes |
+| Offline delivery / Ads offline / Enhanced Conversions / GA4 MP | DEFERRED / NOT VALIDATED | Fuera de esta fase |
+
+Query soportada: `/?utm_source=test&utm_medium=test#diagnostico`. Fragmento `/#diagnostico?utm_source=test` no es acquisition soportada. Los GA IDs se usan solo como contexto privado; analytics_identity_ready no va a GA4 ni sus IDs a custom params. H-09 QA resuelto para esta integración; H-09 producción conserva configuración/permisos/release por verificar. No production-ready ni autorización de publicar. No se cierran por inferencia revisiones de privacidad, URL/PII automática, revocación, key events/dimensiones u operación no confirmadas.
+
+## Historial de estados anteriores
+
+Las tablas/notas siguientes conservan su fecha y evidencia; no son el estado actual. GA4/IDs DEFERRED/get500ms y ausencia de tags quedan sustituidos para QA por la matriz anterior. No se reescribe evidencia histórica.
+
+21/10/2026: GTM-K5MZ4W66 recibido e integrado en head exclusivamente local/QA. HTTP local200 con1bootstrap head y archivo público gtm.js200 (lectura con CA de Windows); no prueba de ejecución en navegador/Tag Assistant ni de tags/destinos. Producción sigue excluida. H-09 parcial; GA4 real, GA IDs, Consent y lanzamiento pendientes. gtm-head-review.md documenta la revisión; resultados anteriores sin loader son históricos.
+
+Web Measurement20/10/2026: contrato local/dataLayer implementado según web-measurement-review.md; user_data restringido solo local/QA, mapper GA4 explícito sin contacto. page_view AUTOMÁTICO futuro, no evento de aplicación; sin measurement_version/site_page_view. GA IDs AVAILABLE WITH CONDITIONS (get oficial/ready real/500ms), transporte y columnas preparados; fuente Google real NOT VALIDATED. No tags cargados. H-09 externo abierto, Consent seis campos DEFERRED y lanzamiento bloqueado. Estados históricos siguientes no sustituyen esta revisión; evidencia y resultados actuales en validation-report.
+
+Corrección posterior20/10: las cinco UTMs y click IDs aceptan valores dinámicos; no catálogo cerrado ni despliegues por nueva campaña. Límites y defensa PII en acquisition-dynamic-values-review.md. Referrer mantiene alcance QA anterior; consentimiento/producción siguen pendientes. Persistencia entre reloads depende de Consent/CMP futura.
+
+Vigente 20/10/2026: acquisition-review.md. AVAILABLE: submission_id/lead_id. AVAILABLE WITH CONDITIONS: cinco UTMs del catálogo sintético, landing_page/referrer saneados, Google click IDs presentes. Captura y persistencia reales verificadas con datos sintéticos tras excepción local adoptada. DEFERRED: GA4, Meta y consentimiento. Tablas19/10 históricas, no captura actual. Producción/delivery desactivados.
+
 19/10/2026. Preparación documental; no tracking ni delivery activos. La nueva instrucción amplía el schema, no concede consentimiento ni acceso a destinos. Política vigente de measurement conserva permisos por finalidad y saneamiento; cambios de esa política necesitan adopción.
 
 | Señal | Estado actual | Dependencia / regla |

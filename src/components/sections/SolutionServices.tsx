@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import { ActionGroup, ActionLink } from "@/components/ui/Actions";
+import { ActionGroup } from "@/components/ui/Actions";
+import { DiagnosisActionLink } from "@/components/measurement/DiagnosisActionLink";
 import { MeasurementJourney } from "@/components/MeasurementJourney";
 import { site } from "@/content/site";
 import typography from "@/styles/typography.module.css";
@@ -31,7 +32,7 @@ export function SolutionServices({ diagnosisReady = false }: { diagnosisReady?: 
           </div>
           {diagnosisReady && (
             <ActionGroup>
-              <ActionLink href={site.solution.cta.href}>{site.solution.cta.label}</ActionLink>
+              <DiagnosisActionLink location="solution" href={site.solution.cta.href}>{site.solution.cta.label}</DiagnosisActionLink>
             </ActionGroup>
           )}
         </div>

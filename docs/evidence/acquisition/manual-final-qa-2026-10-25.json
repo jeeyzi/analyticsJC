@@ -1,0 +1,54 @@
+{
+  "evidence_id": "WM-QA-FINAL-2026-10-25",
+  "recorded_on": "2026-10-25",
+  "timezone": "America/Santiago",
+  "reported_by": "José Cubillo",
+  "method": "Validación manual confirmada por el usuario en el chat; registro documental, sin nueva ejecución del agente",
+  "test_execution_date": "No especificada; la fecha anterior es de registro",
+  "scope": "LOCAL / QA",
+  "final_measurement_status": "LOCAL / QA MEASUREMENT: VALIDATED",
+  "production_ready": false,
+  "manual_findings": {
+    "dynamic_utms_to_sheets": "VALIDATED QA",
+    "gclid_to_sheets": "VALIDATED QA",
+    "gbraid_to_sheets": "VALIDATED QA",
+    "wbraid_to_sheets": "VALIDATED QA",
+    "gtm_integration": "VALIDATED QA",
+    "ga4_integration": "VALIDATED QA",
+    "google_first_party_cookies": "VALIDATED QA",
+    "automatic_page_view": "VALIDATED QA; sin page_view manual",
+    "events": ["page_view", "click_to_action", "form_start", "form_error", "form_submit", "generate_lead"],
+    "gtm_client_id_source": "Variable integrada Analytics Client ID",
+    "gtm_session_id_source": "Analytics Storage → Session ID → Measurement ID específico de GA4",
+    "identity_bridge": "analytics_identity_ready con ga_client_id y ga_session_id; solo GTM → aplicación, no GA4",
+    "real_qa_lead_to_sheets": "VALIDATED QA; ga_client_id y ga_session_id junto a submission_id, lead_id, UTMs/click IDs disponibles y contacto privado",
+    "ga4_parameters": "Solo parámetros analíticos aprobados; sin user_data ni GA identifiers privados como parámetros custom"
+  },
+  "query_contract": {
+    "supported": "/?utm_source=test&utm_medium=test#diagnostico",
+    "unsupported": "/#diagnostico?utm_source=test",
+    "rule": "Query string antes del hash; no interpretar el fragmento como acquisition"
+  },
+  "combined_evidence": {
+    "duplicate_prevention_snapshot_retry_timeout": "Pruebas previas del agente; no nueva ejecución en esta actualización documental",
+    "references": [
+      "docs/evidence/identity/browser.json",
+      "docs/evidence/identity/sheets.json",
+      "docs/evidence/identity/tests.tap",
+      "docs/evidence/acquisition/dynamic-values-qa.json",
+      "docs/evidence/acquisition/browser-sheet.json"
+    ]
+  },
+  "restricted_user_data": {
+    "scope": "Solo QA en generate_lead.user_data",
+    "allowed_fields": ["email", "phone_number", "first_name", "last_name"],
+    "structure": "email y phone_number; first_name y last_name dentro de address, conforme al contrato existente",
+    "sent_to_ga4": false
+  },
+  "deferred_or_not_validated": [
+    "Meta Pixel", "_fbp", "_fbc", "fbp", "fbc", "Consent Mode", "CMP", "production",
+    "offline event delivery", "Google Ads offline conversions", "Enhanced Conversions",
+    "Meta CAPI", "GA4 Measurement Protocol", "real production traffic"
+  ],
+  "limits": "No se aportan capturas/exports nuevos ni una nueva lectura de proveedor en esta actualización. No se registran contacto, credenciales ni valores reales de identidad. No acredita cada variante pathname/hash, dimensiones/key events, revocación ni cumplimiento de privacidad. No sustituye ni reescribe resultados históricos."
+}

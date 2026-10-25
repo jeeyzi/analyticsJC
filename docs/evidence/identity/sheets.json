@@ -1,0 +1,33 @@
+{
+  "environment": "real Google Sheets QA; synthetic contacts/identities; read-only verification",
+  "columnsUnchanged": true,
+  "cases": [
+    {
+      "mode": "pre_mount_timeout",
+      "submission_id": "1b9f4787-6a28-46e0-9d6a-d337e6dde98b",
+      "lead_id": "13a88938-e451-490c-b3eb-5445adb331f7",
+      "rows": 1,
+      "clientMatches": true,
+      "sessionMatches": true,
+      "idsEmpty": false
+    },
+    {
+      "mode": "post_mount",
+      "submission_id": "74fb9f25-5f11-4870-90b7-ca2ac709b64b",
+      "lead_id": "f1ba82f1-6a4d-48ba-b1ad-11ceea096e0a",
+      "rows": 1,
+      "clientMatches": true,
+      "sessionMatches": true,
+      "idsEmpty": false
+    },
+    {
+      "mode": "missing",
+      "submission_id": "a518f86e-8f75-4b3b-8b6d-663d7d9560d1",
+      "lead_id": "36bc47a2-a858-4760-9736-9be9199d5fa8",
+      "rows": 1,
+      "clientMatches": true,
+      "sessionMatches": true,
+      "idsEmpty": true
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Website Content
 
+Actualización acotada21/10/2026 (solicitud explícita de José, decisions.md): componente teléfono añade label técnico «País del teléfono», selector países y prefijo, Chile por defecto. Label «Teléfono» se conserva; no cambia copy comercial ni campos privados más allá del teléfono ya adoptado. Textos anteriores del formulario son históricos donde decisiones19/10 adoptaron dos pasos/ocho campos.
+
 ## Navigation
 
 ### Identity

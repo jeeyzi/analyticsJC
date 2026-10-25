@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { possibleInternationalPhone } from "./phone.ts";
 
 // Contrato compartido cliente/servidor de QA; normalización conservadora sin inferir país.
 export const limits = { first_name: 100, last_name: 100, email: 254, phone: 40, company_name: 150, problem_to_solve: 2000 } as const;
@@ -8,9 +9,12 @@ const text = (max: number) => z.string().max(max).trim().min(1);
 export const stepOneSchema = z.object({
   first_name: text(limits.first_name), last_name: text(limits.last_name),
   email: z.string().max(limits.email).trim().pipe(z.email()),
-  phone: text(limits.phone).regex(/^\+?[\d ()-]+$/).refine((value) => {
+  phone: text(limits.phone).refine((value) => {
+    if (value.startsWith("+")) return possibleInternationalPhone(value);
+    // Compatibilidad con submissions QA previas sin prefijo: no inferir país ni
+    // cambiar su normalización, para no invalidar retries de payload congelado.
     const digits = value.replace(/\D/g, "");
-    return digits.length >= 8 && digits.length <= 15;
+    return /^[\d ()-]+$/.test(value) && digits.length >= 8 && digits.length <= 15;
   }),
   company_name: text(limits.company_name), company_type: z.enum(companyTypes),
 }).strict();

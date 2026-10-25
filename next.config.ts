@@ -11,6 +11,7 @@ if (process.env.NEXT_PUBLIC_MEASUREMENT_ENABLED === "true") {
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: { agentUpgrade: "security" },
   async headers() {
     return [{
       source: "/:path*",

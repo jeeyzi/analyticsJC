@@ -1,0 +1,62 @@
+{
+  "environment": "375px emulation / keyboard; 422 and503 mocked before real POST201; throwing push injected",
+  "mockErrorSequence": [
+    {
+      "event": "form_start",
+      "attempt_type": null,
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "form_submit",
+      "attempt_type": "initial",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "form_error",
+      "attempt_type": null,
+      "error_type": "server",
+      "field_name": "email",
+      "error_code": "server_validation"
+    },
+    {
+      "event": "form_submit",
+      "attempt_type": "retry",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "form_error",
+      "attempt_type": null,
+      "error_type": "reception",
+      "field_name": "none",
+      "error_code": "recoverable_error"
+    }
+  ],
+  "result": {
+    "confirmed": true,
+    "submission_id": "19ed2ce5-d0c4-4158-a806-fae0e368a5d0",
+    "lead_id": "def7e74c-7016-4247-a479-3ebbc65e3dac",
+    "http": [
+      201
+    ],
+    "pushFailures": 2,
+    "requests": 3,
+    "frozenRetry": true,
+    "acquisition": {
+      "utm_campaign": "wm_october",
+      "landing_page": "/"
+    },
+    "gaAbsent": true,
+    "leadEvents": 0,
+    "overflow": false,
+    "viewport": 375,
+    "focus": "Solicitud recibida"
+  },
+  "consoleWarningsErrors": [],
+  "touchValidation": "NOT VALIDATED: IAB clicks under device emulation did not activate Continue; keyboard verified"
+}

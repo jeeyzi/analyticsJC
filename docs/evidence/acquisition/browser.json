@@ -1,0 +1,23 @@
+{
+  "truncated": false,
+  "hasMore": false,
+  "submission_id": "1f0829a3-2f10-4777-a54a-d8ca752d5b77",
+  "acquisition": {
+    "utm_source": "qa_source",
+    "utm_medium": "qa_medium",
+    "utm_campaign": "qa_campaign",
+    "utm_content": "qa_content",
+    "utm_term": "qa_term",
+    "gclid": "Qa_Browser-123",
+    "gbraid": "Qa_Browser-456",
+    "wbraid": "Qa_Browser-789",
+    "landing_page": "/"
+  },
+  "urlAtSubmit": "http://127.0.0.1:3000/#inicio",
+  "requestOrigins": [
+    "http://127.0.0.1:3000"
+  ],
+  "responses": [
+    201
+  ]
+}

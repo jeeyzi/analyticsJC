@@ -1,5 +1,11 @@
 # Google Sheets — contrato Lead Flow MVP
 
+Web Measurement20/10/2026: POST acepta ga opcional privado {client_id?,session_id?}, saneado en cliente/servidor y mapeado a ga_client_id/ga_session_id existentes, sin nuevas columnas. Captura solo API get real, ready real y plazo total500ms. Si no disponible se omite/celda vacía; sin parseo cookies ni fallback. Contexto congelado con submission; replay conserva fila original y no actualiza GA/adquisición. collected_at no se incorpora al Sheet. Tests de mapping con valores mock no prueban IDs reales; pruebas de integración real no fabrican GA IDs. user_data de measurement no es un nuevo payload servidor: contacto sigue contrato privado existente. Consent/Meta siguen vacíos.
+
+Corrección posterior20/10: UTMs y click IDs aceptan valores dinámicos, sin catálogo de valores; solo nombres allowlisted. UTM máximo100, click IDs512; saneamiento y exclusión de PII conocida servidor. Mapping y replay sin cambios. acquisition-dynamic-values-review.md sustituye referencias anteriores a catálogo QA para estos campos.
+
+Actualización 20/10/2026: POST incorpora acquisition opcional, separado de contact. Cinco UTMs del catálogo QA, landing_page pathname, referrer origin allowlisted y gclid/gbraid/wbraid presentes se saneán en cliente/servidor y escriben en columnas existentes. Sin migración. Excepción local adoptada en decisions.md; consentimiento/GA/Meta vacíos. Columnas representan primer contexto del documento; replay nunca actualiza. Ver acquisition-review.md. Los apartados fechados19/10 conservan valor histórico.
+
 19/10/2026. Contrato documental, sin Sheet/tab creada ni API integrada. Adopción en decisions.md. Nombres lógicos leads/offline_events; nombres físicos e ID pendientes. No claves/tokens/PII de prueba en este documento.
 
 ## leads

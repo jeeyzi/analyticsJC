@@ -22,3 +22,6 @@ textarea.control { min-height: 9rem; resize: vertical; }
 .help, .error { margin: 0; font-size: var(--font-caption); line-height: 1.5; }
 .help { color: var(--color-text-muted); }
 .error { color: var(--color-error); }
+.prefixedControl { display: flex; align-items: stretch; min-width: 0; }
+.prefix { display: flex; align-items: center; padding-inline: var(--space-4); border: 1px solid var(--color-border-control); border-right: 0; border-radius: var(--radius-control) 0 0 var(--radius-control); background: var(--color-surface-muted); font-size: var(--font-ui); }
+.prefixedControl .control { border-radius: 0 var(--radius-control) var(--radius-control) 0; }

@@ -1,5 +1,54 @@
 # Acceptance Criteria
 
+## Cierre documental Web Measurement — 25/10/2026
+
+**LOCAL / QA MEASUREMENT: VALIDATED**. WM-* de arquitectura/eventos/accepted/dedupe, GTM/GA4 QA/page_view automático, ACQ-* de UTMs dinámicas/click IDs/Sheets e ID-* de identidad/bridge/snapshot/retry/Sheets documentados según tabla final de validation-report.md. Confirmación manual de José complementa pruebas previas y cierra pendiente de fuente real/lead real QA; no nueva ejecución del agente. Evidencia WM-QA-FINAL-2026-10-25 (docs/evidence/acquisition/manual-final-qa-2026-10-25.json). No altera criterios de consentimiento/privacidad/producción ni acredita subcasos no reportados (pathname/hash, dimensiones/key events, etc.). Meta/Consent/CMP/producción/offline/Ads offline/Enhanced Conversions/CAPI/MP/tráfico productivo NOT VALIDATED/DEFERRED. Query antes de hash; query en fragmento no soportada. Detalles históricos siguientes conservados.
+
+## GA identity GTM — 25/10/2026
+
+ID-01 historia previa y último par válido; ID-02 actualizaciones posteriores sin polling ni romper push GTM; ID-03 validación client/session y rechazo templates/ausentes; ID-04 nuevo POST válido contiene IDs privados y Sheets los persiste en columnas existentes; ID-05 retry/timeout/replay byte-idénticos y evento posterior sin modificar snapshot; ID-06 ausencia no bloquea recepción; ID-07 evento técnico/IDs aislados de eventos/custom params GA4 y Network; ID-08 tests/typecheck/lint/build PASS. Evidencia saneada docs/evidence/identity y docs/identity-review.md; no acredita producción/consentimiento ni convierte validación aportada por José en observación propia.
+
+## Actualización de seguridad — 23/10/2026
+
+SEC-UP-01: versión instalada y lockfile exactamente Next.js16.4.3 según CLI security, política security y manager conservados. SEC-UP-02: typecheck/lint/build y tests existentes PASS tanto en baseline aislada como checkout actual; no cambiar tests para ocultar fallos. SEC-UP-03: servidor local actualizado responde, formulario/gates/contratos conservados; integración externa/producción no acreditadas por este cambio. Evidencia en docs/evidence/next-security y next-security-review.md.
+
+## CTA Step1 y teléfono — 21/10/2026
+
+PHONE-01: selector países por metadata fijada, CL por defecto y +56 listo sin form_start por render; Chile9dígitos, otros países con longitud propia. PHONE-02: typing/paste/longitud inválida rechazada, sin truncar silenciosamente; país diferente cambia prefijo/límite y no infiere dirección. Validación internacional compartida; compatibilidad de teléfonos sin prefijo QA anteriores preservada. PHONE-03: país solo UI, phone privado, no PII en CTA ni nueva columna. CTA-F1-01: click_to_action con continue_diagnosis/form_step_1/diagnosis_step_2 solo avance válido; error no CTA y paso no submit/lead; mouse/Enter y dobleclick sin duplicación. Fuente decisions.md; evidencia docs/evidence/form-phone y form-phone-review.md. No PASS global GA4/Consent/lanzamiento.
+
+Corrección React/HMR GTM21/10: GTM-H-01 requiere HEAD en DOM hidratado y conservación tras Fast Refresh/remount, sin renderizar scripts ejecutables en JSX. Instalación via efecto DOM, return null; bootstrap externo/local único. Script JSX SSR anterior=FAIL en HMR; browser-head-effect.json acredita corrección (HEAD, mismo documento, un recurso/start, consola sin error). HTTP no sustituye DOM hidratado. Sin cambio de gates/lanzamiento.
+
+Corrección GTM HEAD21/10: GTM-H-01 exige etiquetas script reales en HEAD para bootstrap inline y loader externo; no basta ID serializado por Next. Caso previo BODY=FAIL aportado por José, corregido a script nativo + document.head.appendChild. Browser-native-head.json acredita parents HEAD, conteo1/1, un gtm.js/dataLayer y HTTP200 sin aviso. No PASS global de GA4/PII/Consent.
+
+## GTM head local/QA — 21/10/2026
+
+GTM-H-01: contenedor real proporcionado en bootstrap único de head local200; gates inválidos/producción no renderizan loader; prueba VM mantiene array y una carga/start tras ejecuciones repetidas. GTM-H-02: gtm.js público200 no equivale a ejecución o firing. GTM-H-03: Tag Assistant, destinos/GA4/PII, consentimiento y producción NOT VALIDATED. Fuente/autorización: docs/decisions.md; evidencia docs/evidence/gtm-head y revisión docs/gtm-head-review.md. No PASS global M-02 ni cierre H-09.
+
+## Web Measurement local/QA — 20/10/2026
+
+Decisiones explícitas en docs/decisions.md y contrato en docs/web-measurement-review.md sustituyen propuestas contradictorias sin borrar pruebas históricas. En particular M-03/site_page_view/manual/send_page_view=false queda obsoleto; page_view será automático y NOT VALIDATED hasta Google Tag real. M-01/M-07 ya no requieren measurement_version; page_type=home; PR-02 admite excepción restringida user_data local/QA sin enviarlo a GA4, pero company_name/problem_to_solve/contacto fuera de esa estructura siguen prohibidos. M-09 admite contrato GA opcional/500ms con fuente real aún NOT VALIDATED. CO-* no se cierran ni inventan estados. Los criterios globales de lanzamiento no pasan por esta fase.
+
+| ID | Criterio incremental | Método / límite |
+| --- | --- | --- |
+| WM-01 | dataLayer único, contrato runtime+tipos allowlisted, flag local; sin eventos de página manuales ni measurement_version | Tests y código; producción deshabilitada aun con flagQA |
+| WM-02 | CTA mouse/teclado/dobleclick una emisión; solo ubicaciones existentes | Navegador desktop/móvil emulado; no barra nueva |
+| WM-03 | form_start único edición/fallback, no foco/pasos/error/retry/remount no significativo | Tests + recorrido local; dedupe documento actual |
+| WM-04 | form_error catálogos nuevos sin valores; Continuar inválido no POST | Tests schema y navegador;422/503 mock se declaran |
+| WM-05 | form_submit inicial/retry solo POST válido, doble submit una petición activa | Navegador/Network; UI preservada |
+| WM-06 | accepted estricto solo confirmado, pérdida de respuesta no lead, retry confirma una vez | Proveedor Sheets real + fallo de respuesta inducido y tests de duplicados |
+| WM-07 | user_data restringido cuatro campos; GA4 mapper solo allowlist; sin empresa/problema/logging de contacto | Payloads sintéticos y mapper local; GTM externo NOT VALIDATED |
+| WM-08 | GA get ready real o ausencia inmediata;500ms total; contexto congelado/replay sin cambio | Tests mock y contrato; IDs Google reales NOT VALIDATED |
+| WM-09 | Bloqueo/fallo de analytics no rompe recepción, idempotencia/Acquisition preservadas | Fallo inducido y recepción real; suite baseline |
+| WM-10 | Checks/secretos/bundle y producción sin bootstrap/eventos | tests/typecheck/lint/build + inspección output; no despliegue |
+
+Resultados/evidencia: docs/validation-report.md. H-07/H-08/H-09 y lanzamiento abiertos.
+
+Corrección20/10 valores dinámicos: ACQ-01/03/04/05/06/09/10 revalidados con valores creados en runtime; pruebas de límites/PII en acquisition-dynamic-values-review.md y validation-report.md. No catálogo cerrado de valores UTM/click IDs. ACQ-07 conserva evidencia previa y prueba unitaria de snapshot, sin reejecución UI en esta corrección. Consent/CMP y persistencia entre reloads pendientes.
+
+## Alcance incremental Acquisition QA — 20/10/2026
+
+ACQ-01..ACQ-10 y evidencia en [docs/acquisition-review.md](docs/acquisition-review.md): captura URL sintética → memoria del documento → lead Sheets, bajo excepción local explícita en decisions.md. PASS limitado a los casos allí ejecutados. M-09/M-10, CO-* y criterios de producción siguientes no se cierran por esta excepción. Sin CMP/GA/Meta reales ni retención entre documentos adoptada.
+
 Proyecto: AnalyticsXXXXX · José Cubillo. Revisión de handoff: 10 de octubre de 2026. Stack base, diagrama y form_start confirmados en `docs/decisions.md`; otros pendientes mantienen su estado.
 
 Esta es la matriz de pruebas del MVP definido por las fuentes de `docs/`. No aprueba propuestas ni modifica producto, copy o diseño. Leer primero `docs/handoff-review.md`; resolver la decisión vinculada antes de ejecutar la parte afectada. H-16 a H-20 documentan interpretaciones limitadas; el resto de vacíos no se rellena por código.
@@ -169,3 +218,7 @@ Referencias por dominio: strategy→negocio; product/wireframe→rutas/interacci
 | D-07 | Release no contiene placeholders públicos, bloqueos abiertos ni criterios requeridos FAIL/NOT VALIDATED. | Revisar matriz y decisiones; excepciones de alcance explícitas sin convertir NV en PASS. | Release | NOT VALIDATED |
 | D-08 | Completion Report usa cinco secciones, IDs/estado/evidencia y límites de validación. | Revisar informe: Implemented, Validated, Not Validated, Pending, Known Issues; no “todo funciona” sin pruebas. | Release | NOT VALIDATED |
 
+
+## Archivo GTM para GA4 — 21/10/2026
+
+Alcance adoptado en docs/decisions.md: artefacto local, sin publicar. GTM-J-01 PASS estructura/referencias/allowlists; GTM-J-02 PASS funciones URL/referrer y form_id opcional en VM sintética; GTM-J-03 PASS original intacto, destino preservado, sin page_view manual, automatismos de formularios/contacto desactivados en JSON. GTM-J-04 importación UI, GTM-J-05 Preview/Network/GA4, GTM-J-06 page_view inicial/SPA/saneamiento previo y GTM-J-07 Consent/producción: NOT VALIDATED. No cierra M-02/M-03/M-07/M-08/PR-07 globales ni H-09. Evidencia: deliverables/gtm/validation.json; revisión: deliverables/gtm/README.md; reporte: docs/validation-report.md.

@@ -1,5 +1,82 @@
 # Decision Log
 
+## Cierre documental Web Measurement local/QA — 25/10/2026
+
+Estado vigente de fase: **LOCAL / QA MEASUREMENT: VALIDATED**. Fuente: José confirma manualmente en este chat integración GTM+GA4 QA, cookies first-party Google, page_view automático (sin implementación manual), eventos web acordados, acquisition dinámica y persistencia de un lead real de QA con GA IDs. Evidencia aportada, no nueva ejecución del agente: `docs/evidence/acquisition/manual-final-qa-2026-10-25.json`. Se combina con pruebas previas del agente de arquitectura dataLayer, accepted/generate_lead, deduplicación, snapshot/retry/timeout y Sheets. Resuelve para QA los pendientes de origen real GTM/GA4/GA IDs de revisiones anteriores; no borra sus límites históricos ni cierra H-09 productivo.
+
+Fuente única de identidad GTM confirmada: variable integrada Analytics Client ID; Analytics Storage → Session ID → Measurement ID específico de GA4. analytics_identity_ready entrega ga_client_id/ga_session_id a aplicación; no etiqueta/evento GA4. App recupera último par válido, acepta actualizaciones, congela IDs por submission y conserva retry; ausencia no bloquea Lead Flow. Columnas existentes Sheets persisten IDs junto a submission_id/lead_id, UTMs/click IDs disponibles y contacto privado. Sin get concurrente ni cookies parseadas por aplicación.
+
+UTMs dinámicas, gclid, gbraid y wbraid validados end-to-end QA. Query antes de hash: `/?utm_source=test&utm_medium=test#diagnostico` soportado; `/#diagnostico?utm_source=test` no soportado. No nuevo parser de fragmentos ni cambio acquisition.
+
+generate_lead.user_data conserva excepción QA restringida: email, phone_number, first_name/last_name (nombres en address del contrato existente); no mapeado a GA4. GA4 solo parámetros analíticos aprobados, sin GA IDs privados custom. Meta Pixel/_fbp/_fbc/fbp/fbc/CAPI sin fuente validada, vacíos y DEFERRED; no fabricar valores. Consent Mode/CMP, producción/tráfico productivo, delivery offline, Ads offline, Enhanced Conversions, Meta CAPI y GA4 MP NOT VALIDATED/DEFERRED. No production-ready ni nueva activación/publicación/cambio de código.
+
+## GA identifiers mediante GTM — 25/10/2026
+
+José confirma validación manual GTM Preview del evento técnico analytics_identity_ready con ga_client_id/ga_session_id reales; no dispara etiquetas intencionalmente. Autoriza consumo como fuente primaria única: GTM → dataLayer → aplicación → snapshot privado → /api/leads → columnas existentes Sheets. Sustituye estrategia gtag get/callback GoogleTagReady/espera500ms; se retira, sin fallback concurrente ni cookies. No cambia eventos web, user_data, adquisición ni persistencia.
+
+Observador en memoria de documento (gates QA existentes): escanea último evento con par completo válido al iniciar, encadena push preservando array/this/argumentos/retorno para actualizaciones futuras, sin polling. Se rechazan ausentes/null/vacíos/templates; client string numérico con punto, session string de dígitos no cero o entero positivo seguro normalizado a string, límites privados existentes128. Actualización parcial inválida no reemplaza par ni mezcla sesiones. Interpretación técnica acotada documentada; no fabrica identificadores.
+
+Al POST válido, copia síncrona de IDs actualmente disponibles dentro del mismo frozen JSON de contacto/acquisition/submission_id. Retry/timeout/replay conservan ese string; eventos posteriores solo afectan una futura submission. Ausencia retorna{} inmediatamente y no bloquea lead. No nuevo evento GA4 ni custom params IDs. Validación manual de fuente aportada por José no sustituye pruebas de aplicación/Sheets/Network.
+
+## Actualización de seguridad Next.js — 23/10/2026
+
+José solicita ejecutar `next upgrade --agent=security` y seguir sus instrucciones. CLI selecciona exactamente Next.js16.4.3 desde16.4.0; actualización dentro del mismo major, sin codemods ni adopción de Future Defaults. Política `experimental.agentUpgrade: "security"` registrada, npm y lockfile conservados. Actualización aislada en rama codex/next-security-16-4-3 y aplicada también al checkout local con cambios previos sin incorporarlos al commit aislado. No cambia UX, copy, GTM, adquisición, recepción ni autoriza despliegue. Ver docs/next-security-review.md y validation-report.md para evidencia y límites.
+
+## Primer CTA del formulario y teléfono internacional — 21/10/2026
+
+Precisiones de implementación: Chile de contacto fijo/móvil usa9dígitos nacionales (SUBTEL); los posibles9/10/11 de metadata general incluyen servicios especiales fuera de este campo de contacto. Los demás países usan possibleLengths de la API Metadata pública. Schema valida longitud por prefijo en números internacionales nuevos; conserva la regla QA previa8–15dígitos SIN prefijo para no invalidar replay de payloads antiguos. No les agrega ni infiere +56 y no altera normalización/replay. Country solo UI, sin columna nueva. Validación de longitud posible no certifica asignación/existencia/titularidad. Fuente: https://www.subtel.gob.cl/de-manera-exitosa-ya-opera-en-chile-la-nueva-forma-de-marcar-desde-telefonos-moviles/; biblioteca: https://github.com/catamphetamine/libphonenumber-js.
+
+José solicita evento del primer CTA y prefijo/longitud de teléfono; confirma explícitamente: evento SOLO cuando datos válidos permiten avanzar a Step2; selector de países con Chile por defecto.
+
+Adopción acotada: conservar click_to_action, ampliar su contrato con cta_id=continue_diagnosis, cta_location=form_step_1, target_id=diagnosis_step_2 y form_id=diagnosis_request. Son identificadores técnicos documentados para el control solicitado, no alias/nuevo evento ni conversión. Evento ocurre después de validación Step1 y antes de avanzar; Enter/mouse comparten único onSubmit. No emite en error, render, foco o POST final. Volver y continuar válidamente es otra activación real, no otro form_start ni lead.
+
+Teléfono: países/prefijos/longitudes de libphonenumber-js/min versión exacta1.13.15; Chile seleccionado por defecto explícito de UI, no inferencia de residencia ni user_data.address.country. Selector pertenece al componente teléfono, no nuevo campo comercial/payload. Prefijo separado y listo; entrada nacional numérica acotada por país. Longitud y prefijo revalidados en schema compartido cliente/servidor. País no se persiste por separado; phone sigue único string internacional. No geolocalización ni enriquecimiento de dirección. Cambio de país conserva dígitos sin truncado silencioso: longitud incompatible se marca inválida hasta corregirla. Pegar un número internacional del país seleccionado elimina solo ese prefijo; prefijo diferente no cambia país automáticamente.
+
+No modifica accepted/submission_id/retry/idempotencia/Acquisition/Sheets ni autoriza GA4/Ads/Consent productivo. Nueva biblioteca por necesidad del selector global, sin catálogos de numeración inventados ni regex nacional universal. No se valida existencia/propiedad del teléfono, solo estructura/longitud posible.
+
+## Corrección React/HMR GTM — 21/10/2026
+
+José reporta «Encountered a script tag while rendering React component» en RootLayout. La colocación nativa SSR anterior se sustituye: GtmHead es Client Component sin HTML (return null), cuyo useEffect instala bootstrap y contenedor vía createElement/appendChild directamente en document.head. El snippet aparece tras hidratación, no como script JSX/SSR. Sin next/script en body ni scripts ejecutables renderizados por React. Dedupe de documento, gates QA/local/loopback, dataLayer y exclusión productiva se conservan. Se verifica tanto recarga como Fast Refresh sin cambiar documento ni cargar dos veces. No modifica contrato comercial/GA4/Consent ni autoriza destinos nuevos.
+
+## Corrección DOM head GTM — 21/10/2026
+
+José muestra aviso de GTM indicando snippet en BODY y reitera que debe quedar en HEAD. Corrección de implementación de la decisión existente, sin nueva autorización de destinos: script HTML inline nativo dentro de head SSR, sin cola next/script que recree bootstrap en body; script externo insertado explícitamente en document.head. Mantener ID/gates/dedupe/dataLayer y exclusión producción. La evidencia HTTP anterior solo vio ID serializado en head, no demostró ubicación del script ejecutado; ese PASS de ubicación DOM queda sustituido por comprobación de etiqueta real/DOM. No cambia UI/Lead Flow/consentimiento.
+
+## GTM head local/QA — 21/10/2026
+
+RESOLVED por solicitud explícita de José: proporciona snippet de GTM-K5MZ4W66 y solicita colocarlo en head. Autoriza cargar ese contenedor en el local/QA existente; sustituye solo la prohibición anterior de loader externo para este alcance. No autoriza publicación, modificar tags/workspaces GTM, configurar GA4/Ads, transferir user_data ni inventar consentimiento. H-09 queda parcialmente resuelto (Container ID recibido); configuración/publicación/permisos/tag ready/GA4 y QA de destinos siguen pendientes.
+
+Implementación acotada: NEXT_PUBLIC_GTM_ID configura el contenedor; GTM_QA_ENABLED=true + WEB_MEASUREMENT_QA existente + development/local habilitan loader en root head vía Next Script beforeInteractive. Guard adicional loopback y script único; mismo dataLayer, sin segunda config/gtag.js. Sin noscript remoto por no solicitarse y requerir gate independiente. Producción excluye loader aun con flags. No se considera Google tag ready por cargar GTM. QA de carga inicial sin datos de formulario; sin reenvío de contacto ni leads sintéticos a plataformas por esta validación. Consent seis campos DEFERRED.
+
+## Web Measurement local/QA — 20/10/2026
+
+RESOLVED por solicitud explícita de José (adjunto «Quiero actualizar y cerrar las decisiones de Web Measurement…», esta sesión). Autoriza comenzar implementación local/QA; sustituye propuestas incompatibles de measurement/technical/AGENTS/acceptance, sin borrar evidencia histórica. Contrato vigente detallado en web-measurement-review.md.
+
+- V1: page_view automático Google Tag/GA4; aplicación solo click_to_action, form_start, form_error, form_submit, generate_lead. Excluidos site_page_view, page_view manual, send_page_view=false, service_view, faq_interaction y eventos adicionales. Navegación automática real de Next y duplicados pendientes QA externo.
+- Sin measurement_version en dataLayer/GTM/GA4. page_type=home para eventos Home. Abstracción única tipada Application → dataLayer → GTM → GA4; sin calls de eventos a plataformas en componentes.
+- form_start: primer cambio real (no foco), fallback antes de primer POST válido, una vez por interacción lógica; Step2, volver, error, retry y remount no significativo no reinician. Formulario único actual: guarda por documento/form_id, sin almacenamiento persistente. Nueva interacción intencional requerirá definición si se añade UI para otra solicitud.
+- form_submit solo inmediatamente antes de POST válido; initial/retry. Continuar inválido puede emitir form_error, nunca form_submit. field_name corresponde a ocho campos actuales/multiple/none. error_code: required/invalid_format/invalid_option/too_long/multiple_validation_errors/server_validation/recoverable_error/unconfirmed_reception. Interpretación acotada del catálogo error_type ejemplificado: validation (cliente), server (422), reception (otros fallos); errores resumidos una vez por intento.
+- generate_lead solo tras accepted estricto de submission activa y persistencia confirmada; Set de lead_id por documento evita duplicados/replay/remount. lead_id autorizado como parámetro GA4, no user_id/persona ni dimensión custom inicial. company_type y monthly_ad_spend usan enums existentes, autorizados para GA4; no value/currency.
+- EXCEPCIÓN LOCAL/QA a prohibición previa de PII en dataLayer: generate_lead puede contener user_data.email/phone_number/address.first_name/address.last_name proporcionados. Estructura restringida: nunca GA4, logs, URL ni otras plataformas. Sin company_name/problem_to_solve/geografía/hashing. Se autoriza diagnóstico local con sintéticos sin inventar consentimiento. No habilita GTM/GA/Ads ni producción. dataLayer es memoria compartida accesible a scripts: no constituye aislamiento de seguridad; sin scripts de terceros en esta fase.
+- GA IDs: get oficial client_id/session_id mediante mismo dataLayer/tag, ready real, espera total máxima500ms. Sin esperar readiness/polling, sin cookie parsing/fallback. Ausencia/error no bloquea lead. Contexto opcional privado ga se congela con submission, persiste en columnas existentes, replay no actualiza. collected_at no se añade a Sheet: lectura justo antes del primer POST, IDs string; no nueva columna ni timestamp ficticio.
+- H-09 abierto: sin contenedor/propiedad/configuración real no loader ni llamadas externas activadas; mapping GA4 preparado como allowlist local, NOT VALIDATED externo. Consent seis campos DEFERRED. H-07/H-08 y Privacy/Public Launch siguen abiertos. No Enhanced Conversions, CMP, hashing, Meta, Ads, MP, sGTM, BQ, CRM ni delivery offline.
+
+WM-01/02/03/04/05 de revisión previa quedan resueltos para este alcance con las reglas anteriores. No se reabren stack, Sheets, idempotencia ni adquisición. Pruebas mock no acreditan proveedores; pruebas sintéticas Sheets deben distinguirse de GA real.
+
+## Corrección valores Acquisition — 20/10/2026
+
+RESOLVED por instrucción explícita de José: allowlist únicamente de nombres UTM y click IDs soportados, nunca catálogo de valores. Campañas nuevas no requieren despliegue. Sustituye la restricción de valores QA descrita abajo y en measurement. Valores UTM dinámicos string, máximo100 unidades UTF-16 antes/después de saneamiento, NFC/trim, defensa PII/formato. Click IDs dinámicos máximo512, preservados exactamente o descartados. Validación compartida y defensa adicional servidor contra contacto enviado. Fixtures QA son solo pruebas, no decisiones comerciales. Persistencia entre reloads no implementada; dependiente de Consent/CMP futura. Referrer conserva alcance QA previo, fuera de esta corrección. Sin activación productiva.
+
+## Acquisition QA — 20/10/2026
+
+Solicitud: capture → persist → associate, preservando baseline Sheets. Ante la pregunta explícita sobre excepción local/QA a la regla de consentimiento previo, José responde «excluir esa regla de momento». RESOLVED para esta fase local/QA: captura URL en memoria y asociación al lead sintético sin CMP. No inventar estados de consentimiento. No habilita producción ni delivery.
+
+Interpretación acotada: primer contexto del documento conservado en memoria hasta recarga/cierre; navegación SPA/hash o eliminación posterior de query no lo modifica. Las columnas planas representan FIRST LANDING del documento, no first touch histórico ni sesión GA4 ni last-touch. No mezclar campos de distintas visitas. Navegación con carga completa reinicia contexto; persistencia entre documentos y retención siguen DECISION NEEDED.
+
+Catálogo cerrado QA en src/lib/lead/acquisition.ts, separado de catálogo comercial pendiente. Solo UTMs sintéticas conocidas; referrer solo origin de example.org/example.com para pruebas, sin path/query/hash. Landing solo pathname propio permitido. Click IDs presentes, caracteres URL-safe y máximo defensivo512, sin transformación ni truncado; sintéticos prueban transporte, no validez de plataforma. Ausencia se omite en JSON y representa con celda vacía. Señales no permitidas se descartan sin impedir recepción.
+
+Meta/GA y seis campos de consentimiento DEFERRED sin fuente real. H-07/H-08/H-09 y privacidad/retención productiva no se cierran. Sin cookies ni almacenamiento persistente navegador. Receptor productivo continúa deshabilitado.
+
 Fecha: 10 de octubre de 2026 (America/Santiago). Fuente: confirmación explícita «si» de José Cubillo en Chat 09 a la tabla de recomendaciones y pregunta sobre stack, diagrama y form_start.
 
 ## Confirmado
@@ -199,3 +276,13 @@ Solicitud explícita de José: implementar integración server-side, leads prime
 - Configuración solo servidor mediante GOOGLE_APPLICATION_CREDENTIALS (ruta externa), GOOGLE_SHEETS_SPREADSHEET_ID, GOOGLE_SHEETS_LEADS_TAB y LEAD_SHEETS_QA_ENABLED. .env.local ignorado por Git; ninguna clave copiada a código ni cliente. Nombres definidos ahora como parte de la integración solicitada, no credenciales inventadas.
 - H-11 cuatro estados implementados. H-14 mínimos operacionales en leads y marcador técnico sin duplicar PII; no logs de contacto ni historial de valores. No schedulers/email.
 - Production Privacy / Retention mantiene BLOCKER FOR LAUNCH; no cierres de H-07/H-08/H-09 ni garantías de producción.
+
+## JSON GTM para eventos GA4 — 21/10/2026
+
+Solicitud explícita de José: modificar GTM-K5MZ4W66_workspace3.json para configurar variables, activadores y etiquetas de los eventos creados hacia GA4. Adopción limitada a generar un archivo local importable en deliverables/gtm; destino real G-N0GCP60M3V leído del export, sin inventar propiedad/entorno. No publicación ni edición remota ni modificación frontend. Se mantiene contrato vigente events.ts, incluido CTA Continuar/form_id opcional; user_data excluido. Se desactivan captura automática de formularios y datos proporcionados en el export. Page_view automático original conservado; saneamiento previo y comportamiento SPA pendientes de configuración/QA externa, no se introduce otra config ni page_view manual. H-09 parcial: ID recibido no acredita firing/recepción. H-07/H-08/privacidad y lanzamiento siguen abiertos. Detalle, instrucciones y límites: deliverables/gtm/README.md.
+
+## Herramienta Python local GTM API v2 readonly — 25/10/2026
+
+Adopción explícita por solicitud de José en esta sesión: integrar Google Tag Manager API v2 con el entorno local mediante Python y OAuth 2.0 de aplicación de escritorio, exclusivamente https://www.googleapis.com/auth/tagmanager.readonly. Alcance separado de la aplicación Next.js: autenticación y renovación, almacenamiento cifrado Windows DPAPI fuera del repositorio, listados de cuentas/contenedores/workspaces/tags/triggers/variables/version_headers con paginación, errores 401/403/429 y prueba de conexión. No acciones de escritura, eliminación ni publicación; no cambios al sitio, instrumentación, dataLayer o configuración MCP.
+
+Interpretación técnica acotada: tools/gtm_readonly usa venv/pip y lockfile propios; no sustituye npm del sitio. DPAPI de usuario actual bajo LOCALAPPDATA, sin fallback en claro; CLI muestra solo IDs/paths. SAFE ASSUMPTION: uso Windows con un proceso por almacén; versiones se listan como metadatos version_headers y variables como variables de usuario. BLOCKER GTM-API-07: creación/configuración del cliente Google Cloud y consentimiento requieren al propietario; no se fabrican ni reutilizan credenciales GA4/ADC. Guía y evidencia: tools/gtm_readonly/README.md, tools/gtm_readonly/validation.md. No autoriza activación ni release del sitio.

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "61af58536e5d414b4206b438a0d7f69153b3b0a4b65f0d671552cee5d2a79c50"
+    },
+    {
+      "path": "docs/decisions.md",
+      "sha256": "6af2530e6431d0587c91ccdc59fb7554db197ff4d18fea6962def991cfde0683"
+    },
+    {
+      "path": "docs/strategy.md",
+      "sha256": "80db1d9886d924e2fa1ef619c00da5104876306ab5a7141314e85e6480ad6924"
+    },
+    {
+      "path": "docs/product.md",
+      "sha256": "5d0dc1d184177550f8a47473bd3c128268328ef5715d11a405992ecce4028513"
+    },
+    {
+      "path": "docs/wireframe.md",
+      "sha256": "4a748c353346dbd2ea343b5b252c1c0fe1bad17950d88ed1130492b1bfd19eba"
+    },
+    {
+      "path": "docs/content.md",
+      "sha256": "a9374ec9c3aa6404edfc9c715412ce3256c21fb01bda20fd22e26b7245acd2fa"
+    },
+    {
+      "path": "docs/design.md",
+      "sha256": "c212a5c882710a2246d54b1cc6dd886219c29dddc6a374c39331f1bb98ccd92e"
+    },
+    {
+      "path": "docs/technical.md",
+      "sha256": "f330b97603dd4feb2c7cade630dcba9cf1a6a83a68c6c993068d46c9c587dcb7"
+    },
+    {
+      "path": "docs/measurement.md",
+      "sha256": "557f40762bcfa71af7606b01f2040b7650d6b252c311381ecb967526b368848b"
+    },
+    {
+      "path": "acceptance.md",
+      "sha256": "d7c7cea667e22184ba4e9a5b03b118298f2025ad874b2a18e39f47fb4043479d"
+    },
+    {
+      "path": "docs/web-measurement-review.md",
+      "sha256": "01dcbc549d238ff05abc12332258737a7fa9c173bb51a414ac7ade3477e8fc6f"
+    }
+  ]
+}

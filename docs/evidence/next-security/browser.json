@@ -1,0 +1,10 @@
+{
+  "country": "CL",
+  "phoneMaxLength": 9,
+  "bootstrapHead": "HEAD",
+  "gtmScripts": [
+    "HEAD"
+  ],
+  "continueCount": 0,
+  "leadApiResources": 0
+}

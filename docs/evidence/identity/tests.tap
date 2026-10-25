@@ -1,0 +1,249 @@
+TAP version 13
+# (node:26004) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:26004) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/lead/acquisition.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: captura URL una vez, preserva case IDs y elimina query/referrer sensibles
+ok 1 - captura URL una vez, preserva case IDs y elimina query/referrer sensibles
+  ---
+  duration_ms: 5.7504
+  type: 'test'
+  ...
+# Subtest: ausentes, duplicados, no autorizados y PII no se convierten en señales
+ok 2 - ausentes, duplicados, no autorizados y PII no se convierten en señales
+  ---
+  duration_ms: 0.521
+  type: 'test'
+  ...
+# Subtest: valores dinámicos sin catálogo, límites exactos y saneamiento idempotente
+ok 3 - valores dinámicos sin catálogo, límites exactos y saneamiento idempotente
+  ---
+  duration_ms: 1.005
+  type: 'test'
+  ...
+# Subtest: rechazo defensivo PII, controles, markup y encoding residual
+ok 4 - rechazo defensivo PII, controles, markup y encoding residual
+  ---
+  duration_ms: 0.4262
+  type: 'test'
+  ...
+# Subtest: PII coincidente con contacto se excluye al persistir sin afectar contacto ni otras señales
+ok 5 - PII coincidente con contacto se excluye al persistir sin afectar contacto ni otras señales
+  ---
+  duration_ms: 16.2662
+  type: 'test'
+  ...
+# Subtest: navegación y query vacía no pisan primer contexto; snapshot aislado y nueva vida no hereda
+ok 6 - navegación y query vacía no pisan primer contexto; snapshot aislado y nueva vida no hereda
+  ---
+  duration_ms: 0.4302
+  type: 'test'
+  ...
+# Subtest: servidor mapea señales permitidas, descarta campos ajenos y no inventa consentimiento
+ok 7 - servidor mapea señales permitidas, descarta campos ajenos y no inventa consentimiento
+  ---
+  duration_ms: 1.5575
+  type: 'test'
+  ...
+# (node:9236) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:9236) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/measurement/gtm.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: GTM requiere ID válido y gates QA/local; producción siempre excluida
+ok 8 - GTM requiere ID válido y gates QA/local; producción siempre excluida
+  ---
+  duration_ms: 2.3002
+  type: 'test'
+  ...
+# Subtest: snippet head conserva array, async y un solo gtm.start/script tras ejecución repetida
+ok 9 - snippet head conserva array, async y un solo gtm.start/script tras ejecución repetida
+  ---
+  duration_ms: 3.5782
+  type: 'test'
+  ...
+# Subtest: host externo/datalayer inválido/DOM bloqueado no cargan GTM ni lanzan a UI
+ok 10 - host externo/datalayer inválido/DOM bloqueado no cargan GTM ni lanzan a UI
+  ---
+  duration_ms: 4.0662
+  type: 'test'
+  ...
+# Subtest: instalación tras hidratación/Strict Mode/remount inserta bootstrap y contenedor una vez en HEAD
+ok 11 - instalación tras hidratación/Strict Mode/remount inserta bootstrap y contenedor una vez en HEAD
+  ---
+  duration_ms: 2.9922
+  type: 'test'
+  ...
+# (node:17972) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:17972) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/measurement/identity.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: historia previa: último par válido, no último evento inválido ni mezcla de campos
+ok 12 - historia previa: último par válido, no último evento inválido ni mezcla de campos
+  ---
+  duration_ms: 4.8763
+  type: 'test'
+  ...
+# Subtest: validación de ambos IDs: null/undefined/vacío/templates/infinito y formato incorrecto rechazados
+ok 13 - validación de ambos IDs: null/undefined/vacío/templates/infinito y formato incorrecto rechazados
+  ---
+  duration_ms: 1.4913
+  type: 'test'
+  ...
+# Subtest: actualizaciones futuras, batch push, this/retorno/argumentos originales y montaje repetido
+ok 14 - actualizaciones futuras, batch push, this/retorno/argumentos originales y montaje repetido
+  ---
+  duration_ms: 0.7247
+  type: 'test'
+  ...
+# Subtest: GTM wrappers antes/después: sin perder push y snapshot congelado/retry inmutable
+ok 15 - GTM wrappers antes/después: sin perder push y snapshot congelado/retry inmutable
+  ---
+  duration_ms: 0.4519
+  type: 'test'
+  ...
+# Subtest: ausencia/bloqueo/disabled no bloquean ni crean gtag/cookies/timers; lectura síncrona
+ok 16 - ausencia/bloqueo/disabled no bloquean ni crean gtag/cookies/timers; lectura síncrona
+  ---
+  duration_ms: 0.6609
+  type: 'test'
+  ...
+# Subtest: evento identidad no es web event; IDs no admitidos como custom parameters GA4
+ok 17 - evento identidad no es web event; IDs no admitidos como custom parameters GA4
+  ---
+  duration_ms: 7.1585
+  type: 'test'
+  ...
+# (node:23340) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:23340) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/lead/contract.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: HTTP accepted estricto: malformed,202 y otra submission nunca confirman
+ok 18 - HTTP accepted estricto: malformed,202 y otra submission nunca confirman
+  ---
+  duration_ms: 5.418
+  type: 'test'
+  ...
+# Subtest: schema no acepta IDs de plataforma ni consentimiento fabricados; normalización conservadora
+ok 19 - schema no acepta IDs de plataforma ni consentimiento fabricados; normalización conservadora
+  ---
+  duration_ms: 11.3629
+  type: 'test'
+  ...
+# Subtest: marcador único y fila forman un solo batch; entradas siempre stringValue
+ok 20 - marcador único y fila forman un solo batch; entradas siempre stringValue
+  ---
+  duration_ms: 0.6468
+  type: 'test'
+  ...
+# (node:30876) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:30876) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/lead/schema.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: dos pasos: seis obligatorios al continuar, inversión obligatoria y problema opcional
+ok 21 - dos pasos: seis obligatorios al continuar, inversión obligatoria y problema opcional
+  ---
+  duration_ms: 8.7745
+  type: 'test'
+  ...
+# Subtest: límites en el schema compartible, sin confiar en maxlength del navegador
+ok 22 - límites en el schema compartible, sin confiar en maxlength del navegador
+  ---
+  duration_ms: 1.7226
+  type: 'test'
+  ...
+# Subtest: rechaza formatos/enums y campos retirados; no rechaza por presupuesto
+ok 23 - rechaza formatos/enums y campos retirados; no rechaza por presupuesto
+  ---
+  duration_ms: 0.9778
+  type: 'test'
+  ...
+# (node:18464) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:18464) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/measurement/events.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: contrato rechaza eventos/keys no adoptados y PII fuera de user_data
+ok 24 - contrato rechaza eventos/keys no adoptados y PII fuera de user_data
+  ---
+  duration_ms: 2.704
+  type: 'test'
+  ...
+# Subtest: secuencia CTA→inicio→error→submit→lead: tipos, reset de estado GTM y mapper GA4 sin PII
+ok 25 - secuencia CTA→inicio→error→submit→lead: tipos, reset de estado GTM y mapper GA4 sin PII
+  ---
+  duration_ms: 4.3826
+  type: 'test'
+  ...
+# Subtest: errores controlados: required/formato/opción/longitud/múltiples, Step1 y servidor sin eco
+ok 26 - errores controlados: required/formato/opción/longitud/múltiples, Step1 y servidor sin eco
+  ---
+  duration_ms: 1.6561
+  type: 'test'
+  ...
+# Subtest: accepted estricto, timeout no lead, replay puede confirmar por primera vez; dedupe documento
+ok 27 - accepted estricto, timeout no lead, replay puede confirmar por primera vez; dedupe documento
+  ---
+  duration_ms: 1.5396
+  type: 'test'
+  ...
+# Subtest: fallo de push/array bloqueado/deshabilitado nunca lanza; reentrancia no duplica
+ok 28 - fallo de push/array bloqueado/deshabilitado nunca lanza; reentrancia no duplica
+  ---
+  duration_ms: 0.5115
+  type: 'test'
+  ...
+# Subtest: GA contexto privado estricto opcional mapea columnas sin cambiar adquisición/contacto; mock no prueba IDs reales
+ok 29 - GA contexto privado estricto opcional mapea columnas sin cambiar adquisición/contacto; mock no prueba IDs reales
+  ---
+  duration_ms: 4.2555
+  type: 'test'
+  ...
+# Subtest: runtime compartido sobrevive consumidores/remount; producción nunca inicializa aun con flagQA
+ok 30 - runtime compartido sobrevive consumidores/remount; producción nunca inicializa aun con flagQA
+  ---
+  duration_ms: 0.5026
+  type: 'test'
+  ...
+# (node:16020) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:16020) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/jose%20cubillo/Documents/AnalyticsJC/src/lib/lead/phone.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to C:\\Users\\jose cubillo\\Documents\\AnalyticsJC\\package.json.
+# Subtest: selector global Chile por defecto y longitudes nacionales según país
+ok 31 - selector global Chile por defecto y longitudes nacionales según país
+  ---
+  duration_ms: 1.6171
+  type: 'test'
+  ...
+# Subtest: entrada/paste solo dígitos; acepta prefijo correcto sin duplicarlo, no trunca ni cambia país
+ok 32 - entrada/paste solo dígitos; acepta prefijo correcto sin duplicarlo, no trunca ni cambia país
+  ---
+  duration_ms: 0.4206
+  type: 'test'
+  ...
+# Subtest: schema compartido rechaza longitud/prefijo incorrectos y solo comprueba posibilidad, no existencia
+ok 33 - schema compartido rechaza longitud/prefijo incorrectos y solo comprueba posibilidad, no existencia
+  ---
+  duration_ms: 7.4048
+  type: 'test'
+  ...
+# Subtest: CTA Continuar es contrato controlado separado de navegación; mapper sin PII y sin conversión
+ok 34 - CTA Continuar es contrato controlado separado de navegación; mapper sin PII y sin conversión
+  ---
+  duration_ms: 4.4825
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1115.2172

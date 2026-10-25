@@ -7,6 +7,10 @@ import { contactDraftSchema, contactFields, stepOneFields, limits, adSpendValues
 import { site } from "@/content/site";
 import { classifyResponse, feedback } from "@/lib/lead/contract";
 import styles from "./LeadForm.module.css";
+import { acquisitionSnapshot } from "./AcquisitionCapture";
+import { PhoneField, type PhoneCountryOption } from "./PhoneField";
+import { readGaIdentifiers, track, trackFormStart, trackConfirmedLead } from "@/lib/measurement/runtime";
+import { clientValidationError, receptionError, formContext, continueFormEvent } from "@/lib/measurement/events";
 
 const empty: ContactDraft = { first_name: "", last_name: "", email: "", phone: "", company_name: "", company_type: "", monthly_ad_spend: "", problem_to_solve: "" };
 type Errors = Partial<Record<ContactField, string>>;
@@ -14,7 +18,7 @@ const subscribe = () => () => {};
 const spendLabels = ["Menos de USD 2.000", "USD 2.000–5.000", "Más de USD 5.000"];
 
 // Receptor QA server-side. Contacto únicamente en memoria de esta instancia.
-export function LeadForm() {
+export function LeadForm({ phoneCountryOptions }: { phoneCountryOptions: PhoneCountryOption[] }) {
   const hydrated = useSyncExternalStore(subscribe, () => true, () => false);
   const [values, setValues] = useState<ContactDraft>(empty);
   const [errors, setErrors] = useState<Errors>({});
@@ -26,6 +30,8 @@ export function LeadForm() {
   const inFlight = useRef(false);
   const receptionUncertain = useRef(false);
   const frozen = useRef<string | null>(null);
+  const submittedContact = useRef<ContactDraft | null>(null);
+  const attempted = useRef(false);
   const [locked, setLocked] = useState(false);
   const resultHeading = useRef<HTMLHeadingElement>(null);
   const serverErrorFocus = useRef<string | null>(null);
@@ -52,6 +58,7 @@ export function LeadForm() {
   }
   function edit(field: ContactField, value: string) {
     ensureSubmission();
+    trackFormStart();
     const next = { ...values, [field]: value };
     setValues(next); setState("editing");
     if (errors[field]) setErrors((previous) => ({ ...previous, [field]: validate(next)[field] }));
@@ -67,23 +74,36 @@ export function LeadForm() {
     setErrors(next);
     const first = contactFields.find((field) => next[field]);
     if (first) {
+      const summary = clientValidationError(values, step === 1);
+      if (summary) track(summary);
       setState("validation_error");
       document.getElementById(`diagnosis-${first}`)?.focus();
       return;
     }
-    if (step === 1) { changeStep(2); return; }
+    if (step === 1) { track(continueFormEvent); changeStep(2); return; }
     inFlight.current = true;
     setState("submitting");
-    frozen.current ??= JSON.stringify({ submission_id: submissionId.current, contact: values });
     setLocked(true);
     try {
+      if (!frozen.current) {
+        submittedContact.current = { ...values };
+        const acquisition = acquisitionSnapshot();
+        const ga = readGaIdentifiers();
+        frozen.current = JSON.stringify({ submission_id: submissionId.current, contact: submittedContact.current, acquisition, ...(Object.keys(ga).length ? { ga } : {}) });
+      }
+      trackFormStart();
+      track({ ...formContext, event: "form_submit", attempt_type: attempted.current ? "retry" : "initial" });
+      attempted.current = true;
       const response = await fetch("/api/leads", { method: "POST", headers: { "Content-Type": "application/json" }, body: frozen.current, signal: AbortSignal.timeout(15000) });
       const body: unknown = await response.json();
       const classified = classifyResponse(response.status, body, submissionId.current!);
       const result = receptionUncertain.current && classified !== "confirmed_success" ? "unconfirmed_reception" : classified;
       if (result === "unconfirmed_reception") receptionUncertain.current = true;
       setState(result);
-      if (result === "confirmed_success") { setValues(empty); frozen.current = null; }
+      if (result === "confirmed_success") {
+        trackConfirmedLead(response.status, body, submissionId.current!, submittedContact.current ?? values);
+        setValues(empty); frozen.current = null; submittedContact.current = null;
+      } else track(receptionError(result, body));
       if (result === "validation_error") {
         frozen.current = null; setLocked(false);
         if (body && typeof body === "object" && "fields" in body && Array.isArray(body.fields)) {
@@ -94,7 +114,7 @@ export function LeadForm() {
           if (fields.some((field) => (stepOneFields as readonly string[]).includes(field))) setStep(1);
         }
       }
-    } catch { receptionUncertain.current = true; setState("unconfirmed_reception"); }
+    } catch { receptionUncertain.current = true; setState("unconfirmed_reception"); track(receptionError("unconfirmed_reception")); }
     finally { inFlight.current = false; }
   }
   const props = (field: ContactField) => ({ id: `diagnosis-${field}`, name: field, value: values[field], disabled: locked, error: errors[field], onChange: (event: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => edit(field, event.target.value) });
@@ -111,7 +131,7 @@ export function LeadForm() {
           <Field {...props("first_name")} label="Nombre" autoComplete="given-name" maxLength={limits.first_name} required />
           <Field {...props("last_name")} label="Apellido" autoComplete="family-name" maxLength={limits.last_name} required />
           <Field {...props("email")} label="Email" type="email" autoComplete="email" maxLength={limits.email} required />
-          <Field {...props("phone")} label="Teléfono" type="tel" autoComplete="tel" maxLength={limits.phone} required />
+          <PhoneField options={phoneCountryOptions} value={values.phone} onChange={(value) => edit("phone", value)} disabled={locked} error={errors.phone} />
           <Field {...props("company_name")} label="Nombre de la empresa" autoComplete="organization" maxLength={limits.company_name} required />
           <Field {...props("company_type")} kind="select" label="Tipo de empresa" required>
             <option value="">Selecciona una opción</option><option value="lead_business">Empresa que capta leads</option><option value="agency">Agencia</option><option value="other">Otro</option>
@@ -133,7 +153,7 @@ export function LeadForm() {
         {state === "submitting" && <p role="status">Enviando solicitud…</p>}
         <div className={styles.actions}>
           {step === 2 && <Button variant="secondary" disabled={locked} onClick={() => changeStep(1)}>Volver</Button>}
-          <Button type="submit" disabled={!hydrated || state === "submitting"} className={styles.submit}>{step === 1 ? "Continuar" : state === "submitting" ? "Enviando solicitud…" : copy.submit}</Button>
+          <Button type="submit" disabled={!hydrated || state === "submitting"} onClick={(event) => { if (event.detail > 1) event.preventDefault(); }} className={styles.submit}>{step === 1 ? "Continuar" : state === "submitting" ? "Enviando solicitud…" : copy.submit}</Button>
         </div>
       </form>
     </div>

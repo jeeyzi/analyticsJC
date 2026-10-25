@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-21",
+  "reload": {
+    "timeOrigin": 1792623229141.9,
+    "scripts": [
+      {
+        "id": "analyticsjc-gtm-bootstrap",
+        "parent": "HEAD"
+      },
+      {
+        "id": "analyticsjc-gtm-container",
+        "parent": "HEAD"
+      }
+    ],
+    "starts": 1
+  },
+  "fastRefresh": {
+    "sameDocument": true,
+    "timeOrigin": 1792623229141.9,
+    "scripts": [
+      {
+        "id": "analyticsjc-gtm-bootstrap",
+        "parent": "HEAD"
+      },
+      {
+        "id": "analyticsjc-gtm-container",
+        "parent": "HEAD"
+      }
+    ],
+    "starts": 1,
+    "resources": 1,
+    "logs": [
+      {
+        "level": "log",
+        "message": "[Fast Refresh] rebuilding",
+        "timestamp": "2026-10-21T22:54:15.246Z",
+        "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "level": "log",
+        "message": "[Fast Refresh] done in 5ms",
+        "timestamp": "2026-10-21T22:54:15.293Z",
+        "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "level": "log",
+        "message": "[Fast Refresh] done in 5ms",
+        "timestamp": "2026-10-21T22:54:19.224Z",
+        "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "level": "log",
+        "message": "[Fast Refresh] done in 5ms",
+        "timestamp": "2026-10-21T22:54:21.724Z",
+        "url": "http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      }
+    ]
+  },
+  "submissionsSent": 0
+}

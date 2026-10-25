@@ -1,0 +1,14 @@
+{
+  "step2": "Paso 2 de 2",
+  "continueEvents": [
+    {
+      "event": "click_to_action",
+      "cta_id": "continue_diagnosis",
+      "cta_location": "form_step_1",
+      "target_id": "diagnosis_step_2"
+    }
+  ],
+  "formSubmits": 0,
+  "leads": 0,
+  "apiResources": 0
+}

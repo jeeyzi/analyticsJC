@@ -1,0 +1,78 @@
+{
+  "environment": "local QA / real Sheets / synthetic identities / Google blocked",
+  "cases": [
+    {
+      "mode": "pre_mount_timeout",
+      "captured": {
+        "client_id": "100000001.200000001",
+        "session_id": "190000001"
+      },
+      "ga": {
+        "client_id": "100000001.200000001",
+        "session_id": "190000001"
+      },
+      "submission_id": "1b9f4787-6a28-46e0-9d6a-d337e6dde98b",
+      "lead_id": "13a88938-e451-490c-b3eb-5445adb331f7",
+      "accepted": true,
+      "replayed": true,
+      "beforeRetry": {
+        "leads": 0
+      },
+      "requests": 2,
+      "identicalRetry": true,
+      "upstreamAccepted": [
+        {
+          "http": 201,
+          "accepted": true
+        }
+      ],
+      "leadCount": 1,
+      "webIdsLeaked": false,
+      "snapshotNow": {
+        "client_id": "999999999.888888888",
+        "session_id": "199999999"
+      }
+    },
+    {
+      "mode": "post_mount",
+      "captured": {
+        "client_id": "100000002.200000002",
+        "session_id": "190000002"
+      },
+      "ga": {
+        "client_id": "100000002.200000002",
+        "session_id": "190000002"
+      },
+      "submission_id": "74fb9f25-5f11-4870-90b7-ca2ac709b64b",
+      "lead_id": "f1ba82f1-6a4d-48ba-b1ad-11ceea096e0a",
+      "accepted": true,
+      "replayed": false,
+      "beforeRetry": null,
+      "requests": 1,
+      "identicalRetry": true,
+      "upstreamAccepted": [],
+      "leadCount": 1,
+      "webIdsLeaked": false,
+      "snapshotNow": {
+        "client_id": "100000002.200000002",
+        "session_id": "190000002"
+      }
+    },
+    {
+      "mode": "missing",
+      "captured": {},
+      "ga": {},
+      "submission_id": "a518f86e-8f75-4b3b-8b6d-663d7d9560d1",
+      "lead_id": "36bc47a2-a858-4760-9736-9be9199d5fa8",
+      "accepted": true,
+      "replayed": false,
+      "beforeRetry": null,
+      "requests": 1,
+      "identicalRetry": true,
+      "upstreamAccepted": [],
+      "leadCount": 1,
+      "webIdsLeaked": false,
+      "snapshotNow": {}
+    }
+  ]
+}

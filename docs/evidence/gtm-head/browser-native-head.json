@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "environment": "IAB Chromium / localhost development / fresh reload",
+  "timeOrigin": 1792623098636.4,
+  "scripts": [
+    {
+      "id": "analyticsjc-gtm-bootstrap",
+      "parent": "HEAD"
+    },
+    {
+      "id": "analyticsjc-gtm-container",
+      "parent": "HEAD"
+    }
+  ],
+  "bootstrapCount": 1,
+  "containerCount": 1,
+  "gtmStartCount": 1,
+  "gtmRegistered": true,
+  "gtmResources": 1,
+  "gtmRequests": [
+    {
+      "method": "Network.requestWillBeSent"
+    },
+    {
+      "method": "Network.responseReceived",
+      "status": 200
+    }
+  ],
+  "networkTruncated": false,
+  "networkHasMore": false,
+  "consoleWarningsErrors": [],
+  "submissionsSent": 0
+}

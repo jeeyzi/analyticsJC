@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "environment": "real private Sheets / synthetic fixtures from browser / no new row by replay audit",
+  "cases": [
+    {
+      "submission_id": "67268348-206c-4cfd-8eb0-782a8e3a5db4",
+      "lead_id": "d1bffe71-ee38-4773-90cd-0aaf700245e4",
+      "rows": 1,
+      "acquisitionMapping": "PASS",
+      "gaConsentMetaAbsent": "PASS",
+      "concurrentExistingReplayHttp": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "contextUnchanged": "PASS"
+    },
+    {
+      "submission_id": "19ed2ce5-d0c4-4158-a806-fae0e368a5d0",
+      "lead_id": "def7e74c-7016-4247-a479-3ebbc65e3dac",
+      "rows": 1,
+      "acquisitionMapping": "PASS",
+      "gaConsentMetaAbsent": "PASS",
+      "concurrentExistingReplayHttp": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "contextUnchanged": "PASS"
+    }
+  ]
+}

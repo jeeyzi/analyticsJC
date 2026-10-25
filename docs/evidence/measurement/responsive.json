@@ -1,0 +1,17 @@
+{
+  "requestedViewport": {
+    "width": 375,
+    "height": 812
+  },
+  "observed": {
+    "height": 902,
+    "overflow": false,
+    "scrollWidth": 400,
+    "step": "Paso 2 de 2",
+    "width": 417
+  },
+  "continueByClick": "PASS",
+  "backByClick": "PASS",
+  "nativeTouch": "NOT VALIDATED",
+  "initialCdpMobileAttempt": "click did not activate; supported viewport rerun passed without code change"
+}

@@ -1,5 +1,11 @@
 # Technical Specification
 
+25/10/2026: GA identifiers privados pasan de gtag get a analytics_identity_ready GTM (decisions.md). Observación dataLayer histórica/futura, par válido atómico en memoria y snapshot sin await al POST. Payload ga.client_id/session_id y mapping a columnas existentes sin cambio; sin identidad se usa contexto opcional{} sin espera de500ms. No cambia dedupe/idempotencia/estado de recepción/contratos públicos.
+
+Actualización23/10/2026: solicitud explícita de José y `next upgrade --agent=security` adoptan Next.js16.4.3 exacto (antes16.4.0), npm/lockfile y política experimental.agentUpgrade=security. Sin migración mayor ni Future Defaults. Evidencia y límites en next-security-review.md; no habilita producción ni altera contratos funcionales.
+
+Actualización Web Measurement20/10/2026: decisions.md y web-measurement-review.md adoptan instrumentación local/QA con page_view automático futuro, sin measurement_version y con user_data restringido EXCLUIDO del mapper GA4. GA get opcional máximo500ms; POST admite ga privado saneado y congelado con submission, mapeado a columnas Sheets existentes. Sin loader/destinos externos activos. Las referencias siguientes a Supabase/job/request_id y formulario anterior son históricas donde decisions.md ya adoptó Sheets/submission_id/dos pasos; no se reintroducen. No se habilita producción ni consentimiento ficticio.
+
 Actualización 10/10/2026: decisiones confirmadas y alcance en `decisions.md`. La confirmación es parcial; no convierte otros pendientes en aprobaciones ni acredita una implementación.
 
 Proyecto: AnalyticsXXXXX — José Cubillo · Digital Analytics & Tracking.

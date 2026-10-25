@@ -1,0 +1,423 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido":
+    - /url: "#contenido"
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "José Cubillo" [ref=e5] [cursor=pointer]:
+        - /url: /#inicio
+      - button "Abrir menú" [ref=e7] [cursor=pointer]: Menú
+  - main [ref=e8]:
+    - region [ref=e9]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: Medición y trazabilidad para generación de leads
+          - heading "Conecta tus campañas con las oportunidades y ventas de tu CRM." [level=1] [ref=e14]
+          - paragraph [ref=e15]: Identifica qué campañas generan negocio y utiliza señales de resultados comerciales para orientar tu inversión publicitaria. Revisamos la medición, corregimos brechas y conectamos la captación con lo que ocurre después del formulario.
+          - paragraph [ref=e16]: Para empresas que captan leads con publicidad y utilizan un CRM.
+        - link "Solicitar diagnóstico inicial" [ref=e18] [cursor=pointer]:
+          - /url: "#diagnostico"
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: Cuéntanos qué necesitas resolver. Revisaremos tu solicitud y te contactaremos si hay encaje para una conversación.
+          - paragraph [ref=e21]: José Cubillo · Digital Analytics & Tracking
+    - region [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "Tu medición puede terminar donde empieza la venta." [level=2] [ref=e26]
+          - paragraph [ref=e27]: "Un formulario enviado muestra que alguien se interesó. Para evaluar la inversión, necesitas saber qué ocurrió después: si ese contacto se convirtió en una oportunidad y si terminó comprando."
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "Mides contactos, pero no resultados comerciales" [level=3] [ref=e30]
+            - paragraph [ref=e31]: Sabes cuántos leads genera cada campaña, pero no cuáles avanzan a oportunidades o ventas. Comparar solo el costo por lead puede favorecer campañas que traen contactos baratos con poco valor comercial.
+          - generic [ref=e32]:
+            - heading "Los datos de publicidad, web y CRM no encajan" [level=3] [ref=e33]
+            - paragraph [ref=e34]: Las plataformas reportan cifras distintas y cuesta explicar las diferencias. Sin revisar cómo se registra cada conversión, resulta difícil saber qué información utilizar para decidir.
+          - generic [ref=e35]:
+            - heading "Tus campañas reciben señales incompletas" [level=3] [ref=e36]
+            - paragraph [ref=e37]: Si las plataformas solo reciben el envío del formulario, la optimización no incorpora qué contactos avanzan o compran. Conectar esos resultados puede aportar señales más útiles, cuando la integración sea viable.
+        - paragraph [ref=e38]: Con esa conexión, puedes evaluar dónde reasignar presupuesto y qué campañas priorizar por su aporte comercial. El efecto depende también de las campañas, la oferta y el proceso de ventas.
+    - region [ref=e39]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - heading "Una medición que conecta la captación con el resultado comercial." [level=2] [ref=e43]
+          - paragraph [ref=e44]: Conectamos la información de tus campañas, tu sitio y tu CRM para seguir el recorrido del lead hasta la oportunidad y la venta. Según las brechas de tu operación, el proyecto puede incluir auditoría, implementación, corrección de datos y reporting.
+        - figure "Esquema conceptual" [ref=e45]:
+          - list "Campaña → Lead → CRM → Oportunidad → Venta" [ref=e47]:
+            - listitem [ref=e48]:
+              - generic [ref=e49]: Campaña
+            - listitem [ref=e52]:
+              - generic [ref=e53]: Lead
+            - listitem [ref=e56]:
+              - generic [ref=e57]: CRM
+            - listitem [ref=e60]:
+              - generic [ref=e61]: Oportunidad
+            - listitem [ref=e64]:
+              - generic [ref=e65]: Venta
+          - paragraph [ref=e66]: Cuando la integración lo permite, los resultados comerciales también se envían a las plataformas publicitarias como señales de conversión.
+        - list [ref=e67]:
+          - listitem [ref=e68]:
+            - heading "Auditoría de trazabilidad" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Identificamos dónde se pierde la conexión entre una campaña, el contacto que genera y su resultado en el CRM.
+          - listitem [ref=e71]:
+            - heading "Auditoría de calidad de datos" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Revisamos eventos y conversiones del sitio y las plataformas publicitarias para detectar registros duplicados, datos incompletos y diferencias que necesitan explicación.
+          - listitem [ref=e74]:
+            - heading "Implementación y corrección de medición" [level=3] [ref=e75]
+            - paragraph [ref=e76]: Implementamos o corregimos eventos, conversiones e integraciones para recoger la información que necesita tu negocio.
+          - listitem [ref=e77]:
+            - heading "Reporting de marketing y ventas" [level=3] [ref=e78]
+            - paragraph [ref=e79]: Organizamos los datos para comparar campañas por leads, oportunidades y ventas, con definiciones claras de cada indicador.
+          - listitem [ref=e80]:
+            - heading "Conexión entre campañas y CRM" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Vinculamos el origen de los leads con su avance comercial y evaluamos qué resultados pueden devolverse a las plataformas para optimizar.
+        - generic [ref=e83]:
+          - paragraph [ref=e84]: Según el alcance, trabajamos con GA4, Google Tag Manager, integraciones con CRM, BigQuery y mecanismos de conversión online y offline. La tecnología se define después de entender qué información falta y para qué se necesita.
+          - paragraph [ref=e85]: Cada proyecto aborda las capacidades que requiere el problema detectado. El diagnóstico inicial orienta el alcance; la auditoría técnica detallada se acuerda por separado.
+        - link "Solicitar diagnóstico inicial" [ref=e87] [cursor=pointer]:
+          - /url: "#diagnostico"
+    - region [ref=e88]:
+      - generic [ref=e90]:
+        - heading "Primero entendemos la brecha. Después definimos el trabajo." [level=2] [ref=e91]
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - generic [ref=e94]:
+              - heading "Cuéntanos qué necesitas resolver" [level=3] [ref=e95]
+              - paragraph [ref=e96]: Completa la solicitud con el contexto de tu empresa, tu captación de leads y el problema de medición que quieres abordar.
+          - listitem [ref=e97]:
+            - generic [ref=e98]:
+              - heading "Revisamos tu solicitud" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Evaluamos el problema, los sistemas involucrados y el posible encaje del servicio con tu operación.
+          - listitem [ref=e101]:
+            - generic [ref=e102]:
+              - heading "Conversamos sobre tu caso" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Si hay encaje, profundizamos en lo que necesitas medir, cómo funciona tu proceso comercial y qué requiere la conexión entre campañas y ventas.
+          - listitem [ref=e105]:
+            - generic [ref=e106]:
+              - heading "Recibes una propuesta de alcance" [level=3] [ref=e107]
+              - paragraph [ref=e108]: Definimos la intervención, los entregables, las responsabilidades y las condiciones del proyecto antes de comenzar.
+        - generic [ref=e109]:
+          - paragraph [ref=e110]: El diagnóstico inicial permite orientar el alcance. Una auditoría técnica detallada se acuerda por separado. Para enviar la solicitud no necesitas compartir accesos ni credenciales.
+          - paragraph [ref=e111]: Los accesos y la participación de marketing, desarrollo o ventas se acuerdan según el proyecto.
+    - region [ref=e112]:
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - heading "Soy José Cubillo, especialista en Digital Analytics y Tracking." [level=2] [ref=e116]
+          - paragraph [ref=e117]: Soy especialista en Digital Analytics y Tracking, con experiencia en entornos B2B y generación de leads. Mi trabajo abarca planes de medición, implementación y revisión de eventos, análisis de funnels y trazabilidad entre la captación digital y el proceso comercial.
+          - paragraph [ref=e118]: En esta consultora participo directamente en la evaluación, la definición del alcance y la ejecución técnica de cada proyecto.
+        - list [ref=e119]:
+          - listitem [ref=e120]: Medición de recorridos de generación de leads y sus puntos de conversión.
+          - listitem [ref=e121]: Implementación y QA de tracking en sitios SPA y recorridos entre dominios.
+          - listitem [ref=e122]: Trabajo con CRM y trazabilidad de leads entre sistemas digitales y comerciales.
+        - link "Solicitar diagnóstico inicial" [ref=e124] [cursor=pointer]:
+          - /url: "#diagnostico"
+    - region [ref=e125]:
+      - generic [ref=e127]:
+        - heading "Medición que puedes verificar y mantener" [level=2] [ref=e128]
+        - paragraph [ref=e129]: Cada implementación incluye validación técnica y documentación de lo realizado, para que tu equipo pueda entender qué se mide, cómo se registra y cómo mantenerlo.
+        - paragraph [ref=e130]: La IA y la automatización apoyan tareas de análisis, documentación y control de calidad. Las decisiones de medición y la validación de los entregables permanecen bajo supervisión humana.
+    - region [ref=e131]:
+      - generic [ref=e133]:
+        - heading "Antes de solicitar el diagnóstico" [level=2] [ref=e134]
+        - generic [ref=e135]:
+          - heading "¿Tiene sentido si mi agencia o equipo ya configura el tracking?" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Sí, cuando necesitas revisar la calidad de los datos o conectar la captación con lo que ocurre después del formulario. El trabajo puede complementar a tu equipo, con responsabilidades acordadas según el proyecto.
+        - generic [ref=e138]:
+          - heading "¿Cómo evaluamos si el proyecto justifica su costo?" [level=3] [ref=e139]
+          - paragraph [ref=e140]: "Revisamos la brecha de medición, las decisiones que hoy dificulta y tu inversión publicitaria para orientar el alcance. No prometemos un ahorro: evaluamos qué información y señales puede aportar la intervención y cómo podrían utilizarse."
+        - generic [ref=e141]:
+          - heading "¿Cuánto tendrá que participar mi equipo?" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Depende de los sistemas y del alcance. Antes de comenzar, acordamos los accesos, los responsables y la participación necesaria de marketing, desarrollo y ventas.
+    - region [ref=e144]:
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Solicitar diagnóstico inicial" [level=2] [ref=e147]
+          - paragraph [ref=e148]: Cuéntanos cómo captas leads y qué necesitas conectar o corregir en tu medición. Revisaremos tu solicitud y te contactaremos si hay encaje para una conversación.
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: "Prueba QA: utiliza solo datos sintéticos. Las solicitudes se guardan en el receptor privado de pruebas."
+          - generic [ref=e151]:
+            - heading "Paso 1 de 2" [level=3] [ref=e152]
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]: Nombre
+                - textbox "Nombre" [ref=e156]
+              - generic [ref=e157]:
+                - generic [ref=e158]: Apellido
+                - textbox "Apellido" [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]: Email
+                - textbox "Email" [ref=e162]
+              - generic [ref=e163]:
+                - generic [ref=e164]: País del teléfono
+                - combobox "País del teléfono" [ref=e165]:
+                  - option "Afganistán (+93)"
+                  - option "Albania (+355)"
+                  - option "Alemania (+49)"
+                  - option "Andorra (+376)"
+                  - option "Angola (+244)"
+                  - option "Anguila (+1)"
+                  - option "Antigua y Barbuda (+1)"
+                  - option "Arabia Saudí (+966)"
+                  - option "Argelia (+213)"
+                  - option "Argentina (+54)"
+                  - option "Armenia (+374)"
+                  - option "Aruba (+297)"
+                  - option "Australia (+61)"
+                  - option "Austria (+43)"
+                  - option "Azerbaiyán (+994)"
+                  - option "Bahamas (+1)"
+                  - option "Bangladés (+880)"
+                  - option "Barbados (+1)"
+                  - option "Baréin (+973)"
+                  - option "Bélgica (+32)"
+                  - option "Belice (+501)"
+                  - option "Benín (+229)"
+                  - option "Bermudas (+1)"
+                  - option "Bielorrusia (+375)"
+                  - option "Bolivia (+591)"
+                  - option "Bosnia y Herzegovina (+387)"
+                  - option "Botsuana (+267)"
+                  - option "Brasil (+55)"
+                  - option "Brunéi (+673)"
+                  - option "Bulgaria (+359)"
+                  - option "Burkina Faso (+226)"
+                  - option "Burundi (+257)"
+                  - option "Bután (+975)"
+                  - option "Cabo Verde (+238)"
+                  - option "Camboya (+855)"
+                  - option "Camerún (+237)"
+                  - option "Canadá (+1)"
+                  - option "Caribe neerlandés (+599)"
+                  - option "Catar (+974)"
+                  - option "Chad (+235)"
+                  - option "Chequia (+420)"
+                  - option "Chile (+56)" [selected]
+                  - option "China (+86)"
+                  - option "Chipre (+357)"
+                  - option "Ciudad del Vaticano (+39)"
+                  - option "Colombia (+57)"
+                  - option "Comoras (+269)"
+                  - option "Congo (+242)"
+                  - option "Corea del Norte (+850)"
+                  - option "Corea del Sur (+82)"
+                  - option "Costa Rica (+506)"
+                  - option "Côte d’Ivoire (+225)"
+                  - option "Croacia (+385)"
+                  - option "Cuba (+53)"
+                  - option "Curazao (+599)"
+                  - option "Dinamarca (+45)"
+                  - option "Dominica (+1)"
+                  - option "Ecuador (+593)"
+                  - option "Egipto (+20)"
+                  - option "El Salvador (+503)"
+                  - option "Emiratos Árabes Unidos (+971)"
+                  - option "Eritrea (+291)"
+                  - option "Eslovaquia (+421)"
+                  - option "Eslovenia (+386)"
+                  - option "España (+34)"
+                  - option "Estados Unidos (+1)"
+                  - option "Estonia (+372)"
+                  - option "Esuatini (+268)"
+                  - option "Etiopía (+251)"
+                  - option "Filipinas (+63)"
+                  - option "Finlandia (+358)"
+                  - option "Fiyi (+679)"
+                  - option "Francia (+33)"
+                  - option "Gabón (+241)"
+                  - option "Gambia (+220)"
+                  - option "Georgia (+995)"
+                  - option "Ghana (+233)"
+                  - option "Gibraltar (+350)"
+                  - option "Granada (+1)"
+                  - option "Grecia (+30)"
+                  - option "Groenlandia (+299)"
+                  - option "Guadalupe (+590)"
+                  - option "Guam (+1)"
+                  - option "Guatemala (+502)"
+                  - option "Guayana Francesa (+594)"
+                  - option "Guernesey (+44)"
+                  - option "Guinea (+224)"
+                  - option "Guinea Ecuatorial (+240)"
+                  - option "Guinea-Bisáu (+245)"
+                  - option "Guyana (+592)"
+                  - option "Haití (+509)"
+                  - option "Honduras (+504)"
+                  - option "Hungría (+36)"
+                  - option "India (+91)"
+                  - option "Indonesia (+62)"
+                  - option "Irak (+964)"
+                  - option "Irán (+98)"
+                  - option "Irlanda (+353)"
+                  - option "Isla de la Ascensión (+247)"
+                  - option "Isla de Man (+44)"
+                  - option "Isla de Navidad (+61)"
+                  - option "Isla Norfolk (+672)"
+                  - option "Islandia (+354)"
+                  - option "Islas Aland (+358)"
+                  - option "Islas Caimán (+1)"
+                  - option "Islas Cocos (+61)"
+                  - option "Islas Cook (+682)"
+                  - option "Islas Feroe (+298)"
+                  - option "Islas Malvinas (+500)"
+                  - option "Islas Marianas del Norte (+1)"
+                  - option "Islas Marshall (+692)"
+                  - option "Islas Salomón (+677)"
+                  - option "Islas Turcas y Caicos (+1)"
+                  - option "Islas Vírgenes Británicas (+1)"
+                  - option "Islas Vírgenes de EE. UU. (+1)"
+                  - option "Israel (+972)"
+                  - option "Italia (+39)"
+                  - option "Jamaica (+1)"
+                  - option "Japón (+81)"
+                  - option "Jersey (+44)"
+                  - option "Jordania (+962)"
+                  - option "Kazajistán (+7)"
+                  - option "Kenia (+254)"
+                  - option "Kirguistán (+996)"
+                  - option "Kiribati (+686)"
+                  - option "Kosovo (+383)"
+                  - option "Kuwait (+965)"
+                  - option "Laos (+856)"
+                  - option "Lesoto (+266)"
+                  - option "Letonia (+371)"
+                  - option "Líbano (+961)"
+                  - option "Liberia (+231)"
+                  - option "Libia (+218)"
+                  - option "Liechtenstein (+423)"
+                  - option "Lituania (+370)"
+                  - option "Luxemburgo (+352)"
+                  - option "Macedonia del Norte (+389)"
+                  - option "Madagascar (+261)"
+                  - option "Malasia (+60)"
+                  - option "Malaui (+265)"
+                  - option "Maldivas (+960)"
+                  - option "Mali (+223)"
+                  - option "Malta (+356)"
+                  - option "Marruecos (+212)"
+                  - option "Martinica (+596)"
+                  - option "Mauricio (+230)"
+                  - option "Mauritania (+222)"
+                  - option "Mayotte (+262)"
+                  - option "México (+52)"
+                  - option "Micronesia (+691)"
+                  - option "Moldavia (+373)"
+                  - option "Mónaco (+377)"
+                  - option "Mongolia (+976)"
+                  - option "Montenegro (+382)"
+                  - option "Montserrat (+1)"
+                  - option "Mozambique (+258)"
+                  - option "Myanmar (Birmania) (+95)"
+                  - option "Namibia (+264)"
+                  - option "Nauru (+674)"
+                  - option "Nepal (+977)"
+                  - option "Nicaragua (+505)"
+                  - option "Níger (+227)"
+                  - option "Nigeria (+234)"
+                  - option "Niue (+683)"
+                  - option "Noruega (+47)"
+                  - option "Nueva Caledonia (+687)"
+                  - option "Nueva Zelanda (+64)"
+                  - option "Omán (+968)"
+                  - option "Países Bajos (+31)"
+                  - option "Pakistán (+92)"
+                  - option "Palaos (+680)"
+                  - option "Panamá (+507)"
+                  - option "Papúa Nueva Guinea (+675)"
+                  - option "Paraguay (+595)"
+                  - option "Perú (+51)"
+                  - option "Polinesia Francesa (+689)"
+                  - option "Polonia (+48)"
+                  - option "Portugal (+351)"
+                  - option "Puerto Rico (+1)"
+                  - option "RAE de Hong Kong (China) (+852)"
+                  - option "RAE de Macao (China) (+853)"
+                  - option "Reino Unido (+44)"
+                  - option "República Centroafricana (+236)"
+                  - option "República Democrática del Congo (+243)"
+                  - option "República Dominicana (+1)"
+                  - option "Reunión (+262)"
+                  - option "Ruanda (+250)"
+                  - option "Rumanía (+40)"
+                  - option "Rusia (+7)"
+                  - option "Sáhara Occidental (+212)"
+                  - option "Samoa (+685)"
+                  - option "Samoa Americana (+1)"
+                  - option "San Bartolomé (+590)"
+                  - option "San Cristóbal y Nieves (+1)"
+                  - option "San Marino (+378)"
+                  - option "San Martín (+590)"
+                  - option "San Pedro y Miquelón (+508)"
+                  - option "San Vicente y las Granadinas (+1)"
+                  - option "Santa Elena (+290)"
+                  - option "Santa Lucía (+1)"
+                  - option "Santo Tomé y Príncipe (+239)"
+                  - option "Senegal (+221)"
+                  - option "Serbia (+381)"
+                  - option "Seychelles (+248)"
+                  - option "Sierra Leona (+232)"
+                  - option "Singapur (+65)"
+                  - option "Sint Maarten (+1)"
+                  - option "Siria (+963)"
+                  - option "Somalia (+252)"
+                  - option "Sri Lanka (+94)"
+                  - option "Sudáfrica (+27)"
+                  - option "Sudán (+249)"
+                  - option "Sudán del Sur (+211)"
+                  - option "Suecia (+46)"
+                  - option "Suiza (+41)"
+                  - option "Surinam (+597)"
+                  - option "Svalbard y Jan Mayen (+47)"
+                  - option "Tailandia (+66)"
+                  - option "Taiwán (+886)"
+                  - option "Tanzania (+255)"
+                  - option "Tayikistán (+992)"
+                  - option "Territorio Británico del Océano Índico (+246)"
+                  - option "Territorios Palestinos (+970)"
+                  - option "Timor-Leste (+670)"
+                  - option "Togo (+228)"
+                  - option "Tokelau (+690)"
+                  - option "Tonga (+676)"
+                  - option "Trinidad y Tobago (+1)"
+                  - option "Tristán de Acuña (+290)"
+                  - option "Túnez (+216)"
+                  - option "Turkmenistán (+993)"
+                  - option "Turquía (+90)"
+                  - option "Tuvalu (+688)"
+                  - option "Ucrania (+380)"
+                  - option "Uganda (+256)"
+                  - option "Uruguay (+598)"
+                  - option "Uzbekistán (+998)"
+                  - option "Vanuatu (+678)"
+                  - option "Venezuela (+58)"
+                  - option "Vietnam (+84)"
+                  - option "Wallis y Futuna (+681)"
+                  - option "Yemen (+967)"
+                  - option "Yibuti (+253)"
+                  - option "Zambia (+260)"
+                  - option "Zimbabue (+263)"
+              - generic [ref=e166]:
+                - generic [ref=e167]: Teléfono
+                - generic [ref=e168]:
+                  - generic [ref=e169]: "+56"
+                  - textbox "Teléfono" [ref=e170]
+              - generic [ref=e171]:
+                - generic [ref=e172]: Nombre de la empresa
+                - textbox "Nombre de la empresa" [ref=e173]
+              - generic [ref=e174]:
+                - generic [ref=e175]: Tipo de empresa
+                - combobox "Tipo de empresa" [ref=e176]:
+                  - option "Selecciona una opción" [selected]
+                  - option "Empresa que capta leads"
+                  - option "Agencia"
+                  - option "Otro"
+            - paragraph [ref=e177]: Usaremos los datos que compartas para evaluar tu solicitud y contactarte sobre ella. Consulta la información de privacidad.
+            - paragraph [ref=e178]: Solo QA local. Privacidad y captación pública pendientes.
+            - button "Continuar" [ref=e180] [cursor=pointer]
+    - generic [ref=e181]:
+      - paragraph [ref=e182]: Muestra local de Header + Navigation. Destinos sintéticos de validación.
+      - heading "Solicitar diagnóstico inicial" [level=2] [ref=e184]
+  - contentinfo [ref=e185]:
+    - generic [ref=e186]:
+      - paragraph [ref=e187]: José Cubillo
+      - paragraph [ref=e188]: Digital Analytics & Tracking
+      - paragraph [ref=e189]: Conectamos campañas, CRM y resultados comerciales.
+  - button "Open Next.js Dev Tools" [ref=e195] [cursor=pointer]
+  - alert [ref=e199]

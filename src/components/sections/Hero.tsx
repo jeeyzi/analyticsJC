@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import { ActionGroup, ActionLink } from "@/components/ui/Actions";
+import { ActionGroup } from "@/components/ui/Actions";
+import { DiagnosisActionLink } from "@/components/measurement/DiagnosisActionLink";
 import { site } from "@/content/site";
 import typography from "@/styles/typography.module.css";
 import styles from "./Hero.module.css";
@@ -19,7 +20,7 @@ export function Hero({ diagnosisReady = false }: { diagnosisReady?: boolean }) {
           </div>
           {diagnosisReady && (
             <ActionGroup className={styles.actions}>
-              <ActionLink href={site.hero.cta.href}>{site.hero.cta.label}</ActionLink>
+              <DiagnosisActionLink location="hero" href={site.hero.cta.href}>{site.hero.cta.label}</DiagnosisActionLink>
             </ActionGroup>
           )}
           <div className={styles.context}>

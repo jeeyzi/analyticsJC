@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-21",
+  "environment": "local IAB Chromium / synthetic data / no POST",
+  "initial": {
+    "defaultChile": true,
+    "prefix": "+56",
+    "maxLength": 9,
+    "empty": true
+  },
+  "invalid": {
+    "continueEvents": 0,
+    "submits": 0,
+    "starts": 0,
+    "errors": 1,
+    "timeOrigin": 1792623862201.9
+  },
+  "US": {
+    "maxLength": 10,
+    "prefix": "+1"
+  },
+  "typingChile": {
+    "country": "CL",
+    "nationalLength": 9,
+    "maxLength": 9
+  },
+  "validContinue": {
+    "continueEvents": [
+      {
+        "event": "click_to_action",
+        "page_type": "home",
+        "form_id": "diagnosis_request",
+        "cta_id": "continue_diagnosis",
+        "cta_location": "form_step_1",
+        "target_id": "diagnosis_step_2"
+      }
+    ],
+    "formSubmits": 0,
+    "leads": 0,
+    "starts": 1,
+    "step": "Paso 2 de 2"
+  },
+  "invalidUS": {
+    "continueCount": 1,
+    "phoneInvalid": "true",
+    "prefix": "+1",
+    "nationalLength": 9,
+    "maxLength": 10
+  },
+  "validUS": {
+    "continueCount": 2,
+    "starts": 1,
+    "postResources": 0,
+    "step": "Paso 2 de 2"
+  },
+  "consoleWarningsErrors": [
+    {
+      "level": "error",
+      "message": "Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\nhttps://react.dev/link/hydration-mismatch\n\n  ...\n    <InnerLayoutRouter url=\"/\" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>\n      <SegmentViewNode type=\"page\" pagePath=\"page.tsx\">\n        <SegmentTrieNode>\n        <Home>\n          <section>\n          <section>\n          <section>\n          <section>\n          <section>\n          <section>\n          <section>\n          <LeadFormPreview>\n            <Section>\n              <section aria-labelledby=\"titulo-for...\" className={\"Section-...\"}>\n                <Container>\n                  <div className=\"Container-...\">\n                    <div>\n                    ...\n                      <form id=\"diagnosis_...\" noValidate={true} onSubmit={function submit}>\n                        <h3>\n                        <div hidden={false}>\n                          <Field>\n                          <Field>\n                          <Field>\n                          <PhoneField value=\"\" onChange={function onChange} disabled={false} error={undefined}>\n                            <Field id=\"diagnosis-...\" name=\"phone_coun...\" kind=\"select\" label=\"País del t...\" ...>\n                              <div className={\"Field-mo...\"}>\n                                <label>\n                                <select name=\"phone_coun...\" autoComplete=\"off\" disabled={false} value=\"CL\" ...>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option>\n                                  <option value=\"HK\">\n+                                   Hong Kong (+852)\n-                                   Hungría (+36)\n                                  ...\n                            ...\n                          ...\n                        ...\n          ...\n      ...\n\n    at throwOnHydrationMismatch (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:3142:56)\n    at prepareToHydrateHostInstance (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:3196:23)\n    at completeWork (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:6780:60)\n    at runWithFiberInDEV (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:777:74)\n    at completeUnitOfWork (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:9507:23)\n    at performUnitOfWork (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:9442:28)\n    at workLoopConcurrentByScheduler (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:9436:58)\n    at renderRootConcurrent (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:9419:71)\n    at performWorkOnRoot (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:8947:150)\n    at performWorkOnRootViaSchedulerTask (http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js:10140:9)\n    at MessagePort.performWorkUntilDeadline (http://127.0.0.1:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js:1864:64)",
+      "timestamp": "2026-10-21T23:04:23.220Z",
+      "url": "http://127.0.0.1:3000/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js"
+    }
+  ],
+  "privacy": "No input values recorded; only lengths and controlled CTA params"
+}

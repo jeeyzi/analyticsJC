@@ -1,0 +1,789 @@
+{
+  "environment": "local development / IAB Chromium / synthetic contact / real Sheets / response-loss injection",
+  "cta": [
+    {
+      "event": "click_to_action",
+      "cta_location": "hero",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "click_to_action",
+      "cta_location": "solution",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "click_to_action",
+      "cta_location": "experience",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "click_to_action",
+      "cta_location": "header",
+      "error_type": null,
+      "field_name": null,
+      "error_code": null
+    },
+    {
+      "event": "form_error",
+      "cta_location": null,
+      "error_type": "validation",
+      "field_name": "multiple",
+      "error_code": "multiple_validation_errors"
+    }
+  ],
+  "uncertain": {
+    "sequence": [
+      {
+        "event": "form_start",
+        "attempt_type": null,
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      },
+      {
+        "event": "form_error",
+        "attempt_type": null,
+        "error_type": "validation",
+        "field_name": "monthly_ad_spend",
+        "error_code": "required"
+      },
+      {
+        "event": "form_submit",
+        "attempt_type": "initial",
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      },
+      {
+        "event": "form_error",
+        "attempt_type": null,
+        "error_type": "reception",
+        "field_name": "none",
+        "error_code": "unconfirmed_reception"
+      }
+    ],
+    "requests": 1,
+    "http": [
+      201
+    ],
+    "leadCount": 0
+  },
+  "replay": {
+    "submission_id": "67268348-206c-4cfd-8eb0-782a8e3a5db4",
+    "lead_id": "d1bffe71-ee38-4773-90cd-0aaf700245e4",
+    "sequence": [
+      {
+        "event": "form_start",
+        "attempt_type": null,
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      },
+      {
+        "event": "form_error",
+        "attempt_type": null,
+        "error_type": "validation",
+        "field_name": "monthly_ad_spend",
+        "error_code": "required"
+      },
+      {
+        "event": "form_submit",
+        "attempt_type": "initial",
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      },
+      {
+        "event": "form_error",
+        "attempt_type": null,
+        "error_type": "reception",
+        "field_name": "none",
+        "error_code": "unconfirmed_reception"
+      },
+      {
+        "event": "form_submit",
+        "attempt_type": "retry",
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      },
+      {
+        "event": "generate_lead",
+        "attempt_type": null,
+        "error_type": null,
+        "field_name": null,
+        "error_code": null
+      }
+    ],
+    "http": [
+      201,
+      200
+    ],
+    "requests": 2,
+    "identicalRetry": true,
+    "acquisition": {
+      "utm_source": "wm_test_source",
+      "utm_medium": "wm_test_medium",
+      "gclid": "WM_QA_OPAQUE_ABC",
+      "landing_page": "/"
+    },
+    "gaAbsent": true,
+    "restrictedKeys": [
+      "email",
+      "phone_number",
+      "address"
+    ],
+    "addressKeys": [
+      "first_name",
+      "last_name"
+    ],
+    "noPrivateText": true,
+    "leadCount": 1,
+    "focus": "Solicitud recibida",
+    "documentPIIInURL": false
+  },
+  "dedupe": {
+    "sameArray": true,
+    "duplicateLead": false,
+    "duplicateStart": false,
+    "leadCount": 1,
+    "piiOutsideRestricted": false
+  },
+  "network": {
+    "truncated": false,
+    "hasMore": false,
+    "entries": [
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_1wd2wo0q1v_dw._.css"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_102wyuf5s7tj5._.css"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_1anvha4rlo79g._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_219uq1sj0q91c._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_classic_14j3wd-eemb4z._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_core_14qn2mg1f8pkp._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_locales_1-ided7izgr--._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_1mzd3v4ofrru4._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_07dau_isvfem9._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_03p5a94cg1bp3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_1wd2wo0q1v_dw._.css"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_102wyuf5s7tj5._.css"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_1anvha4rlo79g._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_219uq1sj0q91c._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_classic_14j3wd-eemb4z._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_1mzd3v4ofrru4._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_locales_1-ided7izgr--._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_core_14qn2mg1f8pkp._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_07dau_isvfem9._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_03p5a94cg1bp3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/__nextjs_font/geist-latin.woff2"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/__nextjs_font/geist-latin.woff2"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/media/inter_latin_wght_normal-s.p.0gsaq8ukbf34m.woff2"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_1wd2wo0q1v_dw._.css"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_102wyuf5s7tj5._.css"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_1anvha4rlo79g._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_219uq1sj0q91c._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_classic_14j3wd-eemb4z._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_core_14qn2mg1f8pkp._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_locales_1-ided7izgr--._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_1mzd3v4ofrru4._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_07dau_isvfem9._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_03p5a94cg1bp3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_1wd2wo0q1v_dw._.css"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_102wyuf5s7tj5._.css"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0qva5cupmdgep._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom_development_1sqry0_53krp4.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-dom_0grqycjrj6mju._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/1daa_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_t-ezj9.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-67asdr9._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_1amofcmz--cdp._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jmam7qwg.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_05y3oi5z9mc_3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqwj2323d._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_client_1wygxxh5rwq0t._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_1anvha4rlo79g._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/turbopack-_06rkbud3pyrlm._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/_219uq1sj0q91c._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_classic_14j3wd-eemb4z._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_core_14qn2mg1f8pkp._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_next_dist_1mzd3v4ofrru4._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/node_modules_zod_v4_locales_1-ided7izgr--._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_07dau_isvfem9._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/src_03p5a94cg1bp3._.js"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsayzyj2p6._.js"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "GET",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/__nextjs_font/geist-latin.woff2"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/__nextjs_font/geist-latin.woff2"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "POST",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/api/leads"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 201,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/api/leads"
+      },
+      {
+        "method": "Network.requestWillBeSent",
+        "requestMethod": "POST",
+        "origin": "http://127.0.0.1:3000",
+        "path": "/api/leads"
+      },
+      {
+        "method": "Network.responseReceived",
+        "status": 200,
+        "origin": "http://127.0.0.1:3000",
+        "path": "/api/leads"
+      }
+    ]
+  },
+  "consoleWarningsErrors": []
+}

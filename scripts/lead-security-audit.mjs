@@ -23,7 +23,7 @@ try {
   let pii=false;
   for(const file of logs) {
     const value=await fs.readFile(file,'utf8');
-    if(['qa-lead-integration@example.com','qa-timeout@example.com','qa-browser@example.com','QA Navegador','QA_SYNTHETIC','Prueba sintética; no contactar.','+56900000000','+56 9 0000 0000','+56900000002'].some(marker=>value.includes(marker))) pii=true;
+    if(['qa-attribution@example.com','qa-attribution-browser@example.com','Browser Attribution','QA Attribution','+56900000003','+56900000004','qa-lead-integration@example.com','qa-timeout@example.com','qa-browser@example.com','QA Navegador','QA_SYNTHETIC','Prueba sintética; no contactar.','+56900000000','+56 9 0000 0000','+56900000002'].some(marker=>value.includes(marker))) pii=true;
   }
   const result={clientFilesScanned:files.length,credentialOrSheetDataFound:leaked,logFilesScanned:logs.length,syntheticPIIFound:pii,scope:'Build/dev static assets and available Next dev logs; not production logs'};
   await fs.writeFile('docs/evidence/lead-sheets/security.json',JSON.stringify(result,null,2));

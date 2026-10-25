@@ -2,7 +2,8 @@
 
 import { useEffect, useId, useRef, useState, type MouseEvent } from "react";
 import { site } from "@/content/site";
-import { ActionLink, Button, TextLink } from "@/components/ui/Actions";
+import { Button, TextLink } from "@/components/ui/Actions";
+import { DiagnosisActionLink } from "@/components/measurement/DiagnosisActionLink";
 import styles from "./HeaderNavigation.module.css";
 
 export function HeaderNavigation() {
@@ -65,9 +66,9 @@ export function HeaderNavigation() {
           {site.navigation.links.map((link) => (
             <li key={link.href}><TextLink className={styles.link} href={link.href} onClick={navigate}>{link.label}</TextLink></li>
           ))}
-          <li><ActionLink className={styles.cta} href={site.navigation.cta.href} onClick={navigate}>
+          <li><DiagnosisActionLink location="header" className={styles.cta} href={site.navigation.cta.href} onClick={navigate}>
             {site.navigation.cta.label}
-          </ActionLink></li>
+          </DiagnosisActionLink></li>
         </ul>
       </nav>
     </div>

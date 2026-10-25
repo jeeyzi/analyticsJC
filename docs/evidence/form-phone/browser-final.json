@@ -1,0 +1,48 @@
+{
+  "environment": "IAB Chromium localhost development QA; synthetic data; no final submit",
+  "defaultChile": true,
+  "typingCL": {
+    "nationalLength": 9,
+    "maxLength": 9
+  },
+  "validCL": {
+    "continueEvents": [
+      {
+        "cta_id": "continue_diagnosis",
+        "cta_location": "form_step_1",
+        "target_id": "diagnosis_step_2",
+        "form_id": "diagnosis_request",
+        "attempt_type": null,
+        "error_type": null,
+        "field_name": null,
+        "error_code": null,
+        "lead_type": null,
+        "lead_id": null,
+        "company_type": null,
+        "monthly_ad_spend": null,
+        "user_data": null,
+        "page_type": "home",
+        "event": "click_to_action",
+        "gtm.uniqueEventId": 19
+      }
+    ],
+    "submits": 0,
+    "leads": 0,
+    "starts": 1,
+    "apiResources": 0
+  },
+  "invalidUS": {
+    "invalid": "true",
+    "maxLength": 10,
+    "prefix": "+1",
+    "continueCount": 1
+  },
+  "validUS": {
+    "continueCount": 2,
+    "submits": 0,
+    "starts": 1,
+    "apiResources": 0
+  },
+  "consoleWarningsErrors": [],
+  "hydrationFix": "server serializes Spanish country options; browser uses same props"
+}

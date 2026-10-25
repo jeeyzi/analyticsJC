@@ -1,4 +1,5 @@
 import { site } from "@/content/site";
+import Link from "next/link";
 import { Container } from "./Container";
 import styles from "./Header.module.css";
 import { HeaderNavigation } from "./HeaderNavigation";
@@ -9,7 +10,7 @@ export function Header({ navigationReady = false }: { navigationReady?: boolean 
     <header className={styles.header}>
       <Container>
         <div className={styles.row}>
-          <a className={styles.identity} href="/#inicio">{site.identity}</a>
+          <Link className={styles.identity} href="/#inicio">{site.identity}</Link>
           {navigationReady && <HeaderNavigation />}
         </div>
       </Container>

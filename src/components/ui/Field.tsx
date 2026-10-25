@@ -1,7 +1,7 @@
 import type { InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes, ReactNode } from "react";
 import styles from "./Field.module.css";
 
-type Shared = { id: string; label: string; help?: string; error?: string; className?: string };
+type Shared = { id: string; label: string; help?: string; error?: string; className?: string; prefix?: string };
 type FieldProps = Shared & (
   | ({ kind?: "input" } & Omit<InputHTMLAttributes<HTMLInputElement>, "id" | "className" | "children">)
   | ({ kind: "select"; children: ReactNode } & Omit<SelectHTMLAttributes<HTMLSelectElement>, "id" | "className">)
@@ -9,8 +9,8 @@ type FieldProps = Shared & (
 );
 
 // Solo presentación y asociación accesible. Sin formulario, validación o envío.
-export function Field({ id, label, help, error, className = "", ...props }: FieldProps) {
-  const describedBy = [props["aria-describedby"], help && `${id}-help`, error && `${id}-error`].filter(Boolean).join(" ") || undefined;
+export function Field({ id, label, help, error, prefix, className = "", ...props }: FieldProps) {
+  const describedBy = [props["aria-describedby"], prefix && `${id}-prefix`, help && `${id}-help`, error && `${id}-error`].filter(Boolean).join(" ") || undefined;
   const common = { id, className: styles.control, "aria-describedby": describedBy, "aria-invalid": error ? true : props["aria-invalid"] };
   let control;
   if (props.kind === "select") {
@@ -29,7 +29,7 @@ export function Field({ id, label, help, error, className = "", ...props }: Fiel
   return (
     <div className={`${styles.field} ${className}`}>
       <label className={styles.label} htmlFor={id}>{label}</label>
-      {control}
+      {prefix ? <div className={styles.prefixedControl}><span id={`${id}-prefix`} className={styles.prefix}>{prefix}</span>{control}</div> : control}
       {help && <p className={styles.help} id={`${id}-help`}>{help}</p>}
       {error && <p className={styles.error} id={`${id}-error`}>{error}</p>}
     </div>

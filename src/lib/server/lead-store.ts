@@ -2,6 +2,8 @@ import "server-only";
 import { randomUUID } from "node:crypto";
 import { acceptedSchema, type LeadRequest } from "../lead/contract.ts";
 import { sheetsRequest } from "./sheets.ts";
+import { sanitizeAcquisition, excludeContactSignals } from "../lead/acquisition.ts";
+import { sanitizeGaIdentifiers } from "../lead/ga.ts";
 
 export const leadColumns = ["submission_id", "lead_id", "created_at", "updated_at", "status", "lifecycle_stage", "first_name", "last_name", "email", "phone", "company_name", "company_type", "ad_spend", "problem_to_solve", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "landing_page", "referrer", "gclid", "gbraid", "wbraid", "fbp", "fbc", "ga_client_id", "ga_session_id", "analytics_storage", "ad_storage", "ad_user_data", "ad_personalization", "consent_timestamp", "consent_version", "external_id", "gads_session_attributes"] as const;
 type Column = typeof leadColumns[number];
@@ -22,8 +24,10 @@ function contactValues(input: LeadRequest) {
 }
 export function newLeadRow(input: LeadRequest) {
   const now = new Date().toISOString();
-  const record: Partial<Record<Column, string>> = { ...contactValues(input), submission_id: input.submission_id, lead_id: randomUUID(), created_at: now, updated_at: now, status: "received" };
-  // No fuente consentida instalada: señales y lifecycle sin decisión permanecen vacíos.
+  const acquisition = excludeContactSignals(sanitizeAcquisition(input.acquisition), input.contact);
+  const ga = sanitizeGaIdentifiers(input.ga);
+  const record: Partial<Record<Column, string>> = { ...acquisition, ...contactValues(input), ga_client_id: ga.client_id, ga_session_id: ga.session_id, submission_id: input.submission_id, lead_id: randomUUID(), created_at: now, updated_at: now, status: "received" };
+  // GA opcional privado; consentimiento/Meta/lifecycle sin fuente permanecen vacíos.
   return leadColumns.map((column) => record[column] ?? "");
 }
 export function markerId(submissionId: string) { return `submission_${submissionId.replaceAll("-", "")}`; }

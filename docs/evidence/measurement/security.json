@@ -1,0 +1,8 @@
+{
+  "assets": 139,
+  "logFiles": 1,
+  "secretsFound": false,
+  "fixturePIIInBundle": false,
+  "fixturePIIInLogs": false,
+  "scope": "available local assets/logs only; not hosting/provider logs"
+}

@@ -1,10 +1,14 @@
 import { z } from "zod";
 import { contactDraftSchema } from "./schema.ts";
+import { sanitizeAcquisition } from "./acquisition.ts";
+import { sanitizeGaIdentifiers } from "./ga.ts";
 
 export const MAX_BODY_BYTES = 16 * 1024;
 export const leadRequestSchema = z.object({
   submission_id: z.uuid().transform((id) => id.toLowerCase()),
   contact: contactDraftSchema,
+  acquisition: z.unknown().transform(sanitizeAcquisition).optional(),
+  ga: z.unknown().transform(sanitizeGaIdentifiers).optional(),
 }).strict();
 export type LeadRequest = z.infer<typeof leadRequestSchema>;
 export const acceptedSchema = z.object({

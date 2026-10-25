@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-21",
+  "containerId": "GTM-K5MZ4W66",
+  "environment": "local development / HTTP inspection, not browser runtime",
+  "localHttp": 200,
+  "headBootstrapOccurrences": 1,
+  "containerInHead": true,
+  "nativeInlineScript": true,
+  "productionExcludesGtm": true,
+  "gtmHttp": 200,
+  "publishedScriptAvailable": true,
+  "publicScriptBytes": 335081,
+  "gaIdReferences": [],
+  "browserRuntime": "Not evaluated by HTTP script; separate browser proof in browser-native-head.json",
+  "submissionsSent": 0
+}

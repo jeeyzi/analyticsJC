@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import { ActionGroup, ActionLink } from "@/components/ui/Actions";
+import { ActionGroup } from "@/components/ui/Actions";
+import { DiagnosisActionLink } from "@/components/measurement/DiagnosisActionLink";
 import { site } from "@/content/site";
 import typography from "@/styles/typography.module.css";
 import styles from "./Experience.module.css";
@@ -22,7 +23,7 @@ export function Experience({ diagnosisReady = false }: { diagnosisReady?: boolea
           </ul>
           {diagnosisReady && (
             <ActionGroup>
-              <ActionLink href={site.experience.cta.href}>{site.experience.cta.label}</ActionLink>
+              <DiagnosisActionLink location="experience" href={site.experience.cta.href}>{site.experience.cta.label}</DiagnosisActionLink>
             </ActionGroup>
           )}
         </div>

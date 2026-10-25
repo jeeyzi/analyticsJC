@@ -1,0 +1,10 @@
+{
+  "environment": "local production build artifact; no deployment",
+  "noFormPreview": true,
+  "noMeasurementBootstrap": true,
+  "noManualPageEvents": true,
+  "noMeasurementVersion": true,
+  "noGtmGaScripts": true,
+  "noRemoteNoscript": true,
+  "productionDisabledWithQaFlag": "PASS: runtime production gate covered by measurement.test.mjs"
+}
