@@ -12,7 +12,8 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "next typegen && tsc --noEmit",
-    "lint": "eslint . --max-warnings=0"
+    "lint": "eslint . --max-warnings=0",
+    "test": "node --conditions=react-server --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "libphonenumber-js": "1.13.15",

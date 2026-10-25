@@ -222,3 +222,20 @@ Referencias por dominio: strategy→negocio; product/wireframe→rutas/interacci
 ## Archivo GTM para GA4 — 21/10/2026
 
 Alcance adoptado en docs/decisions.md: artefacto local, sin publicar. GTM-J-01 PASS estructura/referencias/allowlists; GTM-J-02 PASS funciones URL/referrer y form_id opcional en VM sintética; GTM-J-03 PASS original intacto, destino preservado, sin page_view manual, automatismos de formularios/contacto desactivados en JSON. GTM-J-04 importación UI, GTM-J-05 Preview/Network/GA4, GTM-J-06 page_view inicial/SPA/saneamiento previo y GTM-J-07 Consent/producción: NOT VALIDATED. No cierra M-02/M-03/M-07/M-08/PR-07 globales ni H-09. Evidencia: deliverables/gtm/validation.json; revisión: deliverables/gtm/README.md; reporte: docs/validation-report.md.
+
+## Preparación Vercel Preview QA — 25/10/2026
+
+Adopción explícita: decisions.md, sección Vercel Preview QA. Extensión técnica de entorno; sin cierre de release ni sustitución de evidencia manual anterior. No CMP/Consent productivo ni nuevos destinos. Detalle: docs/qa-deployment.md y docs/validation-report.md.
+
+| ID | Criterio | Estado | Evidencia/límite |
+| --- | --- | --- | --- |
+| VQA-01 | Local y QA explícito distinguidos de producción, flags separados y producción cerrada | PASS | tests/environment.test.mjs; build productivo rechazado en smoke |
+| VQA-02 | JSON privado QA inicializa OAuth/Sheets sin archivo local; inválido falla cerrado | PASS | Test con RSA sintético y fetch mock; no integración Google real |
+| VQA-03 | npm ci reproducible, tests, typecheck, lint y build QA | PASS | Instalación limpia aislada, 36 tests; ejecución Windows, no Linux/Vercel |
+| VQA-04 | Receptor compilado valida origen, tipo, schema, tamaño y credencial inválida | PASS | smoke.json: 403/415/422/413/503; sin escritura externa |
+| VQA-05 | Noindex y formulario/ancla únicos en build QA | PASS | HTML/header HTTP local, HTTPS Origin sintético |
+| VQA-06 | Material de clave ausente en Git y secreto canario ausente del cliente | PASS | Búsqueda por firmas: 327 archivos,11 commits;16 archivos cliente. No scanner exhaustivo |
+| VQA-07 | URL HTTPS Preview con protección de acceso y variables reales | NOT VALIDATED | Sin proyecto/equipo Vercel seleccionado ni deployment |
+| VQA-08 | GTM/GA4/cookies/page_view/identidad/acquisition en nuevo origen | NOT VALIDATED | Requiere Preview real, Network/Tag Assistant/DebugView |
+| VQA-09 | Lead/Sheets/replay/concurrencia/timeout/generate_lead end-to-end Preview | NOT VALIDATED | Pruebas históricas QA no acreditan Vercel |
+| VQA-10 | Production Readiness/Consent/Privacy/Storage Governance/operaciones | NOT VALIDATED | Bloqueos existentes siguen abiertos; /privacidad devuelve404 |

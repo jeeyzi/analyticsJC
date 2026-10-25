@@ -993,3 +993,31 @@ Solicitud independiente del sitio, registrada en decisions.md. Evidencia detalla
 - GTM-API-07 NOT VALIDATED: check real devuelve código1 y falta autorización; no se listaron cuentas Google. BLOCKER, responsable José: crear/habilitar cliente desktop en Google Cloud, importar JSON fuera del repo y autorizar navegador.
 - GTM-API-08 NOT VALIDATED: renovación/paginación/errores contra Google real, comprobados solo con mocks. No prueba GTM Preview, Network del sitio, GA4, consentimiento ni producción y no cierra H-09.
 - Incidencias ejecutadas del entorno: ensurepip y DNS pip fallaron dentro del sandbox; rerun autorizado fuera del sandbox resuelto. Suite inicial bloqueada en almacén temporal del sandbox, interrumpida; rerun completo PASS (21 tests,0 fallos). Sin fallos funcionales detectados en esos 21 casos; límites: Windows, un proceso por almacén, cuotas compartidas entre instancias, OAuth real pendiente.
+
+## Preparación Vercel Preview QA — 25/10/2026
+
+### Implemented
+
+Revisión read-only terminada y reportada antes de edición. Solicitud adoptada en decisions.md; technical/measurement ampliados solo para excepción Preview QA. next.config + lib/environment separan local/qa/production; flags separados y build/receptor/Sheets bloquean producción. Formulario/adquisición/medición/GTM disponibles en Preview aprobado; laboratorios visuales locales conservados. Ancla real #diagnostico; sin destino sintético en Preview. GOOGLE_SERVICE_ACCOUNT_JSON privado server-only sin fallback QA a archivo; soporte local mantenido. /api/leads Node maxDuration60 conserva contrato/persistencia/reconciliación. .env.example, ignore, script npm test y guía qa-deployment.md. Sin commit ni deployment.
+
+### Validated
+
+- VQA-01 PASS: matriz de entorno, flags inválidos/production y origen HTTPS exacto. Build con VERCEL_ENV=production rechazado pese a siteEnv=qa/aprobación=true.
+- VQA-02 PASS: credencial JSON sintética RSA, firma JWT/OAuth y Sheets con fetch mock; archivo inexistente y JSON inválido no causan fallback ni exponen error. No request Google real.
+- VQA-03 PASS: npm ci --no-audit --no-fund en directorio aislado limpio con package.json/lockfile idénticos (127 paquetes); npm run test36/36; npm run typecheck; npm run lint; npm run build Preview. Windows/Node22; no Linux ni Vercel. Build con NEXT_PUBLIC_SITE_ENV=qa, VERCEL_ENV=preview, QA_DEPLOYMENT_ENABLED=true, flags formulario/receptor/medición/GTM true, GTM sintético, JSON canario y ruta Windows inexistente.
+- VQA-04/VQA-05 PASS: servidor compilado local, HTTP transporte y Origin HTTPS sintético con Host explícito; formulario/ancla única y noindex header/meta; API403/415/422/413 y503 saneado con credencial inválida. Evidencia docs/evidence/qa-deployment/smoke.json. No prueba TLS externo ni recepción Sheets.
+- VQA-06 PASS acotado: .env.local/.vercel/JSON común ignorados; firmas de claves en327 archivos rastreados y11 commits,0 coincidencias; canario secreto, ruta QA y PEM ausentes en16 archivos .next/static. git-security.json y smoke.json. No equivale a scanner universal de secretos ni Network remoto.
+- git diff --check PASS.
+- Fallos ejecutados: npm ci inicial FAIL EPERM sobre SWC en uso; recuperación restringida npm install FAIL Exit handler never called; recuperación fuera de sandbox PASS con aviso de limpieza SWC; instalación limpia aislada PASS. Lint inicial FAIL globals del test y JS de .venv; corregidos imports y exclusión de dependencia vendorizada, lint final PASS. Smoke inicial FAIL por EACCES/red sandbox; fetch posterior403 por Host no reproducido; HTTP nativo explícito PASS. Se conservan estos límites, sin modificar tests para ocultarlos.
+
+### Not Validated
+
+VQA-07/08/09 NOT VALIDATED: sin URL Preview/deployment ID, protección autenticada, configuración de secrets en Vercel ni pruebas nuevas de Google real. GTM/GA4/cookies/page_view/analytics_identity_ready/UTMs/click IDs/Sheets/retry/generate_lead requieren ejecutar checklist en nuevo origen. Pruebas de unidad con mock no son integración. No regresión visual/teclado exhaustiva nueva ni prueba servicios reales en este turno. D-01/D-03/D-05/S-03 globales permanecen parciales/no validados; no promover VQA PASS local a release.
+
+### Pending
+
+VQA-07 José: seleccionar equipo/proyecto QA, configurar Deployment Protection y secrets Preview, desplegar rama QA; cierre con URL HTTPS privada y revisión de variables sin valores en evidencia. VQA-08/09 implementador + José: checklist qa-deployment.md con datos sintéticos y evidencia externa saneada. H-03/H-04/H-05/H-06/H-07/H-08/H-10 siguen bloqueando lanzamiento según registro; VQA-10 NOT VALIDATED.
+
+### Known Issues
+
+/privacidad no implementada,404 observado: bloquea privacidad/lanzamiento; no se inventó política. No protección auth/rate limit durable implementada en app: QA depende de Deployment Protection externo, aún no verificado. Lecturas Sheets O(n), cuotas y marcadores requieren revisión antes de producción. user_data QA restringido permanece en dataLayer por excepción adoptada; excluirlo de GA4 exige validar contenedor/Network remoto. Timeout cliente15s menor al máximo de función60s: estado incierto/retry conservado, no promesa de respuesta antes de15s. Fallos de tooling iniciales resueltos o aislados arriba; sin afirmación universal de ausencia de problemas.

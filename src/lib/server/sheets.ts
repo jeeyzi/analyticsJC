@@ -1,19 +1,36 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
+import { serverQaAllowed } from "../environment.ts";
 import { sign } from "node:crypto";
 
 export class SheetsError extends Error {
   readonly status: number;
   constructor(status = 0) { super("SHEETS_UNAVAILABLE"); this.status = status; }
 }
+export async function resolveGoogleCredentials() {
+  try {
+    if (!serverQaAllowed()) throw new SheetsError();
+    const json = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+    let raw: string;
+    if (process.env.NEXT_PUBLIC_SITE_ENV === "qa") {
+      if (!json) throw new SheetsError();
+      raw = json;
+    } else if (json) raw = json;
+    else {
+      const path = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+      if (!path) throw new SheetsError();
+      raw = await readFile(path, "utf8");
+    }
+    const credential = JSON.parse(raw);
+    if (credential.type !== "service_account" || typeof credential.client_email !== "string" || !credential.client_email || typeof credential.private_key !== "string" || !credential.private_key) throw new SheetsError();
+    return credential as { type: string; client_email: string; private_key: string };
+  } catch { throw new SheetsError(); }
+}
 let cachedToken: { value: string; expires: number } | undefined;
 async function accessToken() {
   if (cachedToken && cachedToken.expires > Date.now() + 60000) return cachedToken.value;
   try {
-    const path = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-    if (!path) throw new SheetsError();
-    const credential = JSON.parse(await readFile(path, "utf8"));
-    if (credential.type !== "service_account" || !credential.client_email || !credential.private_key) throw new SheetsError();
+    const credential = await resolveGoogleCredentials();
     const encode = (value: unknown) => Buffer.from(JSON.stringify(value)).toString("base64url");
     const now = Math.floor(Date.now() / 1000);
     const jwt = `${encode({ alg: "RS256", typ: "JWT" })}.${encode({ iss: credential.client_email, scope: "https://www.googleapis.com/auth/spreadsheets", aud: "https://oauth2.googleapis.com/token", iat: now, exp: now + 3600 })}`;
@@ -32,6 +49,7 @@ async function accessToken() {
 
 // No logs ni errores de proveedor: pueden contener celdas, tokens o credenciales.
 export async function sheetsRequest(path: string, body?: unknown) {
+  if (!serverQaAllowed()) throw new SheetsError();
   const id = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
   if (!id || !/^[\w-]+$/.test(id)) throw new SheetsError();
   try {

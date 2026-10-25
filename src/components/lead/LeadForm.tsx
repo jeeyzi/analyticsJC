@@ -149,7 +149,7 @@ export function LeadForm({ phoneCountryOptions }: { phoneCountryOptions: PhoneCo
           <Field {...props("problem_to_solve")} kind="textarea" label="¿Qué problema quieres resolver?" help="Opcional" maxLength={limits.problem_to_solve} />
         </div>
         <p className={styles.notice}>{copy.privacyNotice}</p>
-        <p className={styles.local}>Solo QA local. Privacidad y captación pública pendientes.</p>
+        <p className={styles.local}>Solo QA técnico. Privacidad y captación pública pendientes.</p>
         {state === "submitting" && <p role="status">Enviando solicitud…</p>}
         <div className={styles.actions}>
           {step === 2 && <Button variant="secondary" disabled={locked} onClick={() => changeStep(1)}>Volver</Button>}

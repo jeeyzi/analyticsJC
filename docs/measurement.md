@@ -324,3 +324,7 @@ Consultadas el 7/10/2026. Revalidar al activar proveedor o versión; las políti
 - [Data Manager API](https://developers.google.com/data-manager/api/devguides).
 
 Codex debe implementar v1 y dejar destinos offline desactivados, sin inventar credenciales o simular leads. Documento listo para desarrollar el contrato del MVP; la activación de CRM/Ads/Meta/TikTok requiere anexos específicos y configuración real. No se ejecutó QA sobre una web existente en esta entrega.
+
+## Alcance Vercel Preview QA — 25/10/2026
+
+Se extiende la excepción técnica local/QA existente a Preview aprobado según decisions.md y qa-deployment.md. Flags QA explícitos, GTM único, bridge analytics_identity_ready y snapshot/retry sin cambio de contrato. No nueva config Google ni variable GA4 usada por la app: Measurement ID se configura en GTM. page_view continúa automático del tag existente. user_data conserva excepción QA previa, nunca mapping GA4. Consent/CMP y readiness productivo siguen pendientes; la evidencia local/manual previa no acredita nuevo origen HTTPS.

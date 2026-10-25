@@ -1,0 +1,7 @@
+{
+  "tracked_files": 327,
+  "commits_scanned": 11,
+  "private_key_material_hits": 0,
+  "history_pem_hits": 0,
+  "scope": "PEM/credential signatures only; not comprehensive secret scanner; no secrets printed"
+}

@@ -1,4 +1,7 @@
+import { qaEnvironmentAllowed } from "../environment.ts";
 type GtmQaConfig = {
+  vercelEnv?: string;
+  qaEnabled?: string;
   nodeEnv: string | undefined;
   siteEnv: string | undefined;
   measurementQaEnabled: string | undefined;
@@ -7,16 +10,16 @@ type GtmQaConfig = {
 };
 
 export function gtmQaContainerId(config: GtmQaConfig): string | undefined {
-  if (config.nodeEnv !== "development" || (config.siteEnv && config.siteEnv !== "local") || config.measurementQaEnabled !== "true" || config.gtmQaEnabled !== "true") return;
+  if (!qaEnvironmentAllowed(config) || config.measurementQaEnabled !== "true" || config.gtmQaEnabled !== "true") return;
   return config.containerId && /^GTM-[A-Z0-9]+$/.test(config.containerId) ? config.containerId : undefined;
 }
 
 // Snippet proporcionado por José, conservando dataLayer y carga async única.
 // El contenedor no implica readiness GA ni permiso para enviar contacto.
-export function gtmHeadSnippet(containerId: string): string {
+export function gtmHeadSnippet(containerId: string, preview = false): string {
   if (!/^GTM-[A-Z0-9]+$/.test(containerId)) return "";
   return `(function(w,d,s,l,i){try{
-if(!['localhost','127.0.0.1','[::1]'].includes(w.location.hostname))return;
+if(!${preview}&&!['localhost','127.0.0.1','[::1]'].includes(w.location.hostname))return;
 w[l]=w[l]||[];if(!Array.isArray(w[l])||d.getElementById('analyticsjc-gtm-container'))return;
 w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
@@ -27,13 +30,13 @@ d.head.appendChild(j);
 
 // React no renderiza scripts: el efecto cliente crea nodos ejecutables en HEAD.
 // No remover en cleanup: GTM ya cargado y dedupe viven durante todo el documento.
-export function installGtmHead(document: Document, hostname: string, containerId: string): boolean {
+export function installGtmHead(document: Document, hostname: string, containerId: string, preview = false): boolean {
   try {
-    if (!["localhost", "127.0.0.1", "[::1]"].includes(hostname) || !/^GTM-[A-Z0-9]+$/.test(containerId)) return false;
+    if ((!preview && !["localhost", "127.0.0.1", "[::1]"].includes(hostname)) || !/^GTM-[A-Z0-9]+$/.test(containerId)) return false;
     if (document.getElementById("analyticsjc-gtm-bootstrap")) return false;
     const script = document.createElement("script");
     script.id = "analyticsjc-gtm-bootstrap";
-    script.text = gtmHeadSnippet(containerId);
+    script.text = gtmHeadSnippet(containerId, preview);
     document.head.appendChild(script);
     return true;
   } catch { return false; }

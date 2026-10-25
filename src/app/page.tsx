@@ -1,3 +1,4 @@
+import { serverQaAllowed } from "@/lib/environment";
 import { Hero } from "@/components/sections/Hero";
 import { ProblemImpact } from "@/components/sections/ProblemImpact";
 import { SolutionServices } from "@/components/sections/SolutionServices";
@@ -11,18 +12,20 @@ import { LeadFormPreview } from "@/components/development/LeadFormPreview";
 
 export default function Home() {
   const headerPreview = process.env.NODE_ENV === "development" && process.env.HEADER_NAVIGATION_PREVIEW === "true";
+  const qaForm = serverQaAllowed() && process.env.LEAD_FORM_PREVIEW === "true";
+  const diagnosisReady = headerPreview || (process.env.NEXT_PUBLIC_SITE_ENV === "qa" && qaForm);
   return (
     <>
-      <Hero diagnosisReady={headerPreview} />
+      <Hero diagnosisReady={diagnosisReady} />
       <ProblemImpact />
-      <SolutionServices diagnosisReady={headerPreview} />
+      <SolutionServices diagnosisReady={diagnosisReady} />
       <Process />
-      <Experience diagnosisReady={headerPreview} />
+      <Experience diagnosisReady={diagnosisReady} />
       <AIFirst />
       <FAQ />
-      {process.env.NODE_ENV === "development" && (process.env.LEAD_FORM_PREVIEW === "true" || headerPreview) && <LeadFormPreview />}
+      {(qaForm || headerPreview) && <LeadFormPreview />}
       {process.env.NODE_ENV === "development" && process.env.DESIGN_SYSTEM_PREVIEW === "true" && <DesignSystemPreview />}
-      {headerPreview && <HeaderNavigationPreview solutionReady processTrustReady />}
+      {headerPreview && !qaForm && <HeaderNavigationPreview solutionReady processTrustReady />}
     </>
   );
 }

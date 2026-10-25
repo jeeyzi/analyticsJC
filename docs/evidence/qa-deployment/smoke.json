@@ -1,0 +1,17 @@
+{
+  "environment": "local optimized QA build; HTTP transport, synthetic HTTPS Origin; not Vercel",
+  "checks": {
+    "html_form_anchor_noindex": "PASS",
+    "api_security_statuses": [
+      403,
+      415,
+      422,
+      413
+    ],
+    "missing_credentials_sanitized_503": "PASS",
+    "client_artifact_secret_canary": "PASS",
+    "production_build_blocked": "PASS"
+  },
+  "client_files_scanned": 16,
+  "privacy_route_status": 404
+}

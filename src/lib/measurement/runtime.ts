@@ -45,7 +45,7 @@ type Measurement = ReturnType<typeof createMeasurement>;
 declare global { interface Window { __analyticsJCMeasurementQA?: Measurement } }
 
 export function measurementQaEnabled() {
-  return process.env.NODE_ENV === "development" && process.env.NEXT_PUBLIC_WEB_MEASUREMENT_QA_ENABLED === "true";
+  return (process.env.NODE_ENV === "development" || (process.env.NEXT_PUBLIC_SITE_ENV === "qa" && process.env.NEXT_PUBLIC_QA_BUILD_APPROVED === "true")) && process.env.NEXT_PUBLIC_WEB_MEASUREMENT_QA_ENABLED === "true";
 }
 function runtime() {
   if (typeof window === "undefined" || !measurementQaEnabled()) return;

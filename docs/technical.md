@@ -276,3 +276,7 @@ No cambiar producto, copy o UI para acomodar una librería. No nuevas rutas come
 **Listo para implementar:** rutas, componentes, contratos, validación, idempotencia, registro persistente, estados y reglas de medición. **Pendiente operativo antes de producción:** dominio, plan/regiones/proveedores reales, credenciales, bandeja y responsable de revisión, remitente/soporte, contenido final de privacidad con retención/borrado, implementación y texto del control de consentimiento, evidencia publicable. CRM y publicidad offline pueden quedar desactivados sin bloquear captación real; no publicitar su instalación como completada.
 
 Criterio de terminado: formulario conserva solicitudes confirmadas, reintentos no duplican lead, fallo del aviso no pierde datos, preferencias se respetan, PII no sale a analytics, todos los estados son accesibles, build y pruebas críticas pasan, copy/tokens/rutas coinciden y pendientes de producción están resueltos. Este documento no acredita pruebas ejecutadas de una web.
+
+## Adopción QA Vercel — 25/10/2026
+
+La preparación Preview solicitada en decisions.md extiende gates local a QA explícito; configuración operativa en qa-deployment.md. Sheets conserva batch atómico/reconciliación; no se introduce job, dispatcher ni storage nuevo. Credential JSON server-only, sin filesystem requerido en QA; Node runtime en /api/leads, maxDuration=60 para lecturas/OAuth/escritura/reconciliación (cliente15s conserva incertidumbre y retry). Producción continúa bloqueada.

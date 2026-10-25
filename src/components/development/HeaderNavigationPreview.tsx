@@ -7,6 +7,7 @@ export function HeaderNavigationPreview({ solutionReady = false, processTrustRea
   return <Container>
     <p>Muestra local de Header + Navigation. Destinos sintéticos de validación.</p>
     {[...site.navigation.links, site.navigation.cta].filter((link) =>
+      link.href !== "#diagnostico" &&
       !(solutionReady && link.href === "#solucion") &&
       !(processTrustReady && (link.href === "#proceso" || link.href === "#experiencia"))
     ).map((link) => (

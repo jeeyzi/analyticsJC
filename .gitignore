@@ -8,3 +8,7 @@ test-results/
 .env*
 !.env.example
 *.log
+
+.vercel/
+*service-account*.json
+*credentials*.json

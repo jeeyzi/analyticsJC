@@ -1,18 +1,16 @@
+import { serverQaAllowed, leadOriginAllowed } from "@/lib/environment";
 import { leadRequestSchema, MAX_BODY_BYTES } from "@/lib/lead/contract";
 import { LeadStoreError, persistLead } from "@/lib/server/lead-store";
 import { contactFields } from "@/lib/lead/schema";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 const reply = (body: unknown, status: number) => Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 const fail = (code: string, status: number, state = "recoverable_error") => reply({ status: "error", code, state }, status);
 
 export async function POST(request: Request) {
-  // Receptor QA local, no habilitación accidental en un build publicado.
-  if (process.env.NODE_ENV === "production" || process.env.LEAD_SHEETS_QA_ENABLED !== "true") return fail("RECEIVER_DISABLED", 503);
-  const origin = request.headers.get("origin");
-  let localOrigin: URL;
-  try { localOrigin = new URL(origin ?? ""); } catch { return fail("INVALID_ORIGIN", 403); }
-  if (!["127.0.0.1", "localhost"].includes(localOrigin.hostname) || localOrigin.protocol !== "http:" || origin !== localOrigin.origin || localOrigin.host !== request.headers.get("host")) return fail("INVALID_ORIGIN", 403);
+  if (!serverQaAllowed() || process.env.LEAD_SHEETS_QA_ENABLED !== "true") return fail("RECEIVER_DISABLED", 503);
+  if (!leadOriginAllowed(request)) return fail("INVALID_ORIGIN", 403);
   if (request.headers.get("content-type")?.split(";")[0].trim() !== "application/json") return fail("INVALID_CONTENT_TYPE", 415);
   const reader = request.body?.getReader();
   if (!reader) return fail("INVALID_JSON", 400);
